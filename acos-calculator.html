@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon ACoS Calculator 2026 – Break-Even ACoS, TACoS &amp; ROAS</title>
+<meta name="description" content="Free Amazon ACoS calculator. Work out your advertising cost of sales, break-even ACoS from your true net margin, TACoS and the ROAS equivalent — and see if your Sponsored Products ads are profitable.">
+<link rel="canonical" href="https://dytsk9wrfv.page.coze.site/acos-calculator.html">
+<meta property="og:title" content="Amazon ACoS Calculator 2026 – Break-Even &amp; TACoS">
+<meta property="og:description" content="See your ACoS, break-even ACoS, TACoS and ROAS, and whether ads pay off.">
+<meta property="og:type" content="website">
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1f2430;--muted:#6b7280;--line:#e8eaee;
+--brand:#f1641f;--brand-d:#d4530f;--soft:#fff4ec;--good:#0f9d58;--bad:#d63838;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.5;font-size:16px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header.top{background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;gap:9px;align-items:center;font-weight:800;font-size:18px}
+.logo{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,#ff8a3d,#e2531a);display:grid;place-items:center;color:#fff;font-weight:900}
+.top nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:600;margin-left:14px}
+.hero{padding:32px 0 6px}
+.hero h1{font-size:28px;margin:0 0 6px;letter-spacing:-.02em}
+.hero p{color:var(--muted);margin:0;max-width:700px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:22px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 1px 2px rgba(20,24,40,.05),0 8px 24px rgba(20,24,40,.05)}
+h2{font-size:18px;margin:0 0 4px}
+.hint{color:var(--muted);font-size:13px;font-weight:400}
+label{display:block;font-weight:700;font-size:13.5px;margin:13px 0 5px}
+input{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;font-size:16px;background:#fff}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.res{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.res:last-child{border-bottom:none}
+.res b{font-variant-numeric:tabular-nums}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.kpi{background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:13px}
+.kpi small{color:var(--muted);font-weight:600;font-size:12px;display:block}
+.kpi b{font-size:20px;font-variant-numeric:tabular-nums}
+.verdict{margin-top:12px;border-radius:12px;padding:13px 15px;font-weight:800;font-size:15px}
+.v-good{background:#e9f8f0;color:var(--good)}
+.v-bad{background:#fdeaea;color:var(--bad)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-size:12.5px}
+details{border-bottom:1px solid var(--line);padding:11px 0}
+summary{font-weight:700;cursor:pointer;font-size:15px}
+details p{color:var(--muted);font-size:14px;margin:8px 0 2px}
+.more .row{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+.more a{flex:1;min-width:180px;text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-weight:700;font-size:14px}
+.more small{display:block;color:var(--muted);font-weight:500;font-size:12px;margin-top:3px}
+.sec{margin:26px 0}
+footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:13px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.two{grid-template-columns:1fr}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is ACoS on Amazon?","acceptedAnswer":{"@type":"Answer","text":"ACoS (advertising cost of sales) is ad spend divided by the sales attributed to those ads, expressed as a percentage. $300 of spend producing $1,500 in sales is a 20% ACoS."}},
+{"@type":"Question","name":"What is break-even ACoS?","acceptedAnswer":{"@type":"Answer","text":"Break-even ACoS equals your net profit margin before ads (after product cost, FBA fees and the Amazon referral fee). If ACoS is below that margin the ad-attributed sale is profitable; above it, the sale loses money."}},
+{"@type":"Question","name":"How do ACoS and ROAS convert?","acceptedAnswer":{"@type":"Answer","text":"ROAS = 1 ÷ (ACoS ÷ 100). A 25% ACoS is a 4.0 ROAS, and a 20% ACoS is a 5.0 ROAS."}},
+{"@type":"Question","name":"What is TACoS?","acceptedAnswer":{"@type":"Answer","text":"TACoS (total advertising cost of sales) divides ad spend by your total account sales (not just ad-attributed sales), showing advertising's effect on the whole business."}}
+]}
+</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+ <div class="brand"><span class="logo">S</span>SellerMath</div>
+ <nav><a href="/index.html">Etsy</a><a href="/amazon-fba-calculator.html">FBA</a><a href="/roas-calculator.html">ROAS</a><a href="/tools.html">All Tools</a></nav>
+</div></header>
+
+<div class="wrap">
+ <div class="hero">
+  <h1>Amazon ACoS <span style="color:var(--brand-d)">Calculator</span></h1>
+  <p>Your ACoS only means something next to your real margin. Enter your ad results and product economics to see break-even ACoS, TACoS, ROAS and a clear profit verdict.</p>
+ </div>
+
+ <div class="grid">
+  <div class="card">
+   <h2>Ad performance</h2>
+   <div class="two">
+    <div><label for="spend">Ad spend ($)</label><input id="spend" type="number" inputmode="decimal" value="300" oninput="run()"></div>
+    <div><label for="asales">Attributed sales ($)</label><input id="asales" type="number" inputmode="decimal" value="1500" oninput="run()"></div>
+   </div>
+   <div class="two">
+    <div><label for="tsales">Total account sales ($) <span class="hint">for TACoS</span></label><input id="tsales" type="number" inputmode="decimal" value="6000" oninput="run()"></div>
+    <div><label for="units">Ad-attributed units</label><input id="units" type="number" inputmode="numeric" value="60" oninput="run()"></div>
+   </div>
+
+   <h2 style="margin-top:20px">Your margin before ads</h2>
+   <div class="two">
+    <div><label for="price">Selling price ($)</label><input id="price" type="number" inputmode="decimal" value="25" oninput="run()"></div>
+    <div><label for="cogs">Product cost ($)</label><input id="cogs" type="number" inputmode="decimal" value="8" oninput="run()"></div>
+   </div>
+   <div class="two">
+    <div><label for="fba">FBA fee / unit ($)</label><input id="fba" type="number" inputmode="decimal" value="4.22" oninput="run()"></div>
+    <div><label for="ref">Referral fee (%)</label><input id="ref" type="number" inputmode="decimal" value="15" oninput="run()"></div>
+   </div>
+  </div>
+
+  <div class="card">
+   <h2>Results</h2>
+   <div class="res"><span>ACoS</span><b id="oAcos"></b></div>
+   <div class="res"><span>ROAS equivalent</span><b id="oRoas"></b></div>
+   <div class="res"><span>TACoS</span><b id="oTacos"></b></div>
+   <div class="res"><span>Pre-ad net margin / unit</span><b id="oMarginU"></b></div>
+   <div class="res"><span>Break-even ACoS</span><b id="oBe"></b></div>
+   <div class="kpis">
+    <div class="kpi"><small>Profit on ad-attributed sales</small><b id="oAdProfit"></b></div>
+    <div class="kpi"><small>Net after ad spend</small><b id="oNet"></b></div>
+   </div>
+   <div class="verdict" id="verdict"></div>
+  </div>
+ </div>
+
+ <div class="card sec">
+  <h2>Quick reference</h2>
+  <table>
+   <thead><tr><th>ACoS</th><th>ROAS</th></tr></thead>
+   <tbody>
+    <tr><td>15%</td><td>6.67x</td></tr>
+    <tr><td>20%</td><td>5.00x</td></tr>
+    <tr><td>25%</td><td>4.00x</td></tr>
+    <tr><td>30%</td><td>3.33x</td></tr>
+   </tbody>
+  </table>
+  <p class="hint" style="margin:10px 0 0">Formulas: ACoS = spend ÷ attributed sales; break-even ACoS = pre-ad net margin ÷ price; ROAS = 1 ÷ (ACoS/100); TACoS = spend ÷ total sales.</p>
+ </div>
+
+ <div class="card sec">
+  <h2>How to judge ACoS the right way</h2>
+  <p class="hint" style="margin:0">A low ACoS is not automatically good and a high one is not automatically bad — the reference point is always your own <b>break-even ACoS</b>, which equals the net margin the product earned before ads. If ACoS is below that margin, ad sales add profit; if it is above, those sales lose money even though revenue is rising. Two products with the same 30% ACoS can therefore be profitable on a 45%-margin item and unprofitable on a 20%-margin one.</p>
+  <p class="hint" style="margin:10px 0 0">Sellers often accept a higher ACoS when launching a product, ranking a new listing, or winning repeat buyers, then tighten toward break-even once established. Watch <b>TACoS</b> alongside ACoS: if TACoS keeps climbing while total sales stay flat, ads may be cannibalising organic orders rather than growing the business.</p>
+ </div>
+
+ <div class="card sec">
+  <h2>Frequently asked questions</h2>
+  <details open><summary>What is ACoS on Amazon?</summary><p>Ad spend ÷ attributed sales. $300 ÷ $1,500 = 20% ACoS.</p></details>
+  <details><summary>What is break-even ACoS?</summary><p>It equals your pre-ad net margin; below it you profit, above it you lose.</p></details>
+  <details><summary>How do ACoS and ROAS convert?</summary><p>ROAS = 1 ÷ (ACoS/100). 25% ACoS = 4.0 ROAS.</p></details>
+  <details><summary>What is TACoS?</summary><p>Ad spend ÷ total account sales, showing ads' effect on the whole business.</p></details>
+  <details><summary>Why is my ACoS profitable but I'm losing cash?</summary><p>Break-even ACoS here uses simple per-unit economics and may not include storage over time, coupons, returns, removal fees or fixed overhead. Confirm the full cost picture in Seller Central before judging the account.</p></details>
+ </div>
+
+ <div class="card more sec">
+  <h2>More free seller calculators</h2>
+  <div class="row">
+   <a href="/amazon-fba-calculator.html">Amazon FBA Calculator<small>Referral, fulfillment, ROI</small></a>
+   <a href="/roas-calculator.html">ROAS Calculator<small>Return on ad spend</small></a>
+   <a href="/break-even-calculator.html">Break-Even Calculator<small>Units to be profitable</small></a>
+   <a href="/profit-margin-calculator.html">Profit Margin Calculator<small>Margin vs markup</small></a>
+   <a href="/tools.html">All Tools<small>See every calculator</small></a>
+   <a href="/embed.html">Embed Widget<small>Put a calculator on your site</small></a>
+  </div>
+ </div>
+</div>
+
+<footer><div class="wrap">SellerMath is an independent tool and is not affiliated with Amazon. Break-even assumes simple per-unit economics; factor coupons, returns and storage separately.</div></footer>
+
+<script>
+const $=id=>document.getElementById(id);
+const val=id=>{const v=parseFloat($(id).value);return isFinite(v)?v:0;};
+const fmt=v=>"$"+v.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2});
+function run(){
+ const spend=val("spend"), asales=val("asales"), tsales=val("tsales"), units=val("units");
+ const price=val("price"), cogs=val("cogs"), fba=val("fba"), refp=val("ref")/100;
+ const acos=asales>0?spend/asales:0;
+ $("oAcos").textContent=asales>0?(acos*100).toFixed(2)+"%":"–";
+ $("oRoas").textContent=asales>0&&acos>0?(1/acos).toFixed(2)+"x":"–";
+ $("oTacos").textContent=tsales>0?(spend/tsales*100).toFixed(2)+"%":"–";
+ // per-unit margin before ads
+ const refFee=price*refp;
+ const marginU=price-cogs-fba-refFee;
+ const marginRate=price>0?marginU/price:0;
+ $("oMarginU").textContent=fmt(marginU);
+ $("oBe").textContent=price>0?(marginRate*100).toFixed(2)+"%":"–";
+ // profit on attributed sales = units * marginU - spend
+ const adProfit=units*marginU-spend;
+ $("oAdProfit").textContent=fmt(adProfit);
+ $("oNet").textContent=fmt(asales*marginRate-spend);
+ const v=$("verdict");
+ if(asales>0&&price>0){
+   if(marginRate>acos){v.className="verdict v-good";v.textContent="✓ Profitable: ACoS "+(acos*100).toFixed(1)+"% is below your "+(marginRate*100).toFixed(1)+"% margin.";}
+   else{v.className="verdict v-bad";v.textContent="✗ Losing money: ACoS "+(acos*100).toFixed(1)+"% exceeds your "+(marginRate*100).toFixed(1)+"% margin.";}
+ } else {v.className="verdict";v.textContent="";}
+}
+run();
+</script>
+</body>
+</html>

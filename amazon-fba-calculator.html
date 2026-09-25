@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon FBA Calculator 2026 – Fees, Profit, ROI &amp; Break-Even Price</title>
+<meta name="description" content="Free 2026 Amazon FBA calculator. Estimate referral fees by category, FBA fulfillment fees by size and weight, storage and inbound costs, then see net profit, ROI, margin and break-even price. Includes non-peak and Oct 2026 peak rates.">
+<link rel="canonical" href="https://dytsk9wrfv.page.coze.site/amazon-fba-calculator.html">
+<meta property="og:title" content="Amazon FBA Calculator 2026 – Fees, Profit &amp; ROI">
+<meta property="og:description" content="Estimate every Amazon FBA fee and your real profit. No sign-up.">
+<meta property="og:type" content="website">
+<style>
+:root{
+  --bg:#f6f7f9; --card:#ffffff; --ink:#1f2430; --muted:#6b7280; --line:#e8eaee;
+  --brand:#ff9900; --brand-d:#cc7a00; --good:#0f9d58; --bad:#d83b3b; --soft:#fff6e6;
+  --radius:16px; --shadow:0 1px 2px rgba(20,24,40,.05),0 8px 24px rgba(20,24,40,.06);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.5;font-size:16px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header.top{background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px;letter-spacing:-.02em}
+.logo{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,#ffb84d,#ff9000);
+  display:grid;place-items:center;color:#232f3e;font-size:17px;font-weight:900}
+.top nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:600;margin-left:18px}
+.top nav a:hover{color:var(--ink)}
+.hero{padding:34px 0 8px}
+h1{font-size:28px;line-height:1.2;letter-spacing:-.03em;margin:0 0 8px}
+.hero p{color:var(--muted);margin:0;font-size:16px;max-width:660px}
+.pill{display:inline-block;background:var(--soft);color:#9a6500;font-size:12.5px;font-weight:700;
+  padding:4px 10px;border-radius:999px;margin-bottom:12px}
+.crumbs{font-size:13px;color:var(--muted);margin-bottom:10px}
+.crumbs a{color:var(--brand-d);text-decoration:none}
+.grid{display:grid;grid-template-columns:1fr;gap:18px;margin:22px 0 40px}
+@media(min-width:860px){.grid{grid-template-columns:1.05fr .95fr;align-items:start}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px}
+.card h2{font-size:16px;margin:0 0 14px;letter-spacing:-.01em}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:13.5px;font-weight:650;margin-bottom:6px}
+.field .hint{font-weight:400;color:var(--muted);font-size:12px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.input{position:relative}
+.input span{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--muted);font-weight:600;font-size:15px}
+input[type=number],select{width:100%;padding:11px 12px;font-size:16px;border:1px solid var(--line);
+  border-radius:11px;background:#fcfcfd;color:var(--ink);appearance:none;-webkit-appearance:none}
+input[type=number].plain{padding-left:12px}
+input[type=number].unit{padding-right:34px}
+.input .u2{position:absolute;right:12px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:13px;font-weight:600}
+input:focus,select:focus{outline:2px solid #ffd48a;border-color:var(--brand);background:#fff}
+select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 12px center;padding-right:34px}
+.seg{display:flex;background:#f1f2f5;border-radius:11px;padding:4px;gap:4px}
+.seg button{flex:1;border:0;background:transparent;padding:9px 6px;border-radius:8px;font-size:13.5px;font-weight:650;
+  color:var(--muted);cursor:pointer}
+.seg button.on{background:#fff;color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.big{text-align:center;padding:6px 0 16px;border-bottom:1px dashed var(--line);margin-bottom:8px}
+.big .num{font-size:42px;font-weight:850;letter-spacing:-.03em;line-height:1.05}
+.big .lab{color:var(--muted);font-size:13px;font-weight:600;margin-top:4px}
+.big .sub{font-size:13.5px;color:var(--muted);margin-top:6px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.kpi{background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:11px 12px}
+.kpi .v{font-size:18px;font-weight:800;letter-spacing:-.01em}
+.kpi .l{font-size:12px;color:var(--muted);font-weight:600;margin-top:1px}
+.fees{margin-top:6px}
+.fee-row{display:flex;justify-content:space-between;align-items:center;padding:9px 2px;border-bottom:1px solid var(--line);font-size:14px}
+.fee-row:last-child{border-bottom:0}
+.fee-row .name{color:#374151}
+.fee-row .name small{display:block;color:var(--muted);font-size:11.5px}
+.fee-row .amt{font-weight:700;font-variant-numeric:tabular-nums}
+.fee-row.total{border-top:2px solid var(--ink);border-bottom:0;margin-top:2px;padding-top:11px;font-weight:800}
+.fee-row.total .amt{color:var(--brand-d)}
+.note{font-size:12px;color:var(--muted);margin-top:12px;line-height:1.45}
+section.learn{margin:8px 0 46px}
+.sec-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-bottom:18px}
+.sec-card h2{font-size:21px;letter-spacing:-.02em;margin:0 0 12px}
+.sec-card h3{font-size:16px;margin:20px 0 6px}
+.sec-card p{color:#3b4150;margin:8px 0}
+.feetable{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
+.feetable th,.feetable td{padding:10px;text-align:left;border-bottom:1px solid var(--line)}
+.feetable th{background:#fafbfc;font-size:12.5px;color:var(--muted)}
+.feetable tr:last-child td{border-bottom:0}
+.faq details{border-bottom:1px solid var(--line);padding:13px 0}
+.faq details:last-child{border-bottom:0}
+.faq summary{font-weight:700;cursor:pointer;font-size:15px;list-style:none;position:relative;padding-right:26px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:-1px;font-size:20px;color:var(--brand-d);font-weight:500}
+.faq details[open] summary::after{content:"–"}
+.faq p{color:#3b4150;font-size:14.5px;margin:9px 0 0}
+.othertools{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+.othertools a{flex:1;min-width:200px;text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);
+  border-radius:12px;padding:14px 16px;font-weight:700;font-size:14.5px}
+.othertools a small{display:block;color:var(--muted);font-weight:500;font-size:12.5px;margin-top:3px}
+footer{border-top:1px solid var(--line);background:#fff;padding:26px 0;color:var(--muted);font-size:13px}
+.src{font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><span class="logo">S</span> SellerMath</div>
+    <nav><a href="#calculator">Calculator</a><a href="#fees">Fees</a><a href="#faq">FAQ</a></nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="crumbs"><a href="/index.html">SellerMath</a> / Amazon FBA Calculator</div>
+    <span class="pill">2026 rates · non-peak &amp; Oct 15 – Jan 14 peak</span>
+    <h1>Amazon FBA Calculator 2026</h1>
+    <p>Enter your price, category, product size and landed costs. Estimate referral, fulfillment, storage and inbound fees, then see your real profit, ROI, margin and break-even price. No sign-up.</p>
+  </div>
+
+  <div class="grid" id="calculator">
+    <div class="card">
+      <h2>Product &amp; price</h2>
+      <div class="field">
+        <label>Selling price (per unit)</label>
+        <div class="input"><span>$</span><input type="number" id="price" value="24.99" min="0" step="0.01" inputmode="decimal"></div>
+      </div>
+      <div class="field">
+        <label>Product category <span class="hint">sets referral fee</span></label>
+        <select id="cat"></select>
+      </div>
+      <div class="field">
+        <label>Monthly units sold</label>
+        <input type="number" id="units" class="plain" value="300" min="1" step="1" inputmode="numeric">
+      </div>
+      <div class="field">
+        <label>Season</label>
+        <div class="seg" id="season">
+          <button data-v="0" class="on">Non-peak</button>
+          <button data-v="1">Peak (Oct–Jan)</button>
+        </div>
+      </div>
+
+      <h2 style="margin-top:18px">Package size</h2>
+      <div class="field">
+        <label>Size tier</label>
+        <select id="tier">
+          <option value="largeStd">Large standard (most items, ≤ 3 lb)</option>
+          <option value="smallBulky">Small bulky</option>
+          <option value="largeBulky">Large bulky</option>
+        </select>
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label>Shipping weight</label>
+          <div class="input"><input type="number" id="weight" class="unit" value="1" min="0" step="0.01" inputmode="decimal"><span class="u2">lb</span></div>
+        </div>
+        <div class="field">
+          <label>&nbsp;</label>
+          <input type="number" id="volume" class="plain unit" placeholder="Cubic feet (optional)" min="0" step="0.001">
+        </div>
+      </div>
+
+      <h2 style="margin-top:18px">Your costs</h2>
+      <div class="row2">
+        <div class="field">
+          <label>Cost of goods / unit</label>
+          <div class="input"><span>$</span><input type="number" id="cogs" value="4.5" min="0" step="0.01" inputmode="decimal"></div>
+        </div>
+        <div class="field">
+          <label>Inbound ship to FBA / unit</label>
+          <div class="input"><span>$</span><input type="number" id="inbound" value="1.2" min="0" step="0.01" inputmode="decimal"></div>
+        </div>
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label>Prep / other per unit</label>
+          <div class="input"><span>$</span><input type="number" id="prep" value="0.3" min="0" step="0.01" inputmode="decimal"></div>
+        </div>
+        <div class="field">
+          <label>Months stored (storage est.)</label>
+          <input type="number" id="months" class="plain" value="1" min="0" step="0.5" inputmode="decimal">
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="big">
+        <div class="num" id="rProfit">$0.00</div>
+        <div class="lab">Net profit per unit (after all fees &amp; costs)</div>
+        <div class="sub" id="rMargin"></div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v" id="rRoi">0%</div><div class="l">ROI (profit ÷ landed cost)</div></div>
+        <div class="kpi"><div class="v" id="rFees">$0.00</div><div class="l">Total Amazon fees / unit</div></div>
+        <div class="kpi"><div class="v" id="rBreak">$0.00</div><div class="l">Break-even price</div></div>
+        <div class="kpi"><div class="v" id="rMonth">$0</div><div class="l">Profit / month</div></div>
+      </div>
+      <div class="fees" id="feeList"></div>
+      <div class="note" id="footNote"></div>
+    </div>
+  </div>
+
+  <section class="learn" id="fees">
+    <div class="sec-card">
+      <h2>Amazon FBA fees in 2026, explained</h2>
+      <p>FBA sellers pay a <strong>referral fee</strong> on every sale plus a <strong>fulfillment fee</strong> for picking, packing and shipping. Storage and inbound costs depend on how long inventory sits and how it reaches Amazon.</p>
+      <table class="feetable">
+        <thead><tr><th>Fee</th><th>2026 amount</th><th>Basis</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Referral fee</strong></td><td>~8%–15% (varies by category)</td><td>Selling price; minimum $0.30</td></tr>
+          <tr><td><strong>FBA fulfillment</strong></td><td>~$2.91–$7.13+ (large standard)</td><td>Size tier and shipping weight</td></tr>
+          <tr><td><strong>Peak fulfillment</strong></td><td>+$0.20–$0.50 per unit</td><td>Oct 15, 2026 – Jan 14, 2027</td></tr>
+          <tr><td><strong>Monthly storage</strong></td><td>~$0.87/cu ft (Jan–Sep), higher Oct–Dec</td><td>Daily average volume</td></tr>
+          <tr><td><strong>Inbound placement</strong></td><td>Varies by ship option</td><td>Getting inventory to fulfillment centers</td></tr>
+        </tbody>
+      </table>
+      <h3>Large standard fulfillment (non-peak, 2026)</h3>
+      <table class="feetable">
+        <thead><tr><th>Weight</th><th>Non-peak</th><th>Peak</th></tr></thead>
+        <tbody>
+          <tr><td>4 oz or less</td><td>$2.91</td><td>$3.15</td></tr>
+          <tr><td>4–8 oz</td><td>$3.13</td><td>$3.39</td></tr>
+          <tr><td>1–1.25 lb</td><td>$4.22</td><td>$4.52</td></tr>
+          <tr><td>1.5–1.75 lb</td><td>$4.75</td><td>$5.07</td></tr>
+          <tr><td>2.75–3 lb</td><td>$5.85</td><td>$6.26</td></tr>
+        </tbody>
+      </table>
+      <p class="src">Source: Amazon Seller Central, 2026 US FBA fulfillment fee and referral fee pages, verified September 2026. Fees for apparel, dangerous goods and low-price items differ; this tool estimates common cases.</p>
+    </div>
+
+    <div class="sec-card faq" id="faq">
+      <h2>Frequently asked questions</h2>
+      <details open>
+        <summary>How much is the Amazon referral fee in 2026?</summary>
+        <p>Most categories charge 15%, but many are lower — electronics and computers 8%, automotive 12%, and some clothing or low-price items 5–10%. Every referral fee has a $0.30 minimum. Select your category above to use the right rate.</p>
+      </details>
+      <details>
+        <summary>What is the FBA fulfillment fee for a typical 1 lb item?</summary>
+        <p>A large standard item at 1–1.25 lb pays about $4.22 in the non-peak season and $4.52 during the Oct 15 – Jan 14 peak period. The exact figure depends on size tier and weight.</p>
+      </details>
+      <details>
+        <summary>How are FBA fees changing in 2026?</summary>
+        <p>Amazon raised FBA fulfillment fees by an average of about $0.08 per unit; referral fees were not increased. Products priced $10–$50 changed the least, while items above $50 saw larger increases due to extra handling.</p>
+      </details>
+      <details>
+        <summary>What costs do most sellers forget?</summary>
+        <p>Inbound shipping to Amazon, prep-center fees ($1–3/unit), monthly storage, aged-inventory surcharges after about 271 days, and a 3–5% buffer for returns. Add these so your margin is realistic.</p>
+      </details>
+      <details>
+        <summary>How is break-even price calculated?</summary>
+        <p>It is the lowest selling price at which revenue exactly covers the referral fee, fulfillment fee, storage and your landed product cost. Everything above it is profit.</p>
+      </details>
+    </div>
+
+    <div class="sec-card">
+      <h2>More free seller calculators</h2>
+      <div class="othertools">
+        <a href="/index.html">Etsy Fee Calculator <small>Listing, transaction, processing &amp; Offsite Ads, with target price</small></a>
+        <a href="/amazon-fba-calculator.html">Amazon FBA Calculator <small>You are here</small></a>
+        <a href="/ebay-calculator.html">eBay Fee Calculator <small>Final value fees by category, per-order fee &amp; profit</small></a>
+        <a href="/shopify-calculator.html">Shopify Profit Calculator <small>Card fees, plan cost, monthly margin</small></a>
+        <a href="/paypal-calculator.html">PayPal Fee Calculator <small>3.49% + fee, international, reverse</small></a>
+        <a href="/profit-margin-calculator.html">Profit Margin Calculator <small>Margin vs markup, target price</small></a>
+        <a href="/stripe-calculator.html">Stripe Fee Calculator <small>2.9% + 30¢, international, FX</small></a>
+        <a href="/tiktok-calculator.html">TikTok Shop Calculator <small>6% referral, creator fee</small></a>
+        <a href="/embed.html">Embed Widget <small>Put a calculator on your own site</small></a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <section style="background:#fff3ea;border:1px solid #ffd9c2;border-radius:16px;padding:22px;margin:8px 0 4px">
+    <h2 style="margin:0 0 6px;font-size:19px">Need this as a spreadsheet or a calculator for your store?</h2>
+    <p style="margin:0 0 14px;color:#5b6573;font-size:14px">We build custom fee &amp; profit calculators and ready-to-use seller spreadsheets. Tell us what you sell and we'll send a quote — no obligation.</p>
+    <a href="mailto:contentguard@coze.email?subject=Custom%20calculator%20or%20spreadsheet" style="display:inline-block;background:#f1641f;color:#fff;text-decoration:none;font-weight:700;padding:11px 18px;border-radius:10px;font-size:15px">Hire us / Request a quote</a>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>SellerMath is independent and is not affiliated with or endorsed by Amazon.com, Inc. Estimates are based on Amazon's published 2026 fee tables and were last verified in September 2026. Confirm exact fees in Seller Central.</p>
+  </div>
+</footer>
+
+<script>
+// Referral fee by category (2026, US)
+const CATS = [
+  ["Beauty & Personal Care",0.15],["Home & Kitchen",0.15],["Baby Products",0.15],
+  ["Clothing & Accessories",0.17],["Books",0.15],["Sports & Outdoors",0.15],
+  ["Toys & Games",0.15],["Automotive & Powersports",0.12],["Business & Industrial",0.12],
+  ["Tools & Home Improvement",0.15],["Grocery & Gourmet",0.08],["Consumer Electronics",0.08],
+  ["Computers",0.08],["Camera & Photo",0.08],["Cell Phones & Accessories",0.08],
+  ["Video Game Consoles",0.08],["Musical Instruments",0.15],["Office Products",0.15],
+];
+// Large standard non-peak weight brackets (lb) -> fee. Approximation via table lookup.
+const LS = [ // [maxWeight inclusive, fee]
+  [0.25,2.91],[0.5,3.13],[1.25,4.22],[1.5,4.60],[1.75,4.75],[2,5.00],
+  [2.25,5.10],[2.5,5.28],[2.75,5.44],[3,5.85]
+];
+const PEAK_ADD = 0.30;                 // avg delta large standard
+const STORAGE = 0.87;                  // per cu ft per month (standard, non-peak)
+const REFERral_MIN = 0.30;
+let peak = 0;
+
+const $ = id=>document.getElementById(id);
+const n = id=>{const v=parseFloat($(id).value); return isFinite(v)?v:0;};
+const m = v=>"$"+v.toFixed(2);
+
+const catSel=$("cat");
+CATS.forEach((c,i)=>{const o=document.createElement("option");o.value=i;o.textContent=c[0];catSel.appendChild(o);});
+catSel.value=0;
+
+function largeStdFee(weight, peak){
+  let f = LS[LS.length-1][1];
+  for(const [w,fee] of LS){ if(weight<=w){ f=fee; break; } }
+  if(weight>3) f = 5.85 + Math.ceil((weight-3)/0.25)*0.08; // extra 4oz intervals
+  return f + (peak?PEAK_ADD:0);
+}
+function bulkyFee(kind, weight, peak){
+  let base, first;
+  if(kind==="smallBulky"){ base = peak?7.82:6.78; }
+  else { base = peak?9.62:8.58; }
+  const extra = Math.max(0, weight-1);
+  return base + 0.38*extra;
+}
+
+function calc(price){
+  const referralPct = CATS[catSel.value][1];
+  const tier = $("tier").value;
+  const weight = n("weight");
+  const cogs=n("cogs"),inbound=n("inbound"),prep=n("prep"),months=n("months"),vol=n("volume");
+
+  const fReferral = Math.max(REFERral_MIN, referralPct*price);
+  let fFulfill;
+  if(tier==="largeStd") fFulfill = largeStdFee(weight, peak);
+  else fFulfill = bulkyFee(tier, weight, peak);
+
+  // storage estimate
+  let fStorage=0;
+  if(vol>0) fStorage = STORAGE*vol*months;
+  else {
+    // rough cubic-feet estimate from weight not reliable; use small default volume
+    fStorage = STORAGE*0.05*months;
+  }
+
+  const landed = cogs+inbound+prep;
+  const fees = fReferral+fFulfill+fStorage;
+  const profit = price - fees - landed;
+  const margin = price>0?profit/price:0;
+  const roi = landed>0?profit/landed:0;
+  return {referralPct,fReferral,fFulfill,fStorage,landed,fees,profit,margin,roi};
+}
+
+function solveBreak(){
+  // simple numeric search
+  let lo=0,hi=1000;
+  for(let i=0;i<60;i++){const mid=(lo+hi)/2; const r=calc(mid); if(r.profit<0)lo=mid;else hi=mid;}
+  return (lo+hi)/2;
+}
+
+function render(){
+  const price=n("price");
+  const r=calc(price);
+  const el=$("rProfit"); el.textContent=m(r.profit);
+  el.style.color=r.profit>=0?"var(--good)":"var(--bad)";
+  $("rMargin").textContent="Margin "+(r.margin*100).toFixed(1)+"%  •  fees "+(price>0?(r.fees/price*100).toFixed(1):"0")+"% of price";
+  $("rRoi").textContent=(r.roi*100).toFixed(0)+"%";
+  $("rFees").textContent=m(r.fees);
+  $("rBreak").textContent=m(solveBreak());
+  const units=Math.max(1,Math.round(n("units")));
+  $("rMonth").textContent="$"+Math.round(r.profit*units).toLocaleString();
+
+  const rows=[
+    ["Referral fee",(r.referralPct*100)+"% of price (min $0.30)",r.fReferral],
+    ["FBA fulfillment",$("tier").selectedOptions[0].textContent,r.fFulfill],
+    ["Storage (est.)","~$0.87/cu ft × months",r.fStorage],
+  ];
+  $("feeList").innerHTML=rows.map(x=>
+    `<div class="fee-row"><span class="name">${x[0]}<small>${x[1]}</small></span><span class="amt">${m(x[2])}</span></div>`).join("")
+    +`<div class="fee-row total"><span class="name">Total Amazon fees</span><span class="amt">${m(r.fees)}</span></div>`;
+
+  $("footNote").textContent="Estimates for a US FBA seller. Apparel, dangerous goods, low-price and oversize rate cards differ; excludes ads (PPC), returns, aged-inventory and low-inventory fees. Verify exact amounts in Seller Central.";
+}
+
+document.querySelectorAll("#season button").forEach(b=>{
+  b.addEventListener("click",()=>{document.querySelectorAll("#season button").forEach(x=>x.classList.remove("on"));
+    b.classList.add("on");peak=parseInt(b.dataset.v);render();});
+});
+["price","cat","units","tier","weight","volume","cogs","inbound","prep","months"].forEach(id=>{
+  $(id).addEventListener("input",render);$(id).addEventListener("change",render);});
+render();
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Amazon FBA Calculator",
+"applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+"description":"Free 2026 Amazon FBA calculator for referral, fulfillment, storage and inbound fees, with net profit, ROI, margin, break-even and monthly profit."}
+</script>
+</body>
+</html>

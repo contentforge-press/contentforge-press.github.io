@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Etsy Fee Calculator Widget – Embed It on Your Site</title>
+<meta name="description" content="Free, ready-to-embed Etsy fee calculator widget for seller blogs and websites. Copy one line of code — no sign-up, fully responsive, calculated in the browser.">
+<link rel="canonical" href="https://dytsk9wrfv.page.coze.site/embed.html">
+<meta property="og:title" content="Free Etsy Fee Calculator Widget – Embed It on Your Site">
+<meta property="og:description" content="Copy one line to add a free Etsy fee calculator to your site.">
+<meta property="og:type" content="website">
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1f2430;--muted:#6b7280;--line:#e8eaee;
+--brand:#f1641f;--brand-d:#d4530f;--soft:#fff4ec;--good:#0f9d58;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.5;font-size:16px}
+.wrap{max-width:900px;margin:0 auto;padding:0 16px}
+header.top{background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px}
+.logo{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,#ff8a3d,#e2531a);display:grid;place-items:center;color:#fff;font-weight:900}
+.top nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:600;margin-left:16px}
+section{padding:26px 0}
+h1{font-size:27px;margin:0 0 6px;letter-spacing:-.02em}
+.lead{color:var(--muted);margin:0 0 20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:18px;
+  box-shadow:0 1px 2px rgba(20,24,40,.05),0 8px 24px rgba(20,24,40,.05)}
+label{display:block;font-weight:700;font-size:13.5px;margin:12px 0 5px}
+input,select{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;font-size:16px;background:#fff}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:6px}
+.res{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.res:last-child{border-bottom:none}
+.res b{font-variant-numeric:tabular-nums}
+.big{font-size:24px;font-weight:800;color:var(--good);margin-top:8px}
+.credit{font-size:11.5px;color:var(--muted);text-align:center;margin-top:10px}
+.credit a{color:var(--brand-d);text-decoration:none;font-weight:700}
+pre{background:#0e1117;color:#e6edf3;padding:14px;border-radius:12px;overflow:auto;font-size:12.5px;margin:0}
+button.copy{width:100%;margin-top:10px;background:var(--brand);color:#fff;border:none;border-radius:10px;padding:12px;font-weight:700;font-size:15px;cursor:pointer}
+button.copy:active{transform:translateY(1px)}
+.steps li{margin-bottom:7px}
+.foot-pill{display:inline-block;background:var(--soft);color:var(--brand-d);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600}
+footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:13px}
+@media(max-width:560px){.grid2{grid-template-columns:1fr}.row{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><span class="logo">S</span>SellerMath</div>
+    <nav><a href="/index.html">Etsy Calculator</a><a href="/amazon-fba-calculator.html">FBA</a></nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <section>
+    <h1>Free Etsy Fee Calculator Widget</h1>
+    <p class="lead">Give your readers a working calculator, keep them on your page. Copy one line of code — no account, no server, responsive, 100% free.</p>
+
+    <!-- 1. Embed code -->
+    <div class="card">
+      <span class="foot-pill">1 · Copy this code</span>
+      <div style="margin-top:12px">
+        <pre id="snippet">&lt;iframe src="https://dytsk9wrfv.page.coze.site/embed.html" width="100%" height="470" style="border:0;border-radius:14px;max-width:520px" title="Free Etsy fee calculator" loading="lazy"&gt;&lt;/iframe&gt;</pre>
+        <button class="copy" id="copyBtn" onclick="copyCode()">Copy embed code</button>
+      </div>
+      <ol class="steps" style="margin-top:16px;color:var(--muted);font-size:14px">
+        <li>Paste the code into any blog post or page (HTML/embed block).</li>
+        <li>Works on WordPress, Squarespace, Wix, Carrd, Ghost, Substack &amp; more.</li>
+        <li>The calculator updates automatically — you never touch it again.</li>
+      </ol>
+    </div>
+
+    <!-- 2. Live preview = the embeddable widget -->
+    <div class="card">
+      <span class="foot-pill">2 · Live preview (this is what your visitors see)</span>
+      <div style="max-width:520px;margin:16px auto 0;border:1px solid var(--line);border-radius:14px;padding:18px;background:#fff">
+        <div style="font-weight:800;font-size:16px">Etsy Fee Calculator</div>
+        <div class="grid2" style="margin-top:10px">
+          <div>
+            <label for="p">Sale price</label>
+            <input id="p" type="number" inputmode="decimal" value="30" oninput="run()">
+          </div>
+          <div>
+            <label for="s">Shipping charged</label>
+            <input id="s" type="number" inputmode="decimal" value="5" oninput="run()">
+          </div>
+        </div>
+        <label for="cc">Shop country</label>
+        <select id="cc" onchange="run()">
+          <option value="0" selected>United States · $</option>
+          <option value="1">United Kingdom · £</option>
+          <option value="2">Canada · CA$</option>
+          <option value="3">Australia · A$</option>
+          <option value="4">Eurozone · €</option>
+        </select>
+        <div class="row">
+          <div><label style="margin-top:8px">Fees</label><b id="wFees" style="font-size:16px;display:block"></b></div>
+          <div><label style="margin-top:8px">You get</label><b id="wGet" style="font-size:16px;display:block;color:var(--brand-d)"></b></div>
+          <div><label style="margin-top:8px">Net profit</label><b id="wProfit" style="font-size:16px;display:block;color:var(--good)"></b></div>
+          <div><label style="margin-top:8px">Margin</label><b id="wMargin" style="font-size:16px;display:block"></b></div>
+        </div>
+        <div class="credit">Free tool · <a href="/index.html" target="_blank" rel="noopener">Powered by SellerMath</a></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer><div class="wrap">Independent tool, not affiliated with Etsy, Inc. Fees are estimates from Etsy's published policy, verified September 2026.</div></footer>
+
+<script>
+const CC=[
+ {cur:"$", pp:0.03, pf:0.25},
+ {cur:"£", pp:0.04, pf:0.20},
+ {cur:"CA$",pp:0.03,pf:0.25},
+ {cur:"A$",pp:0.03,pf:0.25},
+ {cur:"€", pp:0.04, pf:0.30},
+];
+const LISTING=0.20, TRANS=0.065;
+const $=id=>document.getElementById(id);
+function money(v,cur){return (v<0?"–":"")+cur+Math.abs(v).toFixed(2);}
+function run(){
+  const c=CC[$("cc").value];
+  const price=parseFloat($("p").value)||0, ship=parseFloat($("s").value)||0;
+  const base=price+ship;
+  const fees=LISTING + TRANS*base + c.pp*base + c.pf;
+  const get=base-fees, profit=get; // widget is fee-only (no COGS input) -> payout shown
+  $("wFees").textContent=money(fees,c.cur);
+  $("wGet").textContent=money(get,c.cur);
+  $("wProfit").textContent=money(get,c.cur);
+  $("wMargin").textContent=base>0?(get/base*100).toFixed(0)+"%":"–";
+}
+function copyCode(){
+  const t=$("snippet").textContent;
+  navigator.clipboard.writeText(t).then(()=>{
+    const b=$("copyBtn"); b.textContent="Copied ✓"; setTimeout(()=>b.textContent="Copy embed code",1800);
+  }).catch(()=>{
+    const ta=document.createElement("textarea");ta.value=t;document.body.appendChild(ta);ta.select();
+    try{document.execCommand("copy");}catch(e){}ta.remove();
+    const b=$("copyBtn"); b.textContent="Copied ✓"; setTimeout(()=>b.textContent="Copy embed code",1800);
+  });
+}
+run();
+</script>
+</body>
+</html>

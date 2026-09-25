@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sales Tax Calculator 2026 – US State Sales Tax by State (Reverse Calculator Included)</title>
+<meta name="description" content="Free 2026 US sales tax calculator with state rates for all 50 states + DC. Add county/city local tax, see tax amount and total in real time, or reverse a tax-included price into pre-tax price and tax. Economic nexus FAQ included.">
+<link rel="canonical" href="https://dytsk9wrfv.page.coze.site/sales-tax-calculator.html">
+<meta property="og:title" content="Sales Tax Calculator 2026 – US State &amp; Local Sales Tax">
+<meta property="og:description" content="State rate preselected for all 50 states + DC. Add local tax, get totals instantly, or reverse a tax-included price.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dytsk9wrfv.page.coze.site/sales-tax-calculator.html">
+<meta property="og:site_name" content="SellerMath">
+<style>
+:root{
+  --bg:#f6f7f9; --card:#ffffff; --ink:#1f2430; --muted:#6b7280; --line:#e8eaee;
+  --brand:#f1641f; --brand-d:#c94e10; --good:#0f9d58; --soft:#fef0e8;
+  --radius:16px; --shadow:0 1px 2px rgba(20,24,40,.05),0 8px 24px rgba(20,24,40,.06);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.5;font-size:16px;overflow-x:hidden}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px;width:100%}
+header.top{background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px;letter-spacing:-.02em;white-space:nowrap}
+.logo{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,#ff924d,#f1641f);
+  display:grid;place-items:center:#fff;color:#fff;font-size:17px;font-weight:900;flex:none}
+.top nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:600;margin-left:18px;white-space:nowrap}
+.top nav a:hover{color:var(--ink)}
+.hero{padding:34px 0 8px}
+h1{font-size:28px;line-height:1.2;letter-spacing:-.03em;margin:0 0 8px}
+.hero p{color:var(--muted);margin:0;font-size:16px;max-width:680px}
+.pill{display:inline-block;background:var(--soft);color:var(--brand-d);font-size:12.5px;font-weight:700;
+  padding:4px 10px;border-radius:999px;margin-bottom:12px}
+.crumbs{font-size:13px;color:var(--muted);margin-bottom:10px}
+.crumbs a{color:var(--brand-d);text-decoration:none}
+.grid{display:grid;grid-template-columns:1fr;gap:18px;margin:22px 0 40px}
+@media(min-width:860px){.grid{grid-template-columns:1.05fr .95fr;align-items:start}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px}
+.card h2{font-size:16px;margin:0 0 14px;letter-spacing:-.01em}
+.field{margin-bottom:14px}
+.field:last-child{margin-bottom:0}
+.field label{display:block;font-size:13.5px;font-weight:650;margin-bottom:6px}
+.field .hint{font-weight:400;color:var(--muted);font-size:12px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.input{position:relative}
+.input span{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--muted);font-weight:600;font-size:15px}
+input[type=number],select{width:100%;padding:11px 12px;font-size:16px;border:1px solid var(--line);
+  border-radius:11px;background:#fcfcfd;color:var(--ink);appearance:none;-webkit-appearance:none;min-width:0}
+input[type=number].plain{padding-left:12px}
+input[type=number].unit{padding-right:44px}
+.input .u2{position:absolute;right:12px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:13px;font-weight:600}
+input:focus,select:focus{outline:2px solid #fbc6a6;border-color:var(--brand);background:#fff}
+select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 12px center;padding-right:34px}
+.big{text-align:center;padding:6px 0 16px;border-bottom:1px dashed var(--line);margin-bottom:8px}
+.big .num{font-size:40px;font-weight:850;letter-spacing:-.03em;line-height:1.05;word-break:break-word}
+.big .lab{color:var(--muted);font-size:13px;font-weight:600;margin-top:4px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0 0}
+.kpi{background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:11px 12px;min-width:0}
+.kpi .v{font-size:18px;font-weight:800;letter-spacing:-.01em;word-break:break-word}
+.kpi .l{font-size:12px;color:var(--muted);font-weight:600;margin-top:1px}
+.note{font-size:12px;color:var(--muted);margin-top:14px;line-height:1.5}
+.nomad-tip{display:none;background:var(--soft);border:1px solid #f9d5c2;border-radius:11px;
+  padding:10px 12px;font-size:12.5px;color:#8a3d12;margin-top:14px;line-height:1.5}
+section.learn{margin:8px 0 46px}
+.sec-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-bottom:18px}
+.sec-card h2.sec-title{font-size:21px;letter-spacing:-.02em;margin:0 0 12px}
+.sec-card p{color:#3b4150;margin:8px 0}
+.src{font-size:12px;color:var(--muted);word-break:break-word}
+.src a{color:var(--brand-d)}
+table.ratetable{width:100%;border-collapse:collapse;font-size:14px;margin-top:10px}
+table.ratetable th,table.ratetable td{padding:9px 10px;text-align:left;border-bottom:1px solid var(--line)}
+table.ratetable th{background:#fafbfc;font-size:12.5px;color:var(--muted)}
+table.ratetable td:last-child,table.ratetable th:last-child{text-align:right}
+.faq details{border-bottom:1px solid var(--line);padding:13px 0}
+.faq details:last-child{border-bottom:0}
+.faq summary{font-weight:700;cursor:pointer;font-size:15px;list-style:none;position:relative;padding-right:26px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:-1px;font-size:20px;color:var(--brand-d);font-weight:500}
+.faq details[open] summary::after{content:"\2013"}
+.faq p{color:#3b4150;font-size:14.5px;margin:9px 0 0}
+.faq ul{color:#3b4150;font-size:14.5px;margin:9px 0 0;padding-left:20px}
+.faq a{color:var(--brand-d);word-break:break-word}
+.othertools{display:grid;grid-template-columns:1fr;gap:12px;margin-top:6px}
+@media(min-width:640px){.othertools{grid-template-columns:1fr 1fr}}
+.othertools a{text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);
+  border-radius:12px;padding:14px 16px;font-weight:700;font-size:14.5px}
+.othertools a small{display:block;color:var(--muted);font-weight:500;font-size:12.5px;margin-top:3px;line-height:1.45}
+footer{border-top:1px solid var(--line);background:#fff;padding:26px 0;color:var(--muted);font-size:13px}
+footer p{margin:6px 0}
+footer a{color:var(--brand-d);text-decoration:none;word-break:break-word}
+@media(max-width:400px){
+  .wrap{padding:0 12px}
+  .card,.sec-card{padding:16px}
+  h1{font-size:25px}
+  .big .num{font-size:34px}
+  .kpis{grid-template-columns:1fr 1fr;gap:8px}
+  .row2{gap:10px}
+  .top nav a{margin-left:14px}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><span class="logo">S</span> SellerMath</div>
+    <nav><a href="#calculator">Calculator</a><a href="#faq">FAQ</a><a href="#tools">Tools</a></nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="crumbs"><a href="/index.html">SellerMath</a> / Sales Tax Calculator</div>
+    <span class="pill">2026 rates &middot; all 50 states + DC &middot; verified Sep 2026</span>
+    <h1>Sales Tax Calculator 2026 (US, by State)</h1>
+    <p>Pick a state to prefill its state sales tax rate, add your county/city rate if needed, and see the tax and tax-included total update live. A reverse calculator strips sales tax out of a tax-included price. Defaults to US dollars.</p>
+  </div>
+
+  <div class="grid" id="calculator">
+    <div class="card">
+      <h2>Forward: price &rarr; sales tax</h2>
+      <div class="field">
+        <label for="amount">Pre-tax amount (per unit)</label>
+        <div class="input"><span>$</span><input type="number" id="amount" value="100" min="0" step="0.01" inputmode="decimal"></div>
+      </div>
+      <div class="field">
+        <label for="state">State <span class="hint">&mdash; prefills the state rate below</span></label>
+        <select id="state"></select>
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label for="qty">Quantity <span class="hint">(optional)</span></label>
+          <input type="number" id="qty" class="plain" value="1" min="1" step="1" inputmode="numeric">
+        </div>
+        <div class="field">
+          <label for="local">Local add-on rate <span class="hint">(county/city, %)</span></label>
+          <input type="number" id="local" class="plain unit" min="0" step="0.001" inputmode="decimal" placeholder="">
+        </div>
+      </div>
+      <div class="nomad-tip" id="nomadTip"></div>
+      <p class="note">The actual rate at a checkout address is the state rate <strong>plus</strong> county, city and special-district taxes. Those vary by ZIP code, so enter the exact local rate yourself rather than guessing &mdash; see <a href="#faq" style="color:var(--brand-d)">FAQ</a> for how to look it up.</p>
+    </div>
+
+    <div class="card">
+      <h2>Result</h2>
+      <div class="big">
+        <div class="num" id="rTotal">$0.00</div>
+        <div class="lab">Total price including sales tax</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v" id="rRate">0.00%</div><div class="l">Total sales tax rate (state + local)</div></div>
+        <div class="kpi"><div class="v" id="rTax">$0.00</div><div class="l">Sales tax amount</div></div>
+        <div class="kpi"><div class="v" id="rSub">$0.00</div><div class="l">Pre-tax subtotal (amount &times; qty)</div></div>
+        <div class="kpi"><div class="v" id="rStateRate">0.00%</div><div class="l">State rate applied</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid" style="margin-top:-18px">
+    <div class="card">
+      <h2>Reverse: tax-included price &rarr; pre-tax price</h2>
+      <div class="field">
+        <label for="revTotal">Tax-included total</label>
+        <div class="input"><span>$</span><input type="number" id="revTotal" value="107.25" min="0" step="0.01" inputmode="decimal"></div>
+      </div>
+      <div class="field">
+        <label for="revRate">Total tax rate (%) <span class="hint">state + local combined</span></label>
+        <input type="number" id="revRate" class="plain unit" value="7.25" min="0" step="0.001" inputmode="decimal">
+      </div>
+      <p class="note">Pre-tax price = total &divide; (1 + rate). Sales tax = total &minus; pre-tax price.</p>
+    </div>
+    <div class="card">
+      <h2>Reverse result</h2>
+      <div class="big">
+        <div class="num" id="revNet">$0.00</div>
+        <div class="lab">Pre-tax price</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v" id="revTax">$0.00</div><div class="l">Sales tax inside the price</div></div>
+        <div class="kpi"><div class="v" id="revPct">0.00%</div><div class="l">Rate used</div></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="learn" id="faq">
+    <div class="sec-card faq">
+      <h2 class="sec-title">Sales Tax FAQ (2026)</h2>
+
+      <details open>
+        <summary>What is the state sales tax rate in each state for 2026?</summary>
+        <p>State-level rates below are current as of July 1, 2026, per the Tax Foundation&rsquo;s <a href="https://taxfoundation.org/data/all/state/2026-sales-tax-rates-midyear/" rel="nofollow">State and Local Sales Tax Rates, Midyear 2026</a>. No state changed its base rate between January and July 2026.</p>
+        <table class="ratetable" aria-label="2026 state sales tax rates">
+          <thead><tr><th>State</th><th>State rate</th><th>Avg. local*</th></tr></thead>
+          <tbody id="rateTableBody"></tbody>
+        </table>
+        <p class="src">*Population-weighted average local rate, not the rate for any specific address. Source: <a href="https://taxfoundation.org/data/all/state/2026-sales-tax-rates-midyear/" rel="nofollow">Tax Foundation, Midyear 2026</a> (data from Sales Tax Clearinghouse and state revenue departments).</p>
+      </details>
+
+      <details>
+        <summary>Which states have no state sales tax (the NOMAD states)?</summary>
+        <p>Five states &mdash; nicknamed <strong>NOMAD</strong> &mdash; levy <strong>no statewide sales tax</strong>: <strong>N</strong>ew <strong>H</strong>ampshire, <strong>O</strong>regon, <strong>M</strong>ontana, <strong>A</strong>laska and <strong>D</strong>elaware. In this calculator their state rate is prefilled as 0.00%.</p>
+        <ul>
+          <li><strong>Alaska is the exception on local tax:</strong> it has no state tax but allows boroughs and cities to impose local sales taxes (up to 7.85% in places; average about 1.82%). Enter the local rate in the &ldquo;Local add-on rate&rdquo; box.</li>
+          <li>Delaware, Montana, New Hampshire and Oregon do not permit general local sales taxes, so total stays 0.00%.</li>
+        </ul>
+        <p class="src">Source: <a href="https://taxfoundation.org/data/all/state/2026-sales-tax-rates-midyear/" rel="nofollow">Tax Foundation, Midyear 2026</a>.</p>
+      </details>
+
+      <details>
+        <summary>Why do I need to enter a local rate? What is the &ldquo;combined&rdquo; rate?</summary>
+        <p>Most states let counties, cities and special districts add their own taxes on top of the state rate. For example, the state rate is 7.25% in California and 4.00% in Alabama, but combined rates can exceed 10% in some California and Alabama jurisdictions. The Tax Foundation reports average local layers of 5.46% in Alabama and around 1.78% in California, but these are population-weighted averages &mdash; the exact rate depends on the delivery address or ZIP code. The nationwide population-weighted average combined rate is <strong>7.53%</strong>.</p>
+        <p>To get an exact figure, look up the address on the state department of revenue&rsquo;s rate lookup (e.g., <a href="https://maps.cdtfa.ca.gov/" rel="nofollow">California CDTFA</a>, <a href="https://comptroller.texas.gov/taxes/sales/" rel="nofollow">Texas Comptroller</a>) and type that local portion into the local-rate box. We deliberately do not fabricate ZIP-code-level rates.</p>
+      </details>
+
+      <details>
+        <summary>What is economic nexus? Do I have to collect sales tax in other states?</summary>
+        <p>After the Supreme Court&rsquo;s 2018 <em>South Dakota v. Wayfair</em> decision, a state can require out-of-state sellers to register and collect sales tax once their sales into that state cross an &ldquo;economic nexus&rdquo; threshold &mdash; with no physical presence required.</p>
+        <ul>
+          <li><strong>Most states: $100,000 in sales or 200 transactions</strong> per year (the original South Dakota standard).</li>
+          <li>A growing number of states have dropped the 200-transaction prong and use a <strong>$100,000 sales-only</strong> test (e.g., Colorado, Washington, Illinois from Jan 1, 2026, Indiana, North Carolina, Utah).</li>
+          <li><strong>California and Texas use $500,000</strong> (sales-only); <strong>New York uses $500,000 plus 100 transactions</strong> (both required).</li>
+          <li><strong>Alabama and Mississippi use $250,000</strong>.</li>
+        </ul>
+        <p>Thresholds are typically measured over the current or previous calendar year (or a rolling 12 months), and exactly which sales count &mdash; exempt sales, marketplace sales &mdash; differs by state. Marketplace facilitators (Amazon, eBay, Etsy, Shopify Marketplaces, etc.) usually collect tax on sales they facilitate, but those sales may still count toward your own threshold. Confirm each state&rsquo;s current rule with its department of revenue.</p>
+        <p class="src">Sources: <a href="https://taxfoundation.org/data/all/state/2026-sales-tax-rates-midyear/" rel="nofollow">Tax Foundation</a>; state-by-state nexus guides verified in 2026 such as <a href="https://salestaxcomplianceusa.com/economic-nexus-thresholds-by-state/" rel="nofollow">SalesTaxComplianceUSA</a> and <a href="https://nexusbystate.com/economic-nexus" rel="nofollow">NexusByState</a>.</p>
+      </details>
+
+      <details>
+        <summary>How do I remove sales tax from a price that already includes it?</summary>
+        <p>Use the reverse calculator above. Given a tax-included total <em>T</em> and rate <em>r</em>: pre-tax price = <em>T</em> &divide; (1 + <em>r</em>), and tax = <em>T</em> &minus; pre-tax price. Example: $107.25 at 7.25% gives $100.00 pre-tax and $7.25 tax. Note this is not the same as multiplying the total by the rate &mdash; that would overstate the tax.</p>
+      </details>
+
+      <details>
+        <summary>Are groceries, clothing or digital goods taxed?</summary>
+        <p>Rates are only half the story &mdash; states also differ on what is taxable. Most states fully or partially exempt groceries (Illinois removed its 1% state tax on groceries from January 1, 2026, though many local taxes still apply); some exempt or discount clothing (e.g., New York&rsquo;s clothing exemption); and states continue to expand taxation of digital goods and services in 2026. Hawaii&rsquo;s 4.00% is a General Excise Tax on gross receipts with a very broad base, so it is not directly comparable to a retail sales tax. Always check product taxability for the state you sell into.</p>
+        <p class="src">Source: <a href="https://taxfoundation.org/data/all/state/2026-sales-tax-rates-midyear/" rel="nofollow">Tax Foundation, Midyear 2026</a>.</p>
+      </details>
+    </div>
+
+    <div class="sec-card" id="tools">
+      <h2 class="sec-title">More free seller calculators</h2>
+      <div class="othertools">
+        <a href="/index.html">SellerMath home<small>All free calculators for online sellers in one place.</small></a>
+        <a href="/amazon-fba-calculator.html">Amazon FBA Calculator<small>FBA fees, profit, ROI and break-even price.</small></a>
+        <a href="/ebay-calculator.html">eBay Calculator<small>Final value fees, managed payments and take-home profit.</small></a>
+        <a href="/shopify-calculator.html">Shopify Calculator<small>Plan fees, payments and Shopify profit per order.</small></a>
+        <a href="/profit-margin-calculator.html">Profit Margin Calculator<small>Gross margin, markup and selling price from cost.</small></a>
+        <a href="/tools.html">All tools<small>The full SellerMath calculator directory.</small></a>
+        <a href="/embed.html">Embed<small>Put these calculators on your own site.</small></a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <section style="background:#fff3ea;border:1px solid #ffd9c2;border-radius:16px;padding:22px;margin:8px 0 4px">
+    <h2 style="margin:0 0 6px;font-size:19px">Need this as a spreadsheet or a calculator for your store?</h2>
+    <p style="margin:0 0 14px;color:#5b6573;font-size:14px">We build custom fee &amp; profit calculators and ready-to-use seller spreadsheets. Tell us what you sell and we'll send a quote — no obligation.</p>
+    <a href="mailto:contentguard@coze.email?subject=Custom%20calculator%20or%20spreadsheet" style="display:inline-block;background:#f1641f;color:#fff;text-decoration:none;font-weight:700;padding:11px 18px;border-radius:10px;font-size:15px">Hire us / Request a quote</a>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>SellerMath is an independent free-tool site. This calculator is for general estimation only and <strong>does not constitute tax, legal or accounting advice</strong>. It is not affiliated with, endorsed by or connected to any state tax authority or department of revenue.</p>
+    <p>State rates: Tax Foundation, &ldquo;State and Local Sales Tax Rates, Midyear 2026&rdquo; (as of July 1, 2026) &mdash; <a href="https://taxfoundation.org/data/all/state/2026-sales-tax-rates-midyear/">taxfoundation.org/data/all/state/2026-sales-tax-rates-midyear</a>, based on Sales Tax Clearinghouse and state revenue department data. Local rates change frequently; verify the exact rate with the relevant department of revenue. Data verified: September 2026.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which states have no state sales tax (the NOMAD states)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Five NOMAD states levy no statewide sales tax: New Hampshire, Oregon, Montana, Alaska and Delaware. Alaska is the only one that allows local borough and city sales taxes (up to 7.85%, average about 1.82%); Delaware, Montana, New Hampshire and Oregon have no general local sales taxes either."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is economic nexus for sales tax in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "After South Dakota v. Wayfair (2018), states can require out-of-state sellers to collect once sales into the state cross a threshold. Most states use $100,000 in sales or 200 transactions per year; many have dropped the transaction test in favor of a $100,000 sales-only rule; California and Texas use $500,000, New York $500,000 plus 100 transactions, and Alabama and Mississippi $250,000. Rules vary by state."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why must I add a local sales tax rate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Counties, cities and special districts in most states add taxes on top of the state rate, and these vary by address or ZIP code. The nationwide population-weighted average combined rate is 7.53%, but exact rates can exceed 10% in some jurisdictions. Enter the local rate for the specific delivery address rather than relying on an average."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I remove sales tax from a tax-included price?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pre-tax price = tax-included total divided by (1 + tax rate), and tax = total minus pre-tax price. For example, $107.25 at a 7.25% rate yields a $100.00 pre-tax price and $7.25 tax."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which state has the highest sales tax rate in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "California has the highest state-level rate at 7.25%. By average combined state and local rate, Louisiana ranks highest at 10.13%, followed by Tennessee 9.61%, Washington 9.57%, Arkansas 9.48% and Alabama 9.46%, as of July 1, 2026."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are groceries, clothing and digital goods subject to sales tax?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It varies by state. Most states fully or partially exempt groceries (Illinois removed its 1% state grocery tax in January 2026), some exempt or discount clothing such as New York, and states are increasingly taxing digital goods and services. Check product taxability rules in each state."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+(function(){
+  "use strict";
+  // [state code, name, state rate %, population-weighted avg local rate %]
+  // Rates as of July 1, 2026 — Tax Foundation, State and Local Sales Tax Rates, Midyear 2026
+  var STATES = [
+    ["AL","Alabama",4.00,5.46],
+    ["AK","Alaska",0.00,1.82],
+    ["AZ","Arizona",5.60,2.94],
+    ["AR","Arkansas",6.50,2.98],
+    ["CA","California",7.25,1.78],
+    ["CO","Colorado",2.90,4.99],
+    ["CT","Connecticut",6.35,0.00],
+    ["DE","Delaware",0.00,0.00],
+    ["DC","District of Columbia",6.00,0.00],
+    ["FL","Florida",6.00,0.98],
+    ["GA","Georgia",4.00,3.56],
+    ["HI","Hawaii",4.00,0.50],
+    ["ID","Idaho",6.00,0.03],
+    ["IL","Illinois",6.25,2.73],
+    ["IN","Indiana",7.00,0.00],
+    ["IA","Iowa",6.00,0.94],
+    ["KS","Kansas",6.50,2.21],
+    ["KY","Kentucky",6.00,0.00],
+    ["LA","Louisiana",5.00,5.13],
+    ["ME","Maine",5.50,0.00],
+    ["MD","Maryland",6.00,0.00],
+    ["MA","Massachusetts",6.25,0.00],
+    ["MI","Michigan",6.00,0.00],
+    ["MN","Minnesota",6.875,1.26],
+    ["MS","Mississippi",7.00,0.06],
+    ["MO","Missouri",4.225,4.22],
+    ["MT","Montana",0.00,0.00],
+    ["NE","Nebraska",5.50,1.48],
+    ["NV","Nevada",6.85,1.39],
+    ["NH","New Hampshire",0.00,0.00],
+    ["NJ","New Jersey",6.625,0.00],
+    ["NM","New Mexico",4.875,2.80],
+    ["NY","New York",4.00,4.54],
+    ["NC","North Carolina",4.75,2.35],
+    ["ND","North Dakota",5.00,2.09],
+    ["OH","Ohio",5.75,1.54],
+    ["OK","Oklahoma",4.50,4.56],
+    ["OR","Oregon",0.00,0.00],
+    ["PA","Pennsylvania",6.00,0.34],
+    ["RI","Rhode Island",7.00,0.00],
+    ["SC","South Carolina",6.00,1.49],
+    ["SD","South Dakota",4.20,1.91],
+    ["TN","Tennessee",7.00,2.61],
+    ["TX","Texas",6.25,1.95],
+    ["UT","Utah",6.10,1.32],
+    ["VT","Vermont",6.00,0.43],
+    ["VA","Virginia",5.30,0.47],
+    ["WA","Washington",6.50,3.07],
+    ["WV","West Virginia",6.00,0.60],
+    ["WI","Wisconsin",5.00,0.72],
+    ["WY","Wyoming",4.00,1.39]
+  ];
+
+  function $(id){ return document.getElementById(id); }
+  function num(v){ var n = parseFloat(v); return isFinite(n) && n > 0 ? n : 0; }
+  function usd(n){
+    return "$" + n.toLocaleString("en-US", {minimumFractionDigits:2, maximumFractionDigits:2});
+  }
+  function pct(n){ return n.toFixed(3).replace(/\.?0+$/,"") + "%"; }
+
+  var stateSel = $("state"), localInput = $("local"), tip = $("nomadTip");
+
+  STATES.forEach(function(s, i){
+    var o = document.createElement("option");
+    o.value = String(i);
+    o.textContent = s[1] + " — " + pct(s[2]) + " state";
+    stateSel.appendChild(o);
+  });
+  stateSel.value = "4"; // California default
+
+  function renderRateTable(){
+    var body = $("rateTableBody");
+    var frag = document.createDocumentFragment();
+    STATES.forEach(function(s){
+      var tr = document.createElement("tr");
+      var td1 = document.createElement("td"); td1.textContent = s[1];
+      var td2 = document.createElement("td"); td2.textContent = pct(s[2]);
+      var td3 = document.createElement("td"); td3.textContent = s[2] === 0 && s[3] === 0 ? "—" : pct(s[3]);
+      tr.appendChild(td1); tr.appendChild(td2); tr.appendChild(td3);
+      frag.appendChild(tr);
+    });
+    body.appendChild(frag);
+  }
+  renderRateTable();
+
+  function currentState(){ return STATES[parseInt(stateSel.value,10)] || STATES[0]; }
+
+  function updateTip(){
+    var s = currentState();
+    if (s[0] === "AK") {
+      tip.style.display = "block";
+      tip.innerHTML = "Alaska has <strong>no state sales tax</strong>, but boroughs and cities may charge local tax (average 1.82%, up to 7.85%). Enter it above if it applies.";
+    } else if (s[2] === 0) {
+      tip.style.display = "block";
+      tip.innerHTML = s[1] + " is a NOMAD state with <strong>no state or general local sales tax</strong>. Total tax stays $0.00.";
+    } else {
+      tip.style.display = "none";
+      tip.innerHTML = "";
+    }
+  }
+
+  function updateForward(){
+    var s = currentState();
+    var amount = num($("amount").value);
+    var qty = Math.max(1, parseInt($("qty").value, 10) || 1);
+    var stateRate = s[2];
+    var localRate = Math.max(0, parseFloat(localInput.value));
+    if (!isFinite(localRate)) { localRate = 0; }
+    var rate = stateRate + localRate;
+    var subtotal = amount * qty;
+    var tax = subtotal * rate / 100;
+    var total = subtotal + tax;
+    $("rTotal").textContent = usd(total);
+    $("rRate").textContent = pct(rate);
+    $("rTax").textContent = usd(tax);
+    $("rSub").textContent = usd(subtotal);
+    $("rStateRate").textContent = pct(stateRate);
+  }
+
+  function updateReverse(){
+    var gross = num($("revTotal").value);
+    var r = Math.max(0, parseFloat($("revRate").value));
+    if (!isFinite(r)) { r = 0; }
+    var net = gross / (1 + r / 100);
+    var tax = gross - net;
+    $("revNet").textContent = usd(net);
+    $("revTax").textContent = usd(tax);
+    $("revPct").textContent = pct(r);
+  }
+
+  function onStateChange(){
+    var s = currentState();
+    localInput.value = "";
+    localInput.placeholder = "avg " + pct(s[3]) + " (leave 0 if none)";
+    updateTip();
+    updateForward();
+    // keep reverse rate in sync with the new state rate as a convenience
+    if (!document.getElementById("revRate").dataset.touched) {
+      $("revRate").value = (Math.round(s[2] * 1000) / 1000).toString();
+      updateReverse();
+    }
+  }
+
+  stateSel.addEventListener("change", onStateChange);
+  ["amount","qty","local"].forEach(function(id){
+    $(id).addEventListener("input", updateForward);
+  });
+  ["revTotal","revRate"].forEach(function(id){
+    $(id).addEventListener("input", function(){
+      if (id === "revRate") $("revRate").dataset.touched = "1";
+      updateReverse();
+    });
+  });
+
+  onStateChange();
+  updateForward();
+  updateReverse();
+})();
+</script>
+</body>
+</html>

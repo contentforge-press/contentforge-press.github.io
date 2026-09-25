@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Depop Fee Calculator 2026: Exact Payout &amp; Profit | SellerMath</title>
+<meta name="description" content="Free 2026 Depop fee calculator. US &amp; UK sellers pay no selling fee — only 3.3% + $0.45 (US) or 2.9% + £0.30 (UK), plus optional 12% Boost. See exact payout, profit and margin.">
+<link rel="canonical" href="https://dytsk9wrfv.page.coze.site/depop-fee-calculator.html">
+<meta property="og:title" content="Depop Fee Calculator 2026: Exact Payout &amp; Profit">
+<meta property="og:url" content="https://dytsk9wrfv.page.coze.site/depop-fee-calculator.html">
+<style>
+:root{--brand:#d62976;--bg:#fdf2f8;--ink:#20161d;--mut:#6f5e68;--line:#f1d3e3;--card:#fff;}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+.wrap{max-width:760px;margin:0 auto;padding:18px 16px 40px}
+a{color:var(--brand);text-decoration:none}
+.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;font-size:14px}
+.brand{font-weight:800;color:var(--brand);font-size:18px}
+h1{font-size:26px;line-height:1.25;margin:6px 0 6px}
+.sub{color:var(--mut);font-size:15px;margin:0 0 18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:14px}
+label{display:block;font-weight:600;font-size:14px;margin:14px 0 6px}
+label:first-child{margin-top:0}
+input,select{width:100%;padding:12px 12px;font-size:16px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+input:focus,select:focus{outline:2px solid var(--brand);outline-offset:1px;border-color:var(--brand)}
+.hint{color:var(--mut);font-size:12.5px;margin-top:5px}
+.chk{display:flex;align-items:flex-start;gap:9px;margin:16px 0 2px;cursor:pointer}
+.chk input{width:18px;height:18px;margin-top:2px;flex:0 0 auto}
+.chk span{font-size:14px;font-weight:600}
+.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:14px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+.kpi .l{font-size:12.5px;color:var(--mut)}
+.kpi .v{font-size:22px;font-weight:800;margin-top:2px}
+.kpi.hero{grid-column:1 / -1;background:#fce7f3;border-color:#f3c0dd}
+.kpi.hero .v{color:var(--brand);font-size:28px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:600;font-size:12.5px;text-transform:uppercase;letter-spacing:.03em}
+td.r,th.r{text-align:right}
+h2{font-size:19px;margin:4px 0 10px}
+h3{font-size:15px;margin:16px 0 6px}
+p{margin:8px 0;font-size:14.5px}
+.faq details{border-bottom:1px solid var(--line);padding:10px 0}
+.faq summary{cursor:pointer;font-weight:600;font-size:15px;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq p{color:var(--mut);margin:8px 0 2px}
+.more{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.more a{border:1px solid var(--line);border-radius:12px;padding:12px;font-size:14px;background:#fff}
+.more a b{display:block;color:var(--ink);margin-bottom:2px}
+footer{color:var(--mut);font-size:13px;text-align:center;margin-top:18px}
+@media(max-width:560px){h1{font-size:22px}.more{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="brand" href="/index.html">SellerMath</a>
+    <a href="/tools.html">All tools →</a>
+  </div>
+
+  <h1>Depop Fee Calculator 2026</h1>
+  <p class="sub">US &amp; UK sellers pay <b>no Depop selling fee</b>. Enter your sale to see the exact payout, profit and margin — including the optional 12% Boost.</p>
+
+  <div class="card">
+    <label for="region">Seller region</label>
+    <select id="region">
+      <option value="us" data-rate="0.033" data-fixed="0.45" data-cur="$">United States — 3.3% + $0.45</option>
+      <option value="uk" data-rate="0.029" data-fixed="0.30" data-cur="£">United Kingdom — 2.9% + £0.30</option>
+    </select>
+
+    <label for="price">Item sale price</label>
+    <input id="price" type="number" inputmode="decimal" min="0" step="0.01" value="50">
+
+    <label for="ship">Shipping charged to buyer</label>
+    <input id="ship" type="number" inputmode="decimal" min="0" step="0.01" value="5">
+    <div class="hint">Depop's processing fee is charged on the item + shipping + any tax.</div>
+
+    <label for="cogs">What you paid for the item (optional)</label>
+    <input id="cogs" type="number" inputmode="decimal" min="0" step="0.01" value="15">
+
+    <label for="scost">Your shipping / label cost (optional)</label>
+    <input id="scost" type="number" inputmode="decimal" min="0" step="0.01" value="0">
+
+    <label class="chk" for="boost">
+      <input id="boost" type="checkbox">
+      <span>This sale came through a Boosted Listing (+12% of item price)</span>
+    </label>
+    <div class="hint">You only pay Boost when a boosted listing sells (28-day attribution). It's off unless you turn it on.</div>
+  </div>
+
+  <div class="kpis">
+    <div class="kpi hero"><div class="l">You receive (payout)</div><div class="v" id="kPayout">–</div></div>
+    <div class="kpi"><div class="l">Total Depop fees</div><div class="v" id="kFees">–</div></div>
+    <div class="kpi"><div class="l">Net profit (after your costs)</div><div class="v" id="kNet">–</div></div>
+    <div class="kpi"><div class="l">Profit margin</div><div class="v" id="kMargin">–</div></div>
+    <div class="kpi"><div class="l">Effective fee rate</div><div class="v" id="kEff">–</div></div>
+  </div>
+
+  <div class="card">
+    <h2>Fee breakdown</h2>
+    <table>
+      <thead><tr><th>Item</th><th class="r">Amount</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>Depop fees at a glance (2026)</h2>
+    <table>
+      <thead><tr><th>Fee</th><th>US</th><th>UK</th></tr></thead>
+      <tbody>
+        <tr><td>Selling fee</td><td>0%</td><td>0%</td></tr>
+        <tr><td>Payment processing</td><td>3.3% + $0.45</td><td>2.9% + £0.30</td></tr>
+        <tr><td>Boost (optional)</td><td>12%</td><td>12%</td></tr>
+      </tbody>
+    </table>
+    <p class="hint">Processing is charged on the full buyer payment (item + shipping + tax). Boost is charged on the item price only and only when a boosted listing sells. Sellers outside the US/UK still pay a 10% selling fee.</p>
+  </div>
+
+  <div class="card">
+    <h2>How Depop fees work in 2026</h2>
+    <p>Depop charged a 10% selling fee for years, then removed it for UK sellers (March 2024) and US sellers (July 2024). On a normal US or UK sale today there is <b>no commission</b> — the only mandatory cost is the Depop Payments processing fee, which runs through Stripe.</p>
+    <p>The fixed part of that fee is what hurts cheap items: on an $8 US sale the $0.45 flat fee alone is 5.6% before the percentage. Bundling multiple items into one transaction charges that flat fee once instead of per item, which is a simple way to lift margin on low-value orders.</p>
+    <p>Boost is the one fee you can choose to avoid. For listings created from 23 March 2026 it is a flat 12% in the US and UK, charged only when a buyer who saw your boosted listing buys within 28 days — even if you switched Boost off in between. Turning on shop-wide "Boost Shop" is the fastest way to pay 12% on items that would probably have sold anyway, so use it deliberately.</p>
+  </div>
+
+  <div class="card faq">
+    <h2>Frequently asked questions</h2>
+    <details open><summary>Does Depop still take 10% in 2026?</summary><p>Not from US or UK sellers. The 10% selling fee was removed for the UK in March 2024 and the US in July 2024. Sellers based elsewhere (selling in other currencies) still pay 10%.</p></details>
+    <details><summary>How much are Depop fees on a $50 US sale?</summary><p>With $5 buyer-paid shipping and no Boost, the only fee is processing: 3.3% of $55 + $0.45 = about $2.27. You receive about $52.73 before your own item and label costs. Adding Boost would add $6 (12% of the $50 item).</p></details>
+    <details><summary>Are fees charged on shipping?</summary><p>Processing yes — it applies to the item plus shipping plus tax. Boost no — it is charged on the item price only.</p></details>
+    <details><summary>What is the Depop Boost fee?</summary><p>12% in the US and UK for listings created from 23 March 2026 (boosts started before that are grandfathered at 8%). You pay it only when a boosted listing sells, with a 28-day attribution window.</p></details>
+    <details><summary>How long does Depop take to pay out?</summary><p>Depop Payments releases funds to your linked bank account on a rolling basis, usually a few business days after the buyer receives the item. The buyer-side marketplace fee funds buyer protection and never comes out of your payout.</p></details>
+  </div>
+
+  <div class="card">
+    <h2>Related calculators</h2>
+    <div class="more">
+      <a href="/poshmark-fee-calculator.html"><b>Poshmark fee calculator</b>20% or $2.95 under $15</a>
+      <a href="/mercari-fee-calculator.html"><b>Mercari fee calculator</b>Flat 10%, no processing fee</a>
+      <a href="/mercari-vs-poshmark-fees.html"><b>Mercari vs Poshmark</b>Side-by-side payout</a>
+      <a href="/tools.html"><b>All seller tools</b>See every free calculator</a>
+    </div>
+  </div>
+
+  <section style="background:#fce7f3;border:1px solid #f3c0dd;border-radius:16px;padding:22px;margin:8px 0 4px">
+    <h2 style="margin:0 0 8px;font-size:19px">Need this as a spreadsheet or a calculator for your store?</h2>
+    <p style="margin:0 0 14px;color:var(--mut)">We build custom fee &amp; profit calculators and ready-to-use seller spreadsheets. Tell us your platform and numbers and we'll quote a flat price.</p>
+    <a href="mailto:contentguard@coze.email?subject=Custom%20calculator%20or%20spreadsheet" style="display:inline-block;background:var(--brand);color:#fff;padding:11px 20px;border-radius:10px;font-weight:700">Hire us / Request a quote</a>
+  </section>
+
+  <footer>SellerMath — free, accurate fee calculators for online sellers. Figures reflect 2026 US/UK rates.</footer>
+</div>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Depop Fee Calculator 2026","applicationCategory":"BusinessApplication","operatingSystem":"Any","url":"https://dytsk9wrfv.page.coze.site/depop-fee-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free 2026 Depop fee calculator for US and UK sellers: no selling fee, 3.3%+$0.45 (US) or 2.9%+£0.30 (UK), plus optional 12% Boost."}
+</script>
+<script>
+(function(){
+  function n(id){return parseFloat(document.getElementById(id).value)||0;}
+  function money(v,c){return c+(v<0?"-":"")+Math.abs(v).toFixed(2);}
+  function calc(){
+    var rsel=document.getElementById("region");
+    var opt=rsel.options[rsel.selectedIndex];
+    var rate=parseFloat(opt.getAttribute("data-rate"));
+    var fixed=parseFloat(opt.getAttribute("data-fixed"));
+    var cur=opt.getAttribute("data-cur");
+    var price=n("price"), ship=n("ship"), cogs=n("cogs"), scost=n("scost");
+    var boosted=document.getElementById("boost").checked;
+    var base=price+ship;
+    var proc=rate*base+fixed;
+    var bfee=boosted?0.12*price:0;
+    var fees=proc+bfee;
+    var payout=base-fees;
+    var net=payout-cogs-scost;
+    var margin=base>0?net/base*100:0;
+    var eff=base>0?fees/base*100:0;
+    document.getElementById("kPayout").textContent=money(payout,cur);
+    document.getElementById("kFees").textContent=money(fees,cur);
+    document.getElementById("kNet").textContent=money(net,cur);
+    document.getElementById("kMargin").textContent=margin.toFixed(1)+"%";
+    document.getElementById("kEff").textContent=eff.toFixed(1)+"%";
+    var rows=[
+      ["Item price",money(price,cur)],
+      ["Buyer-paid shipping",money(ship,cur)],
+      ["Buyer pays (total)",money(base,cur)],
+      ["Payment processing ("+(rate*100).toFixed(1)+"% + "+money(fixed,cur)+")","-"+money(proc,cur)],
+      ["Boost (12%, only if used)",bfee>0?"-"+money(bfee,cur):money(0,cur)],
+      ["Total Depop fees","-"+money(fees,cur)],
+      ["You receive (payout)",money(payout,cur)]
+    ];
+    document.getElementById("rows").innerHTML=rows.map(function(r){
+      return "<tr><td>"+r[0]+"</td><td class=\"r\">"+r[1]+"</td></tr>";
+    }).join("");
+  }
+  ["region","price","ship","cogs","scost","boost"].forEach(function(id){
+    document.getElementById(id).addEventListener("input",calc);
+    document.getElementById(id).addEventListener("change",calc);
+  });
+  calc();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Etsy Fee Calculator Canada 2026 – Exact Fees & Profit in C$</title>
+<meta name="description" content="Free Canadian Etsy fee calculator for 2026. Pre-set for C$ with the 3% + C$0.25 payment fee, 6.5% transaction fee, 1.15% regulatory operating fee and C$0.27 (US$0.20) listing fee. See net profit and the exact price.">
+<link rel="canonical" href="https://dytsk9wrfv.page.coze.site/etsy-fee-calculator-canada.html">
+<meta property="og:title" content="Etsy Fee Calculator Canada 2026 – Exact Fees & Profit in C$">
+<meta property="og:description" content="See every Etsy fee line by line in your currency and the exact price to charge. No sign-up.">
+<meta property="og:type" content="website">
+<style>
+:root{
+  --bg:#f6f7f9; --card:#ffffff; --ink:#1f2430; --muted:#6b7280; --line:#e8eaee;
+  --brand:#f1641f; --brand-d:#d4530f; --good:#0f9d58; --bad:#d83b3b; --soft:#fff4ec;
+  --radius:16px; --shadow:0 1px 2px rgba(20,24,40,.05),0 8px 24px rgba(20,24,40,.06);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.5;font-size:16px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header.top{background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px;letter-spacing:-.02em}
+.logo{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,#ff8a3d,#e2531a);
+  display:grid;place-items:center;color:#fff;font-size:16px;font-weight:900}
+.top nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:600;margin-left:18px}
+.top nav a:hover{color:var(--ink)}
+.hero{padding:34px 0 8px}
+h1{font-size:28px;line-height:1.2;letter-spacing:-.03em;margin:0 0 8px}
+.hero p{color:var(--muted);margin:0;font-size:16px;max-width:640px}
+h1 .tag{display:inline-block;font-size:14px;color:var(--brand-d);font-weight:700;
+  background:var(--soft);border-radius:999px;padding:3px 11px;margin-left:6px;vertical-align:middle}
+.pill{display:inline-block;background:var(--soft);color:var(--brand-d);font-size:12.5px;font-weight:700;
+  padding:4px 10px;border-radius:999px;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:1fr;gap:18px;margin:22px 0 40px}
+@media(min-width:860px){.grid{grid-template-columns:1.05fr .95fr;align-items:start}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px}
+.card h2{font-size:16px;margin:0 0 14px;letter-spacing:-.01em}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:13.5px;font-weight:650;margin-bottom:6px}
+.field .hint{font-weight:400;color:var(--muted);font-size:12px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.input{position:relative}
+.input span{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--muted);font-weight:600;font-size:15px}
+input[type=number],select{width:100%;padding:11px 12px;font-size:16px;border:1px solid var(--line);
+  border-radius:11px;background:#fcfcfd;color:var(--ink);appearance:none;-webkit-appearance:none}
+input[type=number]{padding-left:30px}
+input:focus,select:focus{outline:2px solid #ffb38a;border-color:var(--brand);background:#fff}
+select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 12px center;padding-right:34px}
+.seg{display:flex;background:#f1f2f5;border-radius:11px;padding:4px;gap:4px}
+.seg button{flex:1;border:0;background:transparent;padding:9px 6px;border-radius:8px;font-size:13.5px;font-weight:650;
+  color:var(--muted);cursor:pointer}
+.seg button.on{background:#fff;color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.target-row{display:flex;align-items:center;gap:10px}
+.target-row input{flex:1}
+/* results */
+.big{text-align:center;padding:6px 0 16px;border-bottom:1px dashed var(--line);margin-bottom:8px}
+.big .num{font-size:42px;font-weight:850;letter-spacing:-.03em;line-height:1.05}
+.big .lab{color:var(--muted);font-size:13px;font-weight:600;margin-top:4px}
+.big .sub{font-size:13.5px;color:var(--muted);margin-top:6px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.kpi{background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:11px 12px}
+.kpi .v{font-size:19px;font-weight:800;letter-spacing:-.01em}
+.kpi .l{font-size:12px;color:var(--muted);font-weight:600;margin-top:1px}
+.v.good{color:var(--good)} .v.bad{color:var(--bad)}
+.fees{margin-top:6px}
+.fee-row{display:flex;justify-content:space-between;align-items:center;padding:9px 2px;border-bottom:1px solid var(--line);font-size:14px}
+.fee-row:last-child{border-bottom:0}
+.fee-row .name{color:#374151}
+.fee-row .name small{display:block;color:var(--muted);font-size:11.5px}
+.fee-row .amt{font-weight:700;font-variant-numeric:tabular-nums}
+.fee-row.total{border-top:2px solid var(--ink);border-bottom:0;margin-top:2px;padding-top:11px;font-weight:800}
+.fee-row.total .amt{color:var(--brand-d)}
+.note{font-size:12px;color:var(--muted);margin-top:12px;line-height:1.45}
+/* content */
+section.learn{margin:8px 0 46px}
+.sec-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-bottom:18px}
+.sec-card h2{font-size:21px;letter-spacing:-.02em;margin:0 0 12px}
+.sec-card h3{font-size:16px;margin:20px 0 6px}
+.sec-card p{color:#3b4150;margin:8px 0}
+.feetable{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px;overflow:hidden;border-radius:10px}
+.feetable th,.feetable td{padding:10px 10px;text-align:left;border-bottom:1px solid var(--line)}
+.feetable th{background:#fafbfc;font-size:12.5px;color:var(--muted)}
+.featable tr:last-child td{border-bottom:0}
+.faq details{border-bottom:1px solid var(--line);padding:13px 0}
+.faq details:last-child{border-bottom:0}
+.faq summary{font-weight:700;cursor:pointer;font-size:15px;list-style:none;position:relative;padding-right:26px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:-1px;font-size:20px;color:var(--brand);font-weight:500}
+.faq details[open] summary::after{content:"–"}
+.faq p{color:#3b4150;font-size:14.5px;margin:9px 0 0}
+footer{border-top:1px solid var(--line);background:#fff;padding:26px 0;color:var(--muted);font-size:13px}
+footer a{color:var(--muted)}
+.src{font-size:12px;color:var(--muted)}
+.src a{color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><span class="logo">S</span> SellerMath</div>
+    <nav><a href="#calculator">Calculator</a><a href="#fees">Fees</a><a href="#faq">FAQ</a></nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <span class="pill">Updated for Etsy's June 22, 2026 fee changes</span>
+    <h1>Etsy Fee Calculator Canada <span class='tag'>2026 · CAD C$</span></h1>
+    <p>Enter your price and costs. See every Etsy fee separately, your real profit and margin, and the exact price you should charge. No sign-up, runs in your browser.</p>
+  </div>
+
+  <div class="grid" id="calculator">
+    <!-- INPUTS -->
+    <div class="card">
+      <h2>Your sale</h2>
+
+      <div class="field">
+        <label>Where is your bank account? <span class="hint">sets payment &amp; regulatory fees</span></label>
+        <select id="country"></select>
+      </div>
+
+      <div class="row2">
+        <div class="field">
+          <label>Item price</label>
+          <div class="input"><span data-cur>$</span><input type="number" id="price" value="30" min="0" step="0.01" inputmode="decimal"></div>
+        </div>
+        <div class="field">
+          <label>Shipping buyer pays</label>
+          <div class="input"><span data-cur>$</span><input type="number" id="ship" value="5" min="0" step="0.01" inputmode="decimal"></div>
+        </div>
+      </div>
+
+      <div class="row2">
+        <div class="field">
+          <label>Gift wrap charged <span class="hint">(optional)</span></label>
+          <div class="input"><span data-cur>$</span><input type="number" id="gift" value="0" min="0" step="0.01" inputmode="decimal"></div>
+        </div>
+        <div class="field">
+          <label>Quantity</label>
+          <input type="number" id="qty" value="1" min="1" step="1" inputmode="numeric" style="padding-left:12px">
+        </div>
+      </div>
+
+      <h2 style="margin-top:18px">Your costs <span class="hint" style="font-weight:400">(to find real profit)</span></h2>
+      <div class="row2">
+        <div class="field">
+          <label>Material / product cost</label>
+          <div class="input"><span data-cur>$</span><input type="number" id="cost" value="8" min="0" step="0.01" inputmode="decimal"></div>
+        </div>
+        <div class="field">
+          <label>Your cost to ship it</label>
+          <div class="input"><span data-cur>$</span><input type="number" id="shipcost" value="4" min="0" step="0.01" inputmode="decimal"></div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Offsite Ads</label>
+        <div class="seg" id="ads">
+          <button data-v="0" class="on">Not applied</button>
+          <button data-v="0.15">15% &lt; $10k</button>
+          <button data-v="0.12">12% $10k+</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Target profit margin</label>
+        <div class="target-row">
+          <div class="input" style="flex:1"><span>%</span><input type="number" id="target" value="40" min="0" max="95" step="1" inputmode="numeric"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESULTS -->
+    <div class="card">
+      <div class="big">
+        <div class="num" id="rProfit" data-cur>$0.00</div>
+        <div class="lab">Net profit (after all Etsy fees &amp; your costs)</div>
+        <div class="sub" id="rMargin"></div>
+      </div>
+
+      <div class="kpis">
+        <div class="kpi"><div class="v" id="rPayout" data-cur>$0.00</div><div class="l">Etsy pays you</div></div>
+        <div class="kpi"><div class="v" id="rFees" data-cur>$0.00</div><div class="l">Total Etsy fees</div></div>
+        <div class="kpi"><div class="v" id="rBreak" data-cur>$0.00</div><div class="l">Break-even item price</div></div>
+        <div class="kpi"><div class="v" id="rTarget" data-cur>$0.00</div><div class="l">Item price for target margin</div></div>
+      </div>
+
+      <div class="fees" id="feeList"></div>
+      <div class="note" id="footNote"></div>
+    </div>
+  </div>
+
+  <!-- FEES EXPLAINED -->
+  <section class="learn" id="fees">
+    <div class="sec-card">
+      <h2>Etsy fees in 2026, explained</h2>
+      <p>Three fees apply to <strong>every</strong> sale in every country. Two more can apply depending on how the buyer found you and where your bank is.</p>
+      <table class="feetable">
+        <thead><tr><th>Fee</th><th>Amount (2026)</th><th>Charged on</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Listing fee</strong></td><td>$0.20</td><td>Each item, when published or renewed (every 4 months), whether or not it sells</td></tr>
+          <tr><td><strong>Transaction fee</strong></td><td>6.5%</td><td>Item price + shipping + gift wrap</td></tr>
+          <tr><td><strong>Payment processing (US)</strong></td><td>3% + $0.25</td><td>Full order total; rate depends on your bank country</td></tr>
+          <tr><td><strong>Offsite Ads</strong></td><td>15% or 12%</td><td>Order total, only when a sale is attributed to an Etsy ad; capped at $100/order</td></tr>
+          <tr><td><strong>Regulatory operating fee</strong></td><td>0% – 1.97%</td><td>Order total; only in certain countries</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Payment processing by country</h3>
+      <table class="feetable">
+        <thead><tr><th>Bank country</th><th>Processing</th><th>Regulatory fee (from 22 Jun 2026)</th></tr></thead>
+        <tbody>
+          <tr><td>United States</td><td>3% + $0.25</td><td>None</td></tr>
+          <tr><td>United Kingdom</td><td>4% + £0.20</td><td>0.48%</td></tr>
+          <tr><td>Canada</td><td>3% + CA$0.25</td><td>1.15%</td></tr>
+          <tr><td>Australia</td><td>3% + A$0.25</td><td>None</td></tr>
+          <tr><td>Germany</td><td>4% + €0.30</td><td>None</td></tr>
+          <tr><td>France</td><td>4% + €0.30</td><td>1.14%</td></tr>
+          <tr><td>Spain</td><td>4% + €0.30</td><td>0.88%</td></tr>
+          <tr><td>Italy</td><td>4% + €0.30</td><td>0.80%</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Offsite Ads rules</h3>
+      <p>Shops with under $10,000 in sales over the trailing 12 months pay <strong>15%</strong> and can opt out. Shops at or above $10,000 pay <strong>12%</strong>, cannot opt out, and the fee is capped at $100 per order. The 15%/12% is charged on the whole order, including shipping.</p>
+
+      <h3>What changed on June 22, 2026</h3>
+      <p>Only the regulatory operating fees moved: France 0.47%→1.14%, Italy 0.32%→0.80%, Spain 0.72%→0.88%, UK 0.32%→0.48%; Türkiye 2.27%→1.67%, India 0.29%→0.05%; Hungary added 1.97%. The $0.20 listing fee, 6.5% transaction fee, processing rates and Offsite Ads rates were unchanged.</p>
+      <p class="src">Sources: Etsy Fees &amp; Payments Policy (etsy.com/legal/fees), verified September 2026; Shopify &amp; independent fee guides.</p>
+    </div>
+
+    <div class="sec-card faq" id="faq">
+      <h2>Frequently asked questions</h2>
+      <details open>
+        <summary>How much does Etsy take from a $100 sale?</summary>
+        <p>For a US seller, about $9.95: $0.20 listing + $6.50 transaction + $3.25 payment processing. You receive about $90.05 before your material, shipping and ad costs. If the order came from an Offsite Ad, add $15 (or $12 for shops over $10k).</p>
+      </details>
+      <details>
+        <summary>What percentage does Etsy take in 2026?</summary>
+        <p>The mandatory stack is $0.20 listing + 6.5% transaction + about 3–4% payment processing, roughly 10–11% of a typical order. Offsite Ads can add another 12–15% on attributed orders.</p>
+      </details>
+      <details>
+        <summary>Why is payment processing higher for non-US sellers?</summary>
+        <p>Processing is set by the country of your bank account, not the buyer. US accounts pay 3% + $0.25; UK and most European accounts pay 4% plus a fixed amount, and some also pay a regulatory operating fee on every order.</p>
+      </details>
+      <details>
+        <summary>Can I turn off Offsite Ads?</summary>
+        <p>Only if your shop has earned under $10,000 in the last 12 months: Shop Manager → Settings → Offsite Ads. Above $10,000 the program is mandatory for the life of the shop at 12%, capped at $100 per order.</p>
+      </details>
+      <details>
+        <summary>How is the break-even price calculated?</summary>
+        <p>It is the lowest item price at which the Etsy payout (order total minus every fee) exactly covers your material and shipping costs. The target-margin price raises that until your net profit equals the margin you set.</p>
+      </details>
+      <details>
+        <summary>Does this calculator include sales tax or VAT?</summary>
+        <p>US sellers are not charged transaction fees on sales tax, so the default model excludes it. UK/EU sellers may also owe VAT on Etsy's fees themselves; treat the result as pre-tax and confirm with your dashboard.</p>
+      </details>
+    </div>
+
+    <div class="sec-card">
+      <h2>More free seller calculators</h2>
+      <p style="margin:0 0 10px"><a href="/embed.html" style="color:var(--brand-d);font-weight:700;text-decoration:none">📎 Put this calculator on your own site — free embed widget →</a></p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:6px">
+        <a href="/index.html" style="flex:1;min-width:200px;text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-weight:700;font-size:14.5px">Etsy Fee Calculator<small style="display:block;color:var(--muted);font-weight:500;font-size:12.5px;margin-top:3px">You are here</small></a>
+        <a href="/amazon-fba-calculator.html" style="flex:1;min-width:200px;text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-weight:700;font-size:14.5px">Amazon FBA Calculator<small style="display:block;color:var(--muted);font-weight:500;font-size:12.5px;margin-top:3px">Referral, fulfillment, storage, ROI &amp; monthly profit</small></a>
+        <a href="/ebay-calculator.html" style="flex:1;min-width:200px;text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-weight:700;font-size:14.5px">eBay Fee Calculator<small style="display:block;color:var(--muted);font-weight:500;font-size:12.5px;margin-top:3px">Final value fees by category, per-order fee &amp; profit</small></a>
+        <a href="/shopify-calculator.html" style="flex:1;min-width:200px;text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-weight:700;font-size:14.5px">Shopify Profit Calculator<small style="display:block;color:var(--muted);font-weight:500;font-size:12.5px;margin-top:3px">Card fees, plan cost, monthly margin &amp; break-even</small></a>
+        <a href="/paypal-calculator.html" style="flex:1;min-width:200px;text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-weight:700;font-size:14.5px">PayPal Fee Calculator<small style="display:block;color:var(--muted);font-weight:500;font-size:12.5px;margin-top:3px">3.49% + fee, international &amp; reverse invoice</small></a>
+        <a href="/profit-margin-calculator.html" style="flex:1;min-width:200px;text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-weight:700;font-size:14.5px">Profit Margin Calculator<small style="display:block;color:var(--muted);font-weight:500;font-size:12.5px;margin-top:3px">Margin vs markup &amp; price for target margin</small></a>
+        <a href="/stripe-calculator.html" style="flex:1;min-width:200px;text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-weight:700;font-size:14.5px">Stripe Fee Calculator<small style="display:block;color:var(--muted);font-weight:500;font-size:12.5px;margin-top:3px">2.9% + 30¢, international &amp; FX fees</small></a>
+        <a href="/tiktok-calculator.html" style="flex:1;min-width:200px;text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-weight:700;font-size:14.5px">TikTok Shop Calculator<small style="display:block;color:var(--muted);font-weight:500;font-size:12.5px;margin-top:3px">6% referral, creator commission &amp; profit</small></a>
+        <a href="/roas-calculator.html" style="flex:1;min-width:200px;text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-weight:700;font-size:14.5px">ROAS Calculator<small style="display:block;color:var(--muted);font-weight:500;font-size:12.5px;margin-top:3px">Return on ad spend, break-even &amp; real profit</small></a>
+      </div>
+      <p style="color:var(--muted);font-size:13.5px;margin:14px 0 6px;font-weight:600">Etsy fee calculator in your currency:</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a href="/etsy-fee-calculator-uk.html" style="text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 15px;font-weight:600;font-size:13.5px">🇬🇧 UK · £</a>
+        <a href="/etsy-fee-calculator-australia.html" style="text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 15px;font-weight:600;font-size:13.5px">🇦🇺 Australia · A$</a>
+        <a href="/etsy-fee-calculator-canada.html" style="text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 15px;font-weight:600;font-size:13.5px">🇨🇦 Canada · C$</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>SellerMath is an independent tool and is not affiliated with, endorsed or sponsored by Etsy, Inc. Fee figures are estimates based on Etsy's published Fees &amp; Payments Policy and were last verified in September 2026. Always confirm amounts in your Shop Manager.</p>
+  </div>
+</footer>
+
+<script>
+// Country fee data (2026). proc = payment processing, reg = regulatory operating fee.
+const COUNTRIES = [
+  {id:"us", name:"United States", cur:"$", procPct:0.03,  procFix:0.25, reg:0},
+  {id:"uk", name:"United Kingdom", cur:"£", procPct:0.04, procFix:0.20, reg:0.0048},
+  {id:"ca", name:"Canada", cur:"CA$", procPct:0.03, procFix:0.25, reg:0.0115},
+  {id:"au", name:"Australia", cur:"A$", procPct:0.03, procFix:0.25, reg:0},
+  {id:"de", name:"Germany", cur:"€", procPct:0.04, procFix:0.30, reg:0},
+  {id:"fr", name:"France", cur:"€", procPct:0.04, procFix:0.30, reg:0.0114},
+  {id:"es", name:"Spain", cur:"€", procPct:0.04, procFix:0.30, reg:0.0088},
+  {id:"it", name:"Italy", cur:"€", procPct:0.04, procFix:0.30, reg:0.0080},
+];
+const LISTING = 0.20, TRANSACTION = 0.065;
+let adRate = 0;
+
+const $ = id => document.getElementById(id);
+const num = id => { const v = parseFloat($(id).value); return isFinite(v) ? v : 0; };
+const money = (v,c) => (v<0?"–":"") + c + Math.abs(v).toFixed(2);
+
+// populate country
+const sel = $("country");
+COUNTRIES.forEach((c,i)=>{ const o=document.createElement("option"); o.value=i; o.textContent=c.name; sel.appendChild(o); });
+sel.value = 2;
+
+function calc(priceVal){
+  const c = COUNTRIES[sel.value];
+  const price = priceVal;
+  const ship = num("ship"), gift = num("gift"), qty = Math.max(1, Math.round(num("qty")));
+  const cost = num("cost"), shipcost = num("shipcost");
+
+  const base = (price + ship + gift) * qty;          // order total fees are charged on
+
+  const fListing = LISTING * qty;
+  const fTrans   = TRANSACTION * base;
+  const fProc    = c.procPct * base + c.procFix * qty;
+  const fReg     = c.reg * base;
+  const fAds     = adRate * base;                    // USD cap not applied in non-USD model
+
+  const fees = fListing + fTrans + fProc + fReg + fAds;
+  const payout = base - fees;
+  const costs = (cost + shipcost) * qty;
+  const profit = payout - costs;
+  const margin = base > 0 ? profit/base : 0;
+
+  return {c,base,fListing,fTrans,fProc,fReg,fAds,fees,payout,costs,profit,margin,qty};
+}
+
+// find item price that makes net [target] (0 = break-even)
+function solvePrice(targetMargin){
+  const c = COUNTRIES[sel.value];
+  const ship = num("ship"), gift = num("gift"), qty = Math.max(1,Math.round(num("qty")));
+  const cost = num("cost"), shipcost = num("shipcost");
+  const varRate = TRANSACTION + c.procPct + c.reg + adRate; // percentage charged on base
+  const perOrderFixed = (LISTING + c.procFix) * qty;
+  const costs = (cost + shipcost) * qty;
+  const baseNeeded = (costs + perOrderFixed) / (1 - varRate - targetMargin);
+  const price = baseNeeded/qty - ship - gift;
+  return Math.max(0, price);
+}
+
+function render(){
+  const c = COUNTRIES[sel.value];
+  document.querySelectorAll("[data-cur]").forEach(()=>{});
+  document.querySelectorAll(".input span, #rProfit, #rPayout, #rFees, #rBreak, #rTarget").forEach(el=>{
+    if(el.hasAttribute("data-cur")) el.textContent = el.textContent; // keep
+  });
+  // update currency prefixes
+  document.querySelectorAll(".input span").forEach(s=> s.textContent = c.cur);
+
+  const r = calc(num("price"));
+  $("rProfit").textContent = money(r.profit, c.cur);
+  $("rProfit").style.color = r.profit >= 0 ? "var(--good)" : "var(--bad)";
+  $("rPayout").textContent = money(r.payout, c.cur);
+  $("rFees").textContent = money(r.fees, c.cur);
+  $("rMargin").textContent = "Margin " + (r.margin*100).toFixed(1) + "%  •  fees are " +
+    (r.base>0?(r.fees/r.base*100).toFixed(1):"0") + "% of order";
+
+  const breakP = solvePrice(0);
+  const targetP = solvePrice(num("target")/100);
+  $("rBreak").textContent = money(breakP, c.cur);
+  $("rTarget").textContent = money(targetP, c.cur);
+
+  const rows = [
+    ["Listing fee", "$0.20 × "+r.qty, r.fListing],
+    ["Transaction fee", "6.5% of order", r.fTrans],
+    ["Payment processing", (c.procPct*100)+"% + "+c.cur+c.procFix.toFixed(2), r.fProc],
+  ];
+  if(c.reg>0) rows.push(["Regulatory operating fee", (c.reg*100).toFixed(2)+"%", r.fReg]);
+  if(r.fAds>0) rows.push(["Offsite Ads", (adRate*100)+"% of order", r.fAds]);
+
+  let html = rows.map(x=>
+    `<div class="fee-row"><span class="name">${x[0]}<small>${x[1]}</small></span>
+     <span class="amt">${money(x[2], c.cur)}</span></div>`).join("");
+  html += `<div class="fee-row total"><span class="name">Total Etsy fees</span><span class="amt">${money(r.fees,c.cur)}</span></div>`;
+  $("feeList").innerHTML = html;
+
+  $("footNote").textContent = "Shown for a Canadian Etsy shop in C$ (CAD). Payment processing is 3% + C$0.25 and there is a ~1.15% regulatory operating fee; the listing fee is US$0.20 (~C$0.27). Figures exclude sales tax and the 2.5% currency-conversion fee. Confirm exact amounts in Shop Manager.";
+}
+
+// ad toggle
+document.querySelectorAll("#ads button").forEach(b=>{
+  b.addEventListener("click",()=>{
+    document.querySelectorAll("#ads button").forEach(x=>x.classList.remove("on"));
+    b.classList.add("on"); adRate = parseFloat(b.dataset.v); render();
+  });
+});
+// inputs
+["country","price","ship","gift","qty","cost","shipcost","target"].forEach(id=>{
+  $(id).addEventListener("input", render);
+  $(id).addEventListener("change", render);
+});
+render();
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Etsy Fee Calculator",
+"applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+"description":"Free 2026 Etsy fee calculator showing listing, transaction, payment processing and Offsite Ads fees, net profit, margin, break-even and target price."}
+</script>
+</body>
+</html>

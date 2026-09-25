@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROAS Calculator 2026 – Return on Ad Spend, Break-Even &amp; Profit</title>
+<meta name="description" content="Free ROAS calculator for ecommerce sellers. Enter ad spend and revenue to see return on ad spend, break-even ROAS from your margin, and whether your ads are truly profitable.">
+<link rel="canonical" href="https://dytsk9wrfv.page.coze.site/roas-calculator.html">
+<meta property="og:title" content="ROAS Calculator 2026 – Break-Even &amp; Profit">
+<meta property="og:description" content="See your real return on ad spend and the break-even ROAS from your margin.">
+<meta property="og:type" content="website">
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1f2430;--muted:#6b7280;--line:#e8eaee;
+--brand:#f1641f;--brand-d:#d4530f;--good:#0f9d58;--bad:#d63838;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+ line-height:1.5;font-size:16px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header.top{background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px}
+.logo{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,#ff8a3d,#e2531a);display:grid;place-items:center;color:#fff;font-weight:900}
+.top nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:600;margin-left:14px}
+.hero{padding:32px 0 6px}
+.hero h1{font-size:28px;margin:0 0 6px;letter-spacing:-.02em}
+.hero p{color:var(--muted);margin:0;max-width:700px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:22px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;
+ box-shadow:0 1px 2px rgba(20,24,40,.05),0 8px 24px rgba(20,24,40,.05)}
+h2{font-size:18px;margin:0 0 4px}
+.hint{color:var(--muted);font-size:13px;font-weight:400}
+label{display:block;font-weight:700;font-size:13.5px;margin:13px 0 5px}
+input{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;font-size:16px;background:#fff}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.res{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.res:last-child{border-bottom:none}
+.res b{font-variant-numeric:tabular-nums}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.kpi{background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:13px}
+.kpi small{color:var(--muted);font-weight:600;font-size:12px;display:block}
+.kpi b{font-size:20px;font-variant-numeric:tabular-nums}
+.verdict{margin-top:12px;border-radius:12px;padding:13px 15px;font-weight:800;font-size:15px}
+.v-good{background:#e9f8f0;color:var(--good)}
+.v-bad{background:#fdeaea;color:var(--bad)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-size:12.5px}
+details{border-bottom:1px solid var(--line);padding:11px 0}
+summary{font-weight:700;cursor:pointer;font-size:15px}
+details p{color:var(--muted);font-size:14px;margin:8px 0 2px}
+.more .row{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+.more a{flex:1;min-width:180px;text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-weight:700;font-size:14px}
+.more small{display:block;color:var(--muted);font-weight:500;font-size:12px;margin-top:3px}
+.sec{margin:26px 0}
+footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:13px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.two{grid-template-columns:1fr}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is ROAS?","acceptedAnswer":{"@type":"Answer","text":"ROAS (return on ad spend) is revenue from ads divided by ad cost. A ROAS of 4 means $4 of revenue for every $1 spent."}},
+{"@type":"Question","name":"What is a good ROAS for ecommerce?","acceptedAnswer":{"@type":"Answer","text":"It depends on your gross margin. A 50% margin breaks even at ROAS 2 before other costs; sellers often target 3-5 or higher to clear overhead and profit."}},
+{"@type":"Question","name":"Why is a high ROAS sometimes unprofitable?","acceptedAnswer":{"@type":"Answer","text":"Revenue is not profit. If your product costs and fees exceed the gross margin left after ads, even a ROAS above 1 can lose money. This calculator checks that directly."}}
+]}
+</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+ <div class="brand"><span class="logo">S</span>SellerMath</div>
+ <nav><a href="/index.html">Etsy</a><a href="/amazon-fba-calculator.html">FBA</a><a href="/ebay-calculator.html">eBay</a><a href="/shopify-calculator.html">Shopify</a></nav>
+</div></header>
+
+<div class="wrap">
+ <div class="hero">
+  <h1>ROAS Calculator <span style="color:var(--brand-d)">2026</span></h1>
+  <p>Return on ad spend alone can fool you — this shows your ROAS, the break-even ROAS from your margin, and whether the ads actually put money in your pocket.</p>
+ </div>
+
+ <div class="grid">
+  <div class="card">
+   <h2>Your campaign</h2>
+   <div class="two">
+    <div><label for="spend">Ad spend ($)</label><input id="spend" type="number" inputmode="decimal" value="1000" oninput="run()"></div>
+    <div><label for="rev">Revenue from ads ($)</label><input id="rev" type="number" inputmode="decimal" value="4000" oninput="run()"></div>
+   </div>
+   <label for="margin">Gross margin on those sales (%) <span class="hint">after product, platform &amp; shipping costs</span></label>
+   <input id="margin" type="number" inputmode="decimal" value="50" oninput="run()">
+   <div class="two">
+    <div><label for="other">Other costs from these sales ($)</label><input id="other" type="number" inputmode="decimal" value="0" oninput="run()"></div>
+    <div><label for="targetroas">Target ROAS (x)</label><input id="targetroas" type="number" inputmode="decimal" value="4" oninput="run()"></div>
+   </div>
+  </div>
+
+  <div class="card">
+   <h2>Results</h2>
+   <div class="res"><span>ROAS</span><b id="oRoas"></b></div>
+   <div class="res"><span>Gross profit from sales</span><b id="oGross"></b></div>
+   <div class="res"><span>Net after ads &amp; other costs</span><b id="oNet"></b></div>
+   <div class="res"><span>Break-even ROAS (your margin)</span><b id="oBe"></b></div>
+   <div class="kpis">
+    <div class="kpi"><small>Revenue per $1 spent</small><b id="oPer"></b></div>
+    <div class="kpi"><small>Net per $1 spent</small><b id="oNetPer"></b></div>
+   </div>
+   <div class="verdict" id="verdict"></div>
+  </div>
+ </div>
+
+ <div class="card sec">
+  <h2>Reading your numbers</h2>
+  <table>
+   <thead><tr><th>Gross margin</th><th>Break-even ROAS</th><th>Example target</th></tr></thead>
+   <tbody>
+    <tr><td>30%</td><td>3.33x</td><td>≥ 5x</td></tr>
+    <tr><td>50%</td><td>2.00x</td><td>≥ 3–4x</td></tr>
+    <tr><td>70%</td><td>1.43x</td><td>≥ 2–3x</td></tr>
+   </tbody>
+  </table>
+  <p class="hint" style="margin:10px 0 0">Break-even ROAS = 1 ÷ gross margin. Add fixed overhead before treating break-even as true profit.</p>
+ </div>
+
+ <div class="card sec">
+  <h2>Why ROAS alone can mislead</h2>
+  <p class="hint" style="margin:0">ROAS measures revenue returned per ad dollar, not profit. Two stores can both report 4x and one make money while the other loses it, because the difference is the gross margin. That is why this calculator pairs your ROAS with the <b>break-even ROAS = 1 ÷ gross margin</b>: only revenue above that line actually covers product and ad costs. A low-margin product needs a much higher ROAS just to break even than a high-margin one.</p>
+  <p class="hint" style="margin:10px 0 0">Use ROAS to compare campaigns and creatives, but judge profitability on the net figure after costs. Leave headroom for fixed overhead, and treat repeat customers separately — a first order that only breaks even can be profitable over the customer's lifetime.</p>
+ </div>
+
+ <div class="card sec">
+  <h2>Frequently asked questions</h2>
+  <details open><summary>What is ROAS?</summary><p>Revenue from ads ÷ ad cost. ROAS 4 = $4 revenue per $1 spent.</p></details>
+  <details><summary>What is a good ROAS for ecommerce?</summary><p>It depends on margin; 50% margin breaks even at 2x before overhead, many target 3–5x.</p></details>
+  <details><summary>Why is a high ROAS sometimes unprofitable?</summary><p>Revenue isn't profit — product and platform costs can leave you negative even above 1x.</p></details>
+  <details><summary>What's the difference between ROAS and break-even ROAS?</summary><p>ROAS is what the campaign returned. Break-even ROAS is the minimum it must return for ad-driven sales to cover product and ad costs (1 ÷ gross margin). When your ROAS is above break-even, the campaign contributes profit; below it, every ad sale erodes margin.</p></details>
+ </div>
+
+ <div class="card more sec">
+  <h2>More free seller calculators</h2>
+  <div class="row">
+   <a href="/index.html">Etsy Fee Calculator<small>Listing, transaction &amp; break-even</small></a>
+   <a href="/amazon-fba-calculator.html">Amazon FBA Calculator<small>Referral, fulfillment, ROI</small></a>
+   <a href="/ebay-calculator.html">eBay Fee Calculator<small>Final value fees by category</small></a>
+   <a href="/shopify-calculator.html">Shopify Profit Calculator<small>Card fees, plan, margin</small></a>
+   <a href="/profit-margin-calculator.html">Profit Margin Calculator<small>Margin vs markup</small></a>
+   <a href="/embed.html">Embed Widget<small>Put a calculator on your site</small></a>
+  </div>
+ </div>
+</div>
+
+<footer><div class="wrap">SellerMath is an independent tool. ROAS is a gross figure; true profitability also depends on returns, fixed overhead and lifetime value.</div></footer>
+
+<script>
+const $=id=>document.getElementById(id);
+const val=id=>{const v=parseFloat($(id).value);return isFinite(v)?v:0;};
+const fmt=v=>"$"+v.toFixed(2);
+function run(){
+ const spend=val("spend"), rev=val("rev"), margin=val("margin")/100, other=val("other");
+ const roas=spend>0?rev/spend:0;
+ const gross=rev*margin;
+ const net=gross-spend-other;
+ const be=margin>0?1/margin:Infinity;
+ $("oRoas").textContent=spend>0?roas.toFixed(2)+"x":"–";
+ $("oGross").textContent=fmt(gross);
+ $("oNet").textContent=fmt(net);
+ $("oBe").textContent=isFinite(be)?be.toFixed(2)+"x":"–";
+ $("oPer").textContent=spend>0?"$"+roas.toFixed(2):"–";
+ $("oNetPer").textContent=spend>0?"$"+(net/spend).toFixed(2):"–";
+ const v=$("verdict");
+ if(spend>0){
+   if(net>=0){v.className="verdict v-good";v.textContent="✓ Profitable: you clear $"+net.toFixed(2) + (roas>=be?" (above break-even ROAS)":"");}
+   else{v.className="verdict v-bad";v.textContent="✗ Losing money: $"+Math.abs(net).toFixed(2)+" after product costs and ads.";}
+ } else {v.textContent="";v.className="verdict";}
+}
+run();
+</script>
+</body>
+</html>

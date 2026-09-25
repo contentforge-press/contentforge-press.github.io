@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopify Profit Margin Calculator 2026 (Free) | SellerMath</title>
+<meta name="description" content="Free Shopify profit margin calculator for 2026. Enter your selling price, COGS, shipping and plan to see per-order profit, card fees, monthly net profit and break-even price. Rates based on official Shopify pricing (Basic, Grow, Advanced).">
+<link rel="canonical" href="https://dytsk9wrfv.page.coze.site/shopify-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shopify Profit Margin Calculator 2026 | SellerMath">
+<meta property="og:description" content="Calculate per-order and monthly Shopify profit, payment fees and break-even price with verified 2026 rates. Free, no sign-up.">
+<meta property="og:url" content="https://dytsk9wrfv.page.coze.site/shopify-calculator.html">
+<meta property="og:site_name" content="SellerMath">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shopify Profit Margin Calculator 2026 | SellerMath">
+<meta name="twitter:description" content="Calculate per-order and monthly Shopify profit, payment fees and break-even price with verified 2026 rates.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does a Shopify subscription cost in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As of September 2026, US monthly (pay-monthly) prices are: Basic $27/mo, Grow $65/mo (this plan was previously called Shopify), and Advanced $399/mo. Paying yearly lowers them to $20, $49 and $299 per month. Shopify Plus starts from $2,300/mo. Sources: shopify.com/pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are Shopify Payments online credit card rates in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For US stores using Shopify Payments online, standard card rates are Basic 2.9% + $0.30 per order, Grow 2.7% + $0.30, and Advanced 2.5% + $0.30. In-person POS rates are lower (2.6%, 2.5% and 2.4% plus $0.10). Higher-tier cards and international cards carry additional charges."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What extra fee do I pay with a third-party payment gateway on Shopify?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you do not use Shopify Payments, Shopify adds a transaction fee on every order: 2% on Basic, 1% on Grow, and 0.6% on Advanced (0.2% on Plus). This is charged on top of whatever your external gateway (Stripe, PayPal, Authorize.net, etc.) charges you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which Shopify plan has the cheapest credit card rate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Advanced has the lowest online card rate at 2.5% + $0.30, versus 2.9% + $0.30 on Basic and 2.7% + $0.30 on Grow. However, Advanced costs $399/mo, so it only pays off at higher order volumes. Enter your numbers above to compare monthly profit across plans."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is Shopify profit margin calculated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Net profit per order = amount collected (selling price + shipping the customer pays) minus COGS, your shipping cost, and payment fees. Profit margin = net profit divided by the amount collected times 100. Monthly net profit also subtracts the Shopify subscription and any apps, ads or other monthly costs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there an additional transaction fee with Shopify Payments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. With Shopify Payments there is no extra Shopify transaction fee, you only pay the plan's card processing rate. The additional 2% / 1% / 0.6% fee applies only when you use a third-party payment provider instead of Shopify Payments."
+      }
+    }
+  ]
+}
+</script>
+<style>
+  :root{
+    --brand:#f1641f;
+    --brand-dark:#d9550f;
+    --brand-soft:#fff3eb;
+    --ink:#1f2430;
+    --muted:#6b7280;
+    --line:#ececef;
+    --bg:#faf8f6;
+    --card:#ffffff;
+    --green:#1a9e57;
+    --red:#d9382e;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.5;
+    font-size:16px;
+    -webkit-text-size-adjust:100%;
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:20px 16px 40px;}
+  header.top{margin-bottom:18px;}
+  .logo{font-weight:800;font-size:1.15rem;color:var(--brand);letter-spacing:-.02em;}
+  .logo span{color:var(--ink);}
+  h1{font-size:1.55rem;line-height:1.25;margin:14px 0 8px;letter-spacing:-.02em;}
+  .lede{color:var(--muted);margin:0 0 6px;font-size:.98rem;}
+  .verify{font-size:.8rem;color:var(--muted);margin:0 0 18px;}
+  .grid{display:grid;grid-template-columns:1fr;gap:16px;}
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:18px;
+  }
+  .card h2{font-size:1.02rem;margin:0 0 14px;letter-spacing:-.01em;}
+  .field{margin-bottom:14px;}
+  .field:last-child{margin-bottom:0;}
+  label{display:block;font-size:.85rem;font-weight:600;margin-bottom:6px;}
+  .hint{font-weight:400;color:var(--muted);font-size:.78rem;}
+  .inputwrap{position:relative;}
+  .inputwrap .pre{
+    position:absolute;left:12px;top:50%;transform:translateY(-50%);
+    color:var(--muted);font-size:.9rem;pointer-events:none;
+  }
+  input[type=number]{
+    width:100%;
+    padding:11px 12px;
+    border:1px solid #d9d9de;
+    border-radius:10px;
+    font-size:1rem;
+    color:var(--ink);
+    background:#fff;
+    outline:none;
+    transition:border-color .15s, box-shadow .15s;
+  }
+  input[type=number].withpre{padding-left:26px;}
+  input[type=number]:focus{border-color:var(--brand);box-shadow:0 0 0 3px rgba(241,100,31,.15);}
+  input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0;}
+  input[type=number]{-moz-appearance:textfield;appearance:textfield;}
+  .subgroup{border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:14px;}
+  .subgroup .gtitle{font-size:.85rem;font-weight:700;margin-bottom:10px;}
+  .opt{
+    display:flex;align-items:flex-start;gap:10px;
+    padding:10px;border:1px solid var(--line);border-radius:10px;margin-bottom:8px;cursor:pointer;
+  }
+  .opt:last-child{margin-bottom:0;}
+  .opt input{margin-top:3px;accent-color:var(--brand);flex:0 0 auto;width:18px;height:18px;}
+  .opt .olabel{font-size:.9rem;font-weight:600;}
+  .opt .ometa{font-size:.78rem;color:var(--muted);font-weight:400;}
+  .seg{display:flex;border:1px solid #d9d9de;border-radius:10px;overflow:hidden;}
+  .seg label{
+    flex:1;margin:0;text-align:center;padding:10px 6px;font-size:.84rem;font-weight:600;
+    cursor:pointer;background:#fff;color:var(--muted);border:none;
+  }
+  .seg input{position:absolute;opacity:0;pointer-events:none;}
+  .seg label.active{background:var(--brand);color:#fff;}
+  .gateway-note{font-size:.78rem;color:var(--muted);margin-top:8px;}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .rhead{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px;}
+  .rhead h2{margin:0;}
+  .badge{font-size:.72rem;color:var(--brand-dark);background:var(--brand-soft);padding:3px 8px;border-radius:99px;font-weight:700;}
+  .hero{
+    background:linear-gradient(135deg,#fff6f0,#fff);
+    border:1px solid #fbe2d2;
+    border-radius:14px;padding:14px 16px;margin-bottom:14px;
+  }
+  .hero .hl{font-size:.78rem;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.04em;}
+  .hero .hv{font-size:1.7rem;font-weight:800;letter-spacing:-.02em;margin:2px 0;}
+  .hero .hv.neg{color:var(--red);}
+  .hero .hs{font-size:.85rem;color:var(--muted);}
+  .rtable{width:100%;border-collapse:collapse;font-size:.88rem;}
+  .rtable td{padding:7px 0;border-bottom:1px solid var(--line);vertical-align:top;}
+  .rtable tr:last-child td{border-bottom:none;}
+  .rtable td.v{text-align:right;font-weight:600;white-space:nowrap;}
+  .rtable tr.total td{border-top:2px solid var(--ink);border-bottom:none;padding-top:10px;font-weight:800;}
+  .rtable tr.total td.v{color:var(--brand-dark);}
+  .v.neg{color:var(--red)!important;}
+  .msection{margin-top:16px;}
+  .msection h3{font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:0 0 6px;}
+  .break-even{
+    display:flex;justify-content:space-between;align-items:center;gap:10px;
+    background:var(--brand-soft);border:1px solid #fad8c4;border-radius:12px;padding:12px 14px;margin-top:14px;
+  }
+  .break-even .bl{font-size:.85rem;font-weight:600;}
+  .break-even .bs{font-size:.76rem;color:var(--muted);font-weight:400;}
+  .break-even .bp{font-size:1.25rem;font-weight:800;color:var(--brand-dark);white-space:nowrap;}
+  .content{margin-top:26px;}
+  .content h2{font-size:1.15rem;margin:24px 0 10px;letter-spacing:-.01em;}
+  .content p,.content li{font-size:.93rem;color:#3a3f4b;}
+  .content ul{padding-left:20px;margin:8px 0;}
+  .content li{margin-bottom:6px;}
+  details.faq{
+    border:1px solid var(--line);border-radius:12px;padding:0 14px;margin-bottom:10px;background:#fff;
+  }
+  details.faq summary{
+    cursor:pointer;font-weight:700;font-size:.92rem;padding:13px 0;list-style:none;position:relative;padding-right:26px;
+  }
+  details.faq summary::-webkit-details-marker{display:none;}
+  details.faq summary::after{content:"+";position:absolute;right:2px;top:12px;font-size:1.15rem;color:var(--brand);font-weight:700;}
+  details.faq[open] summary::after{content:"\2212";}
+  details.faq p{margin:0 0 14px;font-size:.9rem;color:#3a3f4b;}
+  .more{margin-top:28px;text-align:center;font-size:.9rem;font-weight:700;color:var(--brand-dark);}
+  footer{margin-top:18px;text-align:center;font-size:.78rem;color:var(--muted);line-height:1.6;}
+  footer a{color:var(--muted);}
+  @media (min-width:760px){
+    .grid{grid-template-columns:minmax(0,5fr) minmax(0,6fr);align-items:start;}
+    h1{font-size:1.9rem;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="logo">Seller<span>Math</span></div>
+    <h1>Shopify Profit Margin Calculator (2026)</h1>
+    <p class="lede">Free real-time calculator: see your profit, card fees and break-even price per order and per month, using Shopify's current 2026 US rates.</p>
+    <p class="verify">Rates verified September 2026 against official Shopify sources &middot; all figures in USD ($)</p>
+  </header>
+
+  <div class="grid">
+    <!-- ============ INPUTS ============ -->
+    <section class="card" aria-label="Calculator inputs">
+      <h2>Your numbers</h2>
+
+      <div class="two">
+        <div class="field">
+          <label for="price">Selling price</label>
+          <div class="inputwrap"><span class="pre">$</span>
+            <input class="withpre" type="number" id="price" min="0" step="0.01" value="40" inputmode="decimal">
+          </div>
+        </div>
+        <div class="field">
+          <label for="orders">Orders per month</label>
+          <input type="number" id="orders" min="0" step="1" value="100" inputmode="numeric">
+        </div>
+      </div>
+
+      <div class="two">
+        <div class="field">
+          <label for="cogs">Product cost (COGS) / unit</label>
+          <div class="inputwrap"><span class="pre">$</span>
+            <input class="withpre" type="number" id="cogs" min="0" step="0.01" value="12" inputmode="decimal">
+          </div>
+        </div>
+        <div class="field">
+          <label for="ship">Shipping cost to customer / unit</label>
+          <div class="inputwrap"><span class="pre">$</span>
+            <input class="withpre" type="number" id="ship" min="0" step="0.01" value="3" inputmode="decimal">
+          </div>
+          <span class="hint">What you pay for the label / fulfilment</span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="custShip">Customer-paid shipping <span class="hint">(0 = free shipping)</span></label>
+        <div class="inputwrap"><span class="pre">$</span>
+          <input class="withpre" type="number" id="custShip" min="0" step="0.01" value="0" inputmode="decimal">
+        </div>
+      </div>
+
+      <div class="subgroup" role="radiogroup" aria-label="Shopify plan">
+        <div class="gtitle">Shopify plan <span class="hint">&mdash; sets subscription &amp; card rate</span></div>
+        <label class="opt">
+          <input type="radio" name="plan" value="basic" checked>
+          <span>
+            <span class="olabel">Basic &mdash; $27/mo</span><br>
+            <span class="ometa">$20/mo yearly &middot; card 2.9% + $0.30 &middot; 3rd-party fee 2%</span>
+          </span>
+        </label>
+        <label class="opt">
+          <input type="radio" name="plan" value="grow">
+          <span>
+            <span class="olabel">Grow &mdash; $65/mo</span><br>
+            <span class="ometa">$49/mo yearly &middot; card 2.7% + $0.30 &middot; 3rd-party fee 1% &middot; formerly &ldquo;Shopify&rdquo;</span>
+          </span>
+        </label>
+        <label class="opt">
+          <input type="radio" name="plan" value="advanced">
+          <span>
+            <span class="olabel">Advanced &mdash; $399/mo</span><br>
+            <span class="ometa">$299/mo yearly &middot; card 2.5% + $0.30 &middot; 3rd-party fee 0.6%</span>
+          </span>
+        </label>
+      </div>
+
+      <div class="field">
+        <label>Payment gateway</label>
+        <div class="seg" id="gatewaySeg">
+          <label class="active" data-gw="sp"><input type="radio" name="gateway" value="sp" checked>Shopify Payments</label>
+          <label data-gw="ext"><input type="radio" name="gateway" value="ext">External / 3rd-party</label>
+        </div>
+        <p class="gateway-note" id="gwNote">No extra Shopify transaction fee.</p>
+      </div>
+
+      <div class="subgroup">
+        <div class="gtitle">Other monthly costs <span class="hint">(optional)</span></div>
+        <div class="two">
+          <div class="field">
+            <label for="apps">Apps</label>
+            <div class="inputwrap"><span class="pre">$</span>
+              <input class="withpre" type="number" id="apps" min="0" step="0.01" value="0" inputmode="decimal">
+            </div>
+          </div>
+          <div class="field">
+            <label for="ads">Ads</label>
+            <div class="inputwrap"><span class="pre">$</span>
+              <input class="withpre" type="number" id="ads" min="0" step="0.01" value="0" inputmode="decimal">
+            </div>
+          </div>
+        </div>
+        <div class="field" style="margin-bottom:0;">
+          <label for="domain">Domain / other</label>
+          <div class="inputwrap"><span class="pre">$</span>
+            <input class="withpre" type="number" id="domain" min="0" step="0.01" value="0" inputmode="decimal">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESULTS ============ -->
+    <section class="card" aria-label="Results" aria-live="polite">
+      <div class="rhead">
+        <h2>Results</h2>
+        <span class="badge" id="planBadge">Basic &middot; Shopify Payments</span>
+      </div>
+
+      <div class="hero">
+        <div class="hl">Net profit per order</div>
+        <div class="hv" id="rNetOrder">$23.54</div>
+        <div class="hs" id="rMarginOrder">58.85% margin</div>
+      </div>
+
+      <table class="rtable">
+        <tbody>
+          <tr><td>Amount collected / order</td><td class="v" id="rGross">$40.00</td></tr>
+          <tr><td>Card / payment fee / order</td><td class="v" id="rFee">$1.46</td></tr>
+          <tr><td>Effective payment rate</td><td class="v" id="rRate">2.90%</td></tr>
+        </tbody>
+      </table>
+
+      <div class="msection">
+        <h3>Monthly totals</h3>
+        <table class="rtable">
+          <tbody>
+            <tr><td>Total revenue collected</td><td class="v" id="rRevenue">$4,000.00</td></tr>
+            <tr><td>Total COGS</td><td class="v" id="rCogs">$1,200.00</td></tr>
+            <tr><td>Total shipping cost</td><td class="v" id="rShip">$300.00</td></tr>
+            <tr><td>Total payment fees</td><td class="v" id="rFees">$146.00</td></tr>
+            <tr><td>Shopify subscription</td><td class="v" id="rSub">$27.00</td></tr>
+            <tr><td>Other costs (apps, ads, domain)</td><td class="v" id="rOther">$0.00</td></tr>
+            <tr class="total"><td>Monthly net profit</td><td class="v" id="rNetMonth">$2,327.00</td></tr>
+            <tr><td>Monthly net profit margin</td><td class="v" id="rMarginMonth">58.18%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="break-even">
+        <div>
+          <div class="bl">Break-even selling price</div>
+          <div class="bs">Per-order product profit = $0 (excludes fixed monthly costs)</div>
+        </div>
+        <div class="bp" id="rBE">$15.76</div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ HOW TO USE ============ -->
+  <section class="content">
+    <h2>How to use this calculator &amp; what counts</h2>
+    <p>Fill in the left column (top column on a phone) and every result updates instantly. Here is exactly what each number means:</p>
+    <ul>
+      <li><strong>Selling price</strong> is the product price the customer pays &mdash; not including any shipping they pay separately.</li>
+      <li><strong>Amount collected per order</strong> = selling price + customer-paid shipping. Payment fees are calculated on this full amount, with the fixed $0.30 charged once per order.</li>
+      <li><strong>Product cost (COGS)</strong> is what one unit costs you (manufacturing, wholesale, packaging per unit). <strong>Shipping cost to customer</strong> is what you pay the carrier or fulfilment service.</li>
+      <li><strong>Shopify Payments</strong> charges only your plan's card rate. Choosing an <strong>external gateway</strong> (Stripe, PayPal, Authorize.net, etc.) adds Shopify's transaction fee of 2% (Basic), 1% (Grow) or 0.6% (Advanced) on top of the gateway's own charge; this calculator estimates that external processing cost using the same plan card rate plus the Shopify fee.</li>
+      <li><strong>Break-even price</strong> is the selling price at which product-level profit per order is exactly $0, holding COGS, shipping and fees constant. It does not include fixed monthly costs (subscription, apps, ads), which are covered separately by your order volume.</li>
+      <li>Rates are US/USD figures for online orders. Amex/business cards, international cards, in-person POS sales and currency conversion may cost more.</li>
+    </ul>
+
+    <h2>Frequently asked questions</h2>
+
+    <details class="faq">
+      <summary>What does a Shopify subscription cost in 2026?</summary>
+      <p>As of September 2026, US pay-monthly prices are <strong>Basic $27/mo</strong>, <strong>Grow $65/mo</strong> (previously called the &ldquo;Shopify&rdquo; plan) and <strong>Advanced $399/mo</strong>. Paying yearly brings them to $20, $49 and $299 per month. Shopify Plus starts from $2,300/mo. Source: <a href="https://www.shopify.com/pricing" rel="nofollow noopener">shopify.com/pricing</a>.</p>
+    </details>
+
+    <details class="faq">
+      <summary>What are the Shopify Payments online credit card rates in 2026?</summary>
+      <p>For US stores selling online: <strong>Basic 2.9% + $0.30</strong>, <strong>Grow 2.7% + $0.30</strong> and <strong>Advanced 2.5% + $0.30</strong> per order. In-person rates are lower (2.6% / 2.5% / 2.4% + $0.10). Premium (business/Amex) and international cards cost more. Sources: Shopify Payments fee documentation and Shopify's 2026 payment processing guide.</p>
+    </details>
+
+    <details class="faq">
+      <summary>What extra fee do I pay with a third-party payment gateway?</summary>
+      <p>Without Shopify Payments, Shopify adds a transaction fee on every order: <strong>2% on Basic, 1% on Grow, 0.6% on Advanced</strong> (0.2% on Plus). It is charged on top of your external gateway's own processing fee, which is why most US sellers save money by using Shopify Payments.</p>
+    </details>
+
+    <details class="faq">
+      <summary>Which Shopify plan has the cheapest credit card rate?</summary>
+      <p>Advanced is cheapest per transaction at <strong>2.5% + $0.30</strong>, versus 2.9% + $0.30 on Basic &mdash; a 0.4-point difference. But Advanced costs $399/mo against $27/mo for Basic, so the upgrade only pays off at higher volumes. At 100 orders/month of a $40 product, Basic leaves about $2,327 monthly net profit; switch the radio buttons above to compare plans with your own numbers.</p>
+    </details>
+
+    <details class="faq">
+      <summary>How is Shopify profit margin calculated?</summary>
+      <p>Net profit per order = amount collected &minus; COGS &minus; your shipping cost &minus; payment fees. <strong>Margin % = net profit &divide; amount collected &times; 100.</strong> Monthly net profit also subtracts the subscription and other monthly costs; monthly margin divides that result by total monthly revenue collected.</p>
+    </details>
+
+    <details class="faq">
+      <summary>Does Shopify Payments charge an additional transaction fee?</summary>
+      <p>No. With Shopify Payments you pay only the card processing rate &mdash; there is <strong>no extra Shopify transaction fee</strong>. The 2% / 1% / 0.6% fee applies only when orders go through a third-party payment provider.</p>
+    </details>
+  </section>
+
+  <div class="more" style="text-align:left;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;margin:24px 0 30px;box-shadow:0 8px 24px rgba(20,24,40,.05)">
+    <div style="font-size:18px;margin-bottom:12px">More free seller calculators</div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <a href="/index.html" style="flex:1;min-width:180px;text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-weight:700;font-size:14px">Etsy Fee Calculator<small style="display:block;color:var(--muted);font-weight:500;font-size:12px;margin-top:3px">Listing, transaction, processing &amp; break-even</small></a>
+      <a href="/amazon-fba-calculator.html" style="flex:1;min-width:180px;text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-weight:700;font-size:14px">Amazon FBA Calculator<small style="display:block;color:var(--muted);font-weight:500;font-size:12px;margin-top:3px">Referral, fulfillment, ROI &amp; monthly profit</small></a>
+      <a href="/ebay-calculator.html" style="flex:1;min-width:180;text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-weight:700;font-size:14px">eBay Fee Calculator<small style="display:block;color:var(--muted);font-weight:500;font-size:12px;margin-top:3px">Final value fees by category &amp; profit</small></a>
+      <a href="/paypal-calculator.html" style="flex:1;min-width:180px;text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-weight:700;font-size:14px">PayPal Fee Calculator<small style="display:block;color:var(--muted);font-weight:500;font-size:12px;margin-top:3px">3.49% + fee, international &amp; reverse</small></a>
+      <a href="/profit-margin-calculator.html" style="flex:1;min-width:180px;text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-weight:700;font-size:14px">Profit Margin Calculator<small style="display:block;color:var(--muted);font-weight:500;font-size:12px;margin-top:3px">Margin vs markup &amp; target price</small></a>
+      <a href="/stripe-calculator.html" style="flex:1;min-width:180px;text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-weight:700;font-size:14px">Stripe Fee Calculator<small style="display:block;color:var(--muted);font-weight:500;font-size:12px;margin-top:3px">2.9% + 30¢, international &amp; FX</small></a>
+      <a href="/tiktok-calculator.html" style="flex:1;min-width:180px;text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-weight:700;font-size:14px">TikTok Shop Calculator<small style="display:block;color:var(--muted);font-weight:500;font-size:12px;margin-top:3px">6% referral, creator fee &amp; profit</small></a>
+      <a href="/embed.html" style="flex:1;min-width:180px;text-decoration:none;color:var(--ink);background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-weight:700;font-size:14px">Embed Widget<small style="display:block;color:var(--muted);font-weight:500;font-size:12px;margin-top:3px">Put a calculator on your own site</small></a>
+    </div>
+  </div>
+
+  <div class="wrap">
+  <section style="background:#fff3ea;border:1px solid #ffd9c2;border-radius:16px;padding:22px;margin:8px 0 4px">
+    <h2 style="margin:0 0 6px;font-size:19px">Need this as a spreadsheet or a calculator for your store?</h2>
+    <p style="margin:0 0 14px;color:#5b6573;font-size:14px">We build custom fee &amp; profit calculators and ready-to-use seller spreadsheets. Tell us what you sell and we'll send a quote — no obligation.</p>
+    <a href="mailto:contentguard@coze.email?subject=Custom%20calculator%20or%20spreadsheet" style="display:inline-block;background:#f1641f;color:#fff;text-decoration:none;font-weight:700;padding:11px 18px;border-radius:10px;font-size:15px">Hire us / Request a quote</a>
+  </section>
+</div>
+
+<footer>
+    This is an independent tool and is not affiliated with, endorsed or sponsored by Shopify Inc.<br>
+    Fees are estimates based on Shopify's official publicly available information for US stores; verify current rates in your Shopify admin. Data checked: September 2026.
+  </footer>
+</div>
+
+<script>
+(function(){
+  // 2026 US/USD rates, verified Sept 2026 (shopify.com/pricing + Shopify Payments docs)
+  var PLANS = {
+    basic:    { name:"Basic",    fee:27,  card:0.029, txn:0.02  },
+    grow:     { name:"Grow",     fee:65,  card:0.027, txn:0.01  },
+    advanced: { name:"Advanced", fee:399, card:0.025, txn:0.006 }
+  };
+
+  function num(id){
+    var v = parseFloat(document.getElementById(id).value);
+    return isFinite(v) && v > 0 ? v : 0;
+  }
+  // half-up rounding to 2 decimals (avoids 58.175 -> "58.17" binary-float artifacts)
+  function round2(v){ return Math.round((v + Number.EPSILON) * 100) / 100; }
+  function fmt(v){
+    var s = Math.abs(round2(v)).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
+    return (v < 0 ? "-$" : "$") + s;
+  }
+  function setV(id, v, neg){
+    var el = document.getElementById(id);
+    el.textContent = fmt(v);
+    el.classList.toggle("neg", !!neg && v < 0);
+  }
+
+  function calc(){
+    var price = num("price"), orders = num("orders"),
+        cogs = num("cogs"), ship = num("ship"), custShip = num("custShip"),
+        apps = num("apps"), ads = num("ads"), domain = num("domain");
+
+    var planKey = document.querySelector('input[name="plan"]:checked').value;
+    var external = document.querySelector('input[name="gateway"]:checked').value === "ext";
+    var p = PLANS[planKey];
+
+    var rate = p.card + (external ? p.txn : 0);          // effective percentage rate
+    var gross = price + custShip;                        // collected per order
+    var fee = rate * gross + 0.30;                       // payment fee per order
+    var netOrder = gross - cogs - ship - fee;
+    var mOrder = gross > 0 ? netOrder / gross * 100 : 0;
+
+    var revenue = gross * orders;
+    var cogsT = cogs * orders, shipT = ship * orders, feeT = fee * orders;
+    var other = apps + ads + domain;
+    var netMonth = revenue - cogsT - shipT - feeT - p.fee - other;
+    var mMonth = revenue > 0 ? netMonth / revenue * 100 : 0;
+
+    var be = Math.max(0, (cogs + ship + 0.30) / (1 - rate) - custShip);
+
+    // per order
+    setV("rGross", gross);
+    setV("rFee", fee);
+    document.getElementById("rRate").textContent = (rate*100).toFixed(2) + "%";
+    var netEl = document.getElementById("rNetOrder");
+    netEl.textContent = fmt(netOrder);
+    netEl.classList.toggle("neg", netOrder < 0);
+    var moEl = document.getElementById("rMarginOrder");
+    moEl.textContent = mOrder.toFixed(2) + "% margin";
+
+    // monthly
+    setV("rRevenue", revenue);
+    setV("rCogs", cogsT);
+    setV("rShip", shipT);
+    setV("rFees", feeT);
+    setV("rSub", p.fee);
+    setV("rOther", other);
+    setV("rNetMonth", netMonth, true);
+    document.getElementById("rMarginMonth").textContent = mMonth.toFixed(2) + "%";
+
+    // break-even
+    document.getElementById("rBE").textContent = fmt(be);
+
+    // labels
+    document.getElementById("planBadge").textContent =
+      p.name + " \u00b7 " + (external ? "External gateway" : "Shopify Payments");
+    document.getElementById("gwNote").textContent = external
+      ? "Adds Shopify transaction fee: " + round2(p.txn*100).toFixed(1).replace(/\.0$/,"") + "% per order, plus your gateway's own charge."
+      : "No extra Shopify transaction fee.";
+  }
+
+  // gateway segmented control visuals
+  document.getElementById("gatewaySeg").addEventListener("change", function(e){
+    var v = e.target.value;
+    var labels = this.querySelectorAll("label");
+    labels.forEach(function(l){ l.classList.toggle("active", l.getAttribute("data-gw") === (v === "sp" ? "sp" : "ext")); });
+  });
+
+  document.querySelectorAll("input").forEach(function(el){
+    el.addEventListener("input", calc);
+    el.addEventListener("change", calc);
+  });
+
+  calc();
+})();
+</script>
+</body>
+</html>

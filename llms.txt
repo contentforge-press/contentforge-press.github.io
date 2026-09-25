@@ -1,0 +1,43 @@
+# SellerMath
+
+> Free, accurate 2026 fee and profit calculators for online marketplace sellers. All calculators run entirely in the browser, need no account, and collect no data.
+
+Sitemap: https://dytsk9wrfv.page.coze.site/sitemap.xml
+
+## Tools
+
+- [Etsy Fee Calculator](https://dytsk9wrfv.page.coze.site/): Etsy fees for 2026 — $0.20 listing fee, 6.5% transaction fee, country-specific payment processing, regulatory operating fee and optional Offsite Ads (15% under $10k, 12% over $10k). Shows net profit, margin, break-even price and the exact item price for a target margin. Updated for Etsy's June 22, 2026 fee changes.
+- [Amazon FBA Calculator](https://dytsk9wrfv.page.coze.site/amazon-fba-calculator.html): Amazon FBA fees for 2026 — referral fee by category (8–15%), FBA fulfillment fee by size tier and weight, storage and inbound costs, with net profit, ROI, margin, break-even price and monthly profit. Includes non-peak and Oct 15–Jan 14 peak rates.
+- [eBay Fee Calculator](https://dytsk9wrfv.page.coze.site/ebay-calculator.html): eBay final value fees for 2026 by category (most categories 13.6%, with caps and Store discounts), per-order fee, net profit, margin and break-even price.
+- [Shopify Profit Calculator](https://dytsk9wrfv.page.coze.site/shopify-calculator.html): Shopify 2026 plans (Basic $27, Grow $65, Advanced $399) and Shopify Payments card rates (2.9/2.7/2.5% + $0.30), third-party gateway fees, per-order and monthly profit, break-even price.
+- [TikTok Shop Calculator](https://dytsk9wrfv.page.coze.site/tiktok-calculator.html): TikTok Shop US referral fee for 2026 — 6% for most categories (specific jewelry and pre-owned categories 5%), no fixed per-order fee, payment processing included; optional creator affiliate commission. Net profit, margin and break-even.
+- [PayPal Fee Calculator](https://dytsk9wrfv.page.coze.site/paypal-calculator.html): US PayPal 2026 fees — Checkout 3.49% + $0.49, Goods & Services 2.99%, international +1.5%, QR 2.29%, Pay Later 4.99%, micropayments ~5% + $0.05 — with payout and reverse invoice.
+- [Stripe Fee Calculator](https://dytsk9wrfv.page.coze.site/stripe-calculator.html): US Stripe 2026 — 2.9% + $0.30 domestic, international +1.5%, currency conversion +1%, manual entry +0.5% — with payout and reverse amount.
+- [Profit Margin Calculator](https://dytsk9wrfv.page.coze.site/profit-margin-calculator.html): Gross profit, profit margin (profit ÷ price) vs markup (profit ÷ cost), and the selling price for a target margin. Platform-independent.
+- [ROAS Calculator](https://dytsk9wrfv.page.coze.site/roas-calculator.html): Return on ad spend, gross profit, net after ads, and break-even ROAS (1 ÷ gross margin), with a profitable/losing verdict.
+- [Break-Even Calculator](https://dytsk9wrfv.page.coze.site/break-even-calculator.html): Units and revenue needed to break even (fixed costs ÷ contribution margin) and to reach a target profit.
+- [Sales Tax Calculator](https://dytsk9wrfv.page.coze.site/sales-tax-calculator.html): US state-level sales tax rates for 2026 (state rate pre-selected, optional local add-on), tax amount, tax-inclusive total, and a reverse calculation from a tax-inclusive price.
+- [Amazon ACoS Calculator](https://dytsk9wrfv.page.coze.site/acos-calculator.html): Advertising cost of sale (spend ÷ attributed sales), TACoS, break-even ACoS from net margin, and the ROAS equivalent.
+- [Etsy UK Calculator](https://dytsk9wrfv.page.coze.site/etsy-fee-calculator-uk.html): Etsy fees in pounds (£) with UK payment rates.
+- [Etsy Australia Calculator](https://dytsk9wrfv.page.coze.site/etsy-fee-calculator-australia.html): Etsy fees in Australian dollars (A$).
+- [Etsy Canada Calculator](https://dytsk9wrfv.page.coze.site/etsy-fee-calculator-canada.html): Etsy fees in Canadian dollars (C$).
+- [Embed Widget](https://dytsk9wrfv.page.coze.site/embed.html): Free embeddable Etsy fee calculator for blogs and seller sites.
+- [Etsy vs eBay Fees](https://dytsk9wrfv.page.coze.site/etsy-vs-ebay-fees.html): Side-by-side — Etsy $0.20 listing + 6.5% transaction + 3% + $0.25 payment vs eBay 13.6% final value + $0.40 per order (payment included). For typical items above ~$15–20 Etsy's all-in fee is usually lower.
+- [PayPal vs Stripe Fees](https://dytsk9wrfv.page.coze.site/paypal-vs-stripe-fees.html): PayPal Checkout 3.49% + $0.49 vs Stripe 2.9% + $0.30; both +1.5% international, Stripe +1% FX and +0.5% manual entry. For standard US online sales Stripe is usually slightly cheaper.
+- [Etsy vs Shopify Costs](https://dytsk9wrfv.page.coze.site/etsy-vs-shopify-fees.html): Etsy no subscription but ~9.5% all-in per sale vs Shopify $27/$65/$399 plan with 2.9/2.7/2.5% + $0.30 card fees. Shopify becomes cheaper per sale once order volume covers the subscription; Etsy supplies the audience, Shopify requires self-driven traffic.
+- [Mercari Fee Calculator](https://dytsk9wrfv.page.coze.site/mercari-fee-calculator.html): US Mercari 2026 — flat 10% selling fee on item price plus buyer-paid shipping; no listing fee and no seller payment processing since January 6, 2025. The buyer's separate 3.6% Buyer Protection fee does not reduce the payout.
+- [Poshmark Fee Calculator](https://dytsk9wrfv.page.coze.site/poshmark-fee-calculator.html): US Poshmark 2026 — flat $2.95 on sales under $15, 20% commission on $15 and up, calculated on item price only; the buyer pays flat-rate shipping, no listing or monthly fees.
+- [Mercari vs Poshmark Fees](https://dytsk9wrfv.page.coze.site/mercari-vs-poshmark-fees.html): Mercari 10% (on price + buyer shipping) vs Poshmark $2.95 / 20% (item price only). On fees Mercari is usually cheaper for $15+ orders, while Poshmark's larger fashion-focused audience can mean faster sales or higher prices.
+- [Depop Fee Calculator](https://dytsk9wrfv.page.coze.site/depop-fee-calculator.html): US & UK 2026 — 0% selling fee (removed in 2024); only payment processing, US 3.3% + $0.45 / UK 2.9% + £0.30 on item + shipping + tax; optional Boost is 12% of item price, charged only when a boosted listing sells (28-day window). Sellers outside US/UK still pay 10%.
+
+## Key fee facts (2026)
+
+- Etsy: $0.20 listing fee; 6.5% transaction fee; US payment processing 3% + $0.25; Offsite Ads 15% (12% over $10k in 12 months).
+- Amazon: referral 8–15% by category; FBA fulfillment charged by size/weight (about $4.22 for a 1 lb standard item); peak surcharge Oct 15–Jan 14.
+- eBay: 13.6% final value fee for most categories (2026), plus a per-order fee; caps apply in some categories.
+- Shopify: Basic $27/mo; card rate 2.9% + $0.30; third-party gateways add 2%.
+- TikTok Shop US: 6% referral for most categories; no separate payment fee.
+- PayPal US: Checkout 3.49% + $0.49; international +1.5%.
+- Stripe US: 2.9% + $0.30; international +1.5%; FX +1%.
+- Mercari US: flat 10% of item price + buyer-paid shipping; no seller payment fee (since Jan 6, 2025); buyer pays 3.6% protection fee.
+- Poshmark US: $2.95 flat under $15; 20% on $15+, item price only; buyer pays shipping.
