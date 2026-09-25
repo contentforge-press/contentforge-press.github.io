@@ -8,21 +8,29 @@ permissions:
 jobs:
   archive-and-health:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
-      - name: Archive pages to web.archive.org
+      - name: Archive every URL in the live sitemap to web.archive.org
         env:
           BASE: https://dytsk9wrfv.page.coze.site
         run: |
-          pages="index tools embed amazon-fba-calculator ebay-calculator shopify-calculator tiktok-calculator paypal-calculator stripe-calculator profit-margin-calculator roas-calculator break-even-calculator sales-tax-calculator acos-calculator etsy-fee-calculator-uk etsy-fee-calculator-canada etsy-fee-calculator-australia mercari-fee-calculator poshmark-fee-calculator depop-fee-calculator etsy-vs-ebay-fees paypal-vs-stripe-fees etsy-vs-shopify-fees mercari-vs-poshmark-fees"
-          for p in $pages; do
-            code=$(curl -sL -o /dev/null -w "%{http_code}" --max-time 45 "https://web.archive.org/save/${BASE}/${p}.html" || echo 000)
-            echo "archive ${p}.html -> ${code}"
-            sleep 2
+          mapfile -t pages < <(curl -s --max-time 30 "${BASE}/sitemap.xml" \
+            | grep -oE 'https://[^<]+\.html' \
+            | sed "s#${BASE}/##" | sort -u)
+          echo "Discovered ${#pages[@]} pages from sitemap"
+          ok=0; fail=0
+          for p in "${pages[@]}"; do
+            code=$(curl -sL -o /dev/null -w "%{http_code}" --max-time 40 \
+              "https://web.archive.org/save/${BASE}/${p}" || echo 000)
+            echo "archive ${p} -> ${code}"
+            case "${code}" in 200|301|302) ok=$((ok+1));; *) fail=$((fail+1));; esac
+            sleep 3
           done
+          echo "ARCHIVE SUMMARY ok=${ok} fail=${fail} (failures retry on next run)"
       - name: Health check live site + mirror
         run: |
           for base in https://dytsk9wrfv.page.coze.site https://contentforge-press.github.io; do
-            for p in index tools amazon-fba-calculator depop-fee-calculator; do
+            for p in index tools amazon-fba-calculator depop-fee-calculator sales-tax-by-state california-sales-tax-calculator; do
               code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "${base}/${p}.html")
               echo "health ${base##*/}/${p}.html -> ${code}"
             done
