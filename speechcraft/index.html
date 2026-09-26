@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpeechCraft — AI Wedding Speech Writer (Best Man, Maid of Honor, Parent)</title>
+<meta name="description" content="Write a heartfelt or funny wedding speech in minutes. Best man, maid of honor, father of the bride or groom — tell a few details, get a polished, personal speech.">
+<link rel="canonical" href="https://dytsk9wrfv.page.coze.site/speechcraft/">
+<style>
+:root{--bg:#fbf7f2;--card:#fff;--line:#ece0d3;--ink:#2b221c;--mut:#837364;--acc:#b4543a;--acc2:#caa15a;--gold:#c9a14b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,"Times New Roman",serif;background:var(--bg);color:var(--ink);line-height:1.6}
+.wrap{max-width:880px;margin:0 auto;padding:32px 18px 70px}
+header{text-align:center;margin-bottom:24px}
+.kicker{font-family:-apple-system,sans-serif;color:var(--acc);font-size:11px;letter-spacing:.28em;text-transform:uppercase;margin-bottom:10px}
+h1{font-size:38px;margin-bottom:10px}
+.lead{font-family:-apple-system,sans-serif;color:var(--mut);max-width:560px;margin:0 auto;font-size:15px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;margin-bottom:18px}
+.lab{font-family:-apple-system,sans-serif;display:block;font-size:13px;color:var(--mut);margin:16px 0 6px;font-weight:700}
+input,select,textarea{width:100%;background:#fdfbf8;border:1px solid var(--line);border-radius:10px;padding:12px 13px;font-size:15px;font-family:-apple-system,sans-serif;color:var(--ink)}
+textarea{resize:vertical;min-height:84px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.roles{display:flex;flex-wrap:wrap;gap:9px}
+.role{font-family:-apple-system,sans-serif;border:1px solid var(--line);background:#fdfbf8;color:var(--mut);padding:9px 14px;border-radius:999px;font-size:13.5px;cursor:pointer;font-weight:600}
+.role.on{background:var(--acc);color:#fff;border-color:var(--acc)}
+button.go{font-family:-apple-system,sans-serif;width:100%;background:linear-gradient(90deg,var(--acc),#c96a4d);color:#fff;border:none;padding:15px;border-radius:12px;font-size:16px;font-weight:800;cursor:pointer;margin-top:8px}
+.result{white-space:pre-wrap;font-size:16.5px;line-height:1.75}
+.result h3{font-family:-apple-system,sans-serif;font-size:15px;color:var(--acc);margin-bottom:8px}
+.lock{font-family:-apple-system,sans-serif;background:linear-gradient(180deg,#fff8ec,#fdf3df);border:1px solid #e8d6ad;border-radius:16px;padding:22px;text-align:center;margin-top:6px}
+.lock .big{font-size:17px;font-weight:800;margin-bottom:6px}
+.lock p{color:var(--mut);font-size:14px;margin-bottom:14px;font-family:-apple-system,sans-serif}
+.pay{display:inline-block;background:linear-gradient(90deg,#c9a14b,#b8892f);color:#fff;text-decoration:none;font-family:-apple-system,sans-serif;padding:13px 30px;border-radius:11px;font-weight:800;font-size:15px}
+.chips{font-family:-apple-system,sans-serif;display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.mini{border:1px solid var(--line);background:#fff;color:var(--mut);padding:8px 13px;border-radius:999px;font-size:13px;cursor:pointer}
+.mini.on{background:var(--acc2);color:#fff;border-color:var(--acc2)}
+.loading{font-family:-apple-system,sans-serif;color:var(--mut);text-align:center;padding:30px}
+.how{font-family:-apple-system,sans-serif;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-top:8px}
+.step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;font-size:13.5px;color:var(--mut)}
+.step b{display:block;color:var(--ink);margin-bottom:5px;font-size:14.5px}
+footer{text-align:center;color:var(--mut);font-size:12px;font-family:-apple-system,sans-serif;margin-top:36px}
+.spin{display:inline-block;width:22px;height:22px;border:3px solid #e6d5bd;border-top-color:var(--acc);border-radius:50%;animation:s .8s linear infinite;vertical-align:middle}
+@keyframes s{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="kicker">Personal · Polished · In minutes</div>
+<h1>SpeechCraft</h1>
+<p class="lead">Staring at a blank page before the big day? Answer a few questions and get a warm, genuinely personal wedding speech — funny, heartfelt, or a little of both.</p>
+</header>
+
+<div class="box">
+<span class="lab">1 · Who are you giving the speech as?</span>
+<div class="roles" id="roles">
+<div class="role on" data-r="Best Man">Best Man</div>
+<div class="role" data-r="Maid of Honor">Maid of Honor</div>
+<div class="role" data-r="Father of the Bride">Father of the Bride</div>
+<div class="role" data-r="Mother of the Bride">Mother of the Bride</div>
+<div class="role" data-r="Father of the Groom">Father of the Groom</div>
+<div class="role" data-r="Friend / Other">Friend / Other</div>
+</div>
+
+<div class="row">
+<div><span class="lab">2 · Your name</span><input id="speaker" placeholder="e.g. Alex"></div>
+<div><span class="lab">3 · Name(s) of the couple</span><input id="couple" placeholder="e.g. Sam and Jordan"></div>
+</div>
+
+<span class="lab">4 · How do you know them? Share one short, true story or memory</span>
+<textarea id="story" placeholder="e.g. We've been friends since college. Sam once drove 3 hours in the rain to pick me up when my car broke down..."></textarea>
+
+<span class="lab">5 · Tone</span>
+<div class="chips" id="tones">
+<div class="mini on" data-t="warm and heartfelt">Warm & heartfelt</div>
+<div class="mini" data-t="funny and light">Funny & light</div>
+<div class="mini" data-t="a few jokes, then heartfelt">A few jokes, then heartfelt</div>
+<div class="mini" data-t="short and elegant">Short & elegant</div>
+</div>
+
+<span class="lab">6 · Anything to include or avoid? (optional)</span>
+<input id="extra" placeholder="e.g. mention their dog Maple; keep it under 4 minutes; no inside jokes">
+
+<button class="go" id="go">Write my speech</button>
+</div>
+
+<div id="output"></div>
+
+<div class="box" style="margin-top:22px">
+<span class="lab" style="margin-top:0">How it works</span>
+<div class="how">
+<div class="step"><b>① Share details</b>Pick your role and tell one true memory — that's what makes it personal.</div>
+<div class="step"><b>② Preview free</b>Read the opening and an outline to make sure the tone fits.</div>
+<div class="step"><b>③ Unlock & toast</b>Get the complete speech, tweak it, and deliver with confidence.</div>
+</div>
+</div>
+
+<footer><a href="../index.html">← More tools from SellerMath</a><br>SpeechCraft · Crafted for the people who love them most</footer>
+</div>
+
+<script>
+let role="Best Man",tone="warm and heartfelt";
+document.querySelectorAll('.role').forEach(r=>r.onclick=()=>{
+ document.querySelectorAll('.role').forEach(x=>x.classList.remove('on'));r.classList.add('on');role=r.dataset.r;});
+document.querySelectorAll('.mini').forEach(m=>m.onclick=()=>{
+ document.querySelectorAll('.mini').forEach(x=>x.classList.remove('on'));m.classList.add('on');tone=m.dataset.t;});
+
+function buildPrompt(full){
+ const speaker=document.getElementById('speaker').value.trim()||"[your name]";
+ const couple=document.getElementById('couple').value.trim()||"the happy couple";
+ const story=document.getElementById('story').value.trim()||"[add a short personal memory]";
+ const extra=document.getElementById('extra').value.trim();
+ return `You are an expert wedding speechwriter. Write a ${tone} wedding speech from the ${role}, named ${speaker}, for the couple ${couple}.
+Use this true detail as the emotional centerpiece (do not invent facts beyond it): "${story}"
+${extra?("Also: "+extra):""}
+Requirements: sound like a real person speaking, not generic; open with a hook; include a light, kind moment; end by raising a toast. ${full?"Write the COMPLETE speech, about 350-450 words, ready to deliver.":"Write ONLY: a 4-sentence opening preview, then a short 5-point outline of the full speech. Label them 'Opening preview' and 'What the full speech will cover'."}`;
+}
+async function callAI(full){
+ const p=encodeURIComponent(buildPrompt(full));
+ const r=await fetch("https://text.pollinations.ai/"+p+"?model=openai&nologo=true");
+ return await r.text();
+}
+document.getElementById('go').onclick=async()=>{
+ const out=document.getElementById('output');
+ out.innerHTML='<div class="box loading"><span class="spin"></span><br>Writing your speech…</div>';
+ try{
+  const preview=await callAI(false);
+  out.innerHTML='<div class="box result"><h3>Your free preview</h3>'+escapeHtml(preview)+'</div>'+
+  '<div class="lock"><div class="big">💍 Ready for the full speech?</div>'+
+  '<p>Unlock the complete, ready-to-deliver speech in your chosen tone — plus one rewrite if you want to adjust the jokes or length.</p>'+
+  '<a class="pay" href="#checkout" onclick="return unlock(event)">Unlock full speech — $9</a>'+
+  '<p style="margin-top:12px;font-size:12px">One-time · delivered instantly · edit freely</p></div>';
+ }catch(e){out.innerHTML='<div class="box">Sorry, the writer hit a network error. Please tap again.</div>';}
+};
+async function unlock(e){
+ e.preventDefault();
+ const out=document.getElementById('output');
+ out.lastElementChild.innerHTML='<div class="loading"><span class="spin"></span><br>Completing your speech…</div>';
+ const full=await callAI(true);
+ out.lastElementChild.outerHTML='<div class="box result"><h3>Your complete speech 🥂</h3>'+escapeHtml(full)+'</div>';
+ return false;
+}
+function escapeHtml(s){return s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+</script>
+</body>
+</html>
