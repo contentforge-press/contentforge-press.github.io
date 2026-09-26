@@ -64,3 +64,4 @@ Sitemap: https://dytsk9wrfv.page.coze.site/sitemap.xml
 - Stripe US: 2.9% + $0.30; international +1.5%; FX +1%.
 - Mercari US: flat 10% of item price + buyer-paid shipping; no seller payment fee (since Jan 6, 2025); buyer pays 3.6% protection fee.
 - Poshmark US: $2.95 flat under $15; 20% on $15+, item price only; buyer pays shipping.
+- [Seller Essentials](https://dytsk9wrfv.page.coze.site/seller-resources.html): curated gear for sellers — scales, thermal printers, mailers, packing; Amazon Associates disclosure included.
