@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Name Aura — AI Name Persona Generator</title>
+<meta name="description" content="Enter any name and get an AI-generated portrait, origin, gender probability and a shareable persona card. Free, no sign-up.">
+<style>
+:root{--bg:#0b0714;--card:#171028;--line:#2a1f45;--ink:#f4efff;--mut:#a99cc9;--acc:#b47bff;--acc2:#7be0ff;--good:#5ce6a8}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans;background:radial-gradient(1100px 600px at 50% -10%,#241640 0%,var(--bg) 55%);color:var(--ink);min-height:100vh;line-height:1.5}
+.wrap{max-width:760px;margin:0 auto;padding:28px 18px 60px}
+header{text-align:center;margin-bottom:22px}
+.logo{font-size:13px;letter-spacing:.28em;color:var(--acc2);text-transform:uppercase;margin-bottom:10px}
+h1{font-size:34px;line-height:1.15;background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:10px}
+.sub{color:var(--mut);font-size:15px;max-width:520px;margin:0 auto}
+.panel{background:linear-gradient(180deg,#1b1230,#140d24);border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:22px;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+label{display:block;font-size:13px;color:var(--mut);margin-bottom:8px}
+.row{display:flex;gap:10px}
+input{flex:1;background:#0e0920;border:1px solid var(--line);color:var(--ink);border-radius:12px;padding:14px 16px;font-size:17px;outline:none}
+input:focus{border-color:var(--acc)}
+button{background:linear-gradient(90deg,var(--acc),#8a5cff);color:#fff;border:0;border-radius:12px;padding:14px 22px;font-size:16px;font-weight:700;cursor:pointer;white-space:nowrap}
+button:disabled{opacity:.5;cursor:not-allowed}
+.hint{font-size:12px;color:var(--mut);margin-top:10px;text-align:center}
+#status{display:none;text-align:center;color:var(--mut);font-size:14px;margin-top:18px}
+.spin{display:inline-block;width:16px;height:16px;border:2px solid var(--line);border-top-color:var(--acc);border-radius:50%;vertical-align:-3px;margin-right:8px;animation:sp .8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+#result{display:none;margin-top:26px}
+.card{background:linear-gradient(160deg,#1d1336,#120b22);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.portrait{position:relative;width:100%;aspect-ratio:1/1;background:#0e0920}
+.portrait img{width:100%;height:100%;object-fit:cover;display:block}
+.glow{position:absolute;inset:0;box-shadow:inset 0 -90px 90px -30px rgba(11,7,20,.95)}
+.cardbody{padding:20px}
+.pname{font-size:30px;font-weight:800;letter-spacing:.5px;text-transform:capitalize}
+.persona{color:var(--acc2);font-size:14px;margin-top:2px;font-weight:600}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.chip{background:#0f0a22;border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:12.5px;color:var(--ink)}
+.chip b{color:var(--acc2)}
+.section-title{font-size:11px;letter-spacing:.2em;color:var(--mut);text-transform:uppercase;margin:16px 0 8px}
+.traits{display:flex;flex-wrap:wrap;gap:8px}
+.trait{background:linear-gradient(90deg,rgba(180,123,255,.18),rgba(123,224,255,.12));border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:13px}
+.bar{height:8px;background:#0e0920;border-radius:99px;overflow:hidden;margin-top:6px}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--acc),var(--acc2))}
+.stat{margin-bottom:10px}
+.stat .l{display:flex;justify-content:space-between;font-size:13px;color:var(--mut)}
+.actions{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.ghost{background:#0f0a22;border:1px solid var(--line);color:var(--ink);flex:1;min-width:140px}
+.facts{font-size:13px;color:var(--mut);margin-top:14px}
+.facts div{margin:4px 0}
+footer{text-align:center;color:var(--mut);font-size:12px;margin-top:30px}
+footer a{color:var(--acc2);text-decoration:none}
+.err{color:#ff8a9b;font-size:14px;text-align:center;margin-top:14px;display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="logo">✦ AI Name Persona</div>
+<h1>What does your name look like?</h1>
+<p class="sub">Type any name. We read its real-world gender & origin data, then generate a one-of-a-kind AI portrait and persona card you can share.</p>
+</header>
+
+<div class="panel">
+<label for="nameInput">First name</label>
+<div class="row">
+<input id="nameInput" type="text" placeholder="e.g. Lucia, Kai, Noah…" autocomplete="off" maxlength="24">
+<button id="goBtn">Generate</button>
+</div>
+<div class="hint">Free · No sign-up · Each card is generated live and unique</div>
+<div class="err" id="err"></div>
+</div>
+
+<div id="status"><span class="spin"></span><span id="statusText">Reading the name…</span></div>
+
+<div id="result">
+<div class="card">
+<div class="portrait"><img id="portrait" alt="AI generated portrait"><div class="glow"></div></div>
+<div class="cardbody">
+<div class="pname" id="rName"></div>
+<div class="persona" id="rPersona"></div>
+<div class="meta" id="rMeta"></div>
+
+<div class="section-title">Gender confidence</div>
+<div class="stat"><div class="l"><span id="gLabel">—</span><span id="gPct">—</span></div><div class="bar"><i id="gBar" style="width:0"></i></div></div>
+
+<div class="section-title">Most likely origins</div>
+<div id="origins"></div>
+
+<div class="section-title">Personality traits</div>
+<div class="traits" id="rTraits"></div>
+
+<div class="section-title">Aura details</div>
+<div class="facts" id="rFacts"></div>
+
+<div class="actions">
+<button class="ghost" id="againBtn">↻ Try another name</button>
+<button class="ghost" id="saveBtn">⬇ Save card image</button>
+</div>
+</div>
+</div>
+</div>
+
+<footer>Powered by live demographic data (Genderize & Nationalize) + generative imaging · <a href="index.html">SellerMath tools</a></footer>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const COUNTRY={IT:"Italy",ES:"Spain",BR:"Brazil",US:"United States",MX:"Mexico",GB:"United Kingdom",FR:"France",DE:"Germany",PT:"Portugal",AR:"Argentina",CO:"Colombia",IN:"India",JP:"Japan",CN:"China",RU:"Russia",CA:"Canada",AU:"Australia",NL:"Netherlands",SE:"Sweden",PH:"Philippines",PL:"Poland",TR:"Turkey",KR:"South Korea",UA:"Ukraine",CL:"Chile",PE:"Peru",VE:"Venezuela",IE:"Ireland",GR:"Greece",CH:"Switzerland",BE:"Belgium",NO:"Norway",DK:"Denmark",FI:"Finland",CZ:"Czechia",AT:"Austria",RO:"Romania",IL:"Israel",EG:"Egypt",ZA:"South Africa",NG:"Nigeria",KE:"Kenya",ID:"Indonesia",VN:"Vietnam",TH:"Thailand",MY:"Malaysia"};
+
+// deterministic pseudo-random from a string so same name -> same palette/traits
+function hash(str){let h=2166136261;for(let i=0;i<str.length;i++){h^=str.charCodeAt(i);h=Math.imul(h,16777619);}return ()=>{h+=h<<13;h^=h>>>7;h+=h<<3;h^=h>>>17;h+=h<<5;return (h>>>0)/4294967296;};}
+const pick=(rnd,arr)=>arr[Math.floor(rnd()*arr.length)];
+const TRAITS=["Curious","Bold","Warm-hearted","Mysterious","Optimistic","Loyal","Inventive","Calm under pressure","Magnetic","Playful","Deep thinker","Generous","Fearless","Gentle","Ambitious","Witty","Protective","Dreamer","Reliable","Free-spirited"];
+const ELEMENTS=["Fire","Water","Earth","Air","Aether","Lightning","Moonlight","Starlight"];
+const COLORS=["crimson & gold","ocean teal","violet mist","amber & rose","emerald night","icy blue","sunset coral","midnight indigo"];
+const VIBES=["The Adventurer","The Strategist","The Caregiver","The Dreamer","The Rebel","The Peacemaker","The Creator","The Explorer","The Sage","The Spark"];
+
+async function getJSON(url){const r=await fetch(url);if(!r.ok)throw new Error("network");return r.json();}
+
+async function generate(){
+ const raw=$("nameInput").value.trim();
+ const name=raw.toLowerCase().replace(/[^a-zà-ÿ' -]/g,"");
+ $("err").style.display="none";
+ if(name.length<2){$("err").textContent="Please enter a valid first name.";$("err").style.display="block";return;}
+ $("goBtn").disabled=true;$("againBtn")&&$("againBtn");
+ $("result").style.display="none";
+ const st=$("status");st.style.display="block";
+ const steps=["Reading the name…","Finding its origins…","Painting the portrait…","Reading the aura…"];
+ let si=0;const tick=setInterval(()=>{si=(si+1)%steps.length;$("statusText").textContent=steps[si];},1400);
+ $("statusText").textContent=steps[0];
+ try{
+  const [g,n]=await Promise.all([
+    getJSON("https://api.genderize.io?name="+encodeURIComponent(name)),
+    getJSON("https://api.nationalize.io?name="+encodeURIComponent(name))
+  ]);
+  const rnd=hash(name);
+  const top=(n.country||[]).slice(0,3);
+  const originNames=top.map(c=>COUNTRY[c.country_id]||c.country_id);
+  const gender=g.gender?(g.gender[0].toUpperCase()+g.gender.slice(1)):"Unknown";
+  const gp=Math.round((g.probability||0)*100);
+  const vibe=pick(rnd,VIBES);
+  const element=pick(rnd,ELEMENTS);
+  const palette=pick(rnd,COLORS);
+  const traits=[...TRAITS].sort(()=>rnd()-.5).slice(0,4);
+  const lucky=(1+Math.floor(rnd()*9));
+
+  // build portrait prompt from real data
+  const originHint=originNames[0]?("with features reflecting "+originNames[0]+" heritage"):"";
+  const look=g.gender==="female"?"beautiful woman":(g.gender==="male"?"handsome man":"person");
+  const prompt="cinematic portrait of a "+look+" named "+name+", "+originHint+", expressive eyes, "+palette+" color palette, soft volumetric light, detailed, ethereal, digital painting, trending on artstation, centered head and shoulders, plain dreamy background";
+  const imgURL="https://image.pollinations.ai/prompt/"+encodeURIComponent(prompt)+"?width=768&height=768&nologo=true&seed="+Math.floor(rnd()*1e6);
+  $("statusText").textContent="Painting the portrait…";
+  await new Promise((res,rej)=>{const im=new Image();im.onload=res;im.onerror=()=>rej(new Error("image"));im.src=imgURL;});
+
+  // render
+  $("rName").textContent=name;
+  $("rPersona").textContent=vibe+" · "+element+" aura";
+  $("portrait").src=imgURL;
+  $("rMeta").innerHTML="";
+  if(originNames[0])$("rMeta").innerHTML+='<span class="chip">🌍 <b>'+originNames[0]+'</b></span>';
+  $("rMeta").innerHTML+='<span class="chip">✦ <b>'+palette+'</b></span><span class="chip">🔢 Lucky <b>'+lucky+'</b></span>';
+
+  $("gLabel").textContent=gender;$("gPct").textContent=gp+"%";$("gBar").style.width=gp+"%";
+
+  $("origins").innerHTML=top.map(c=>{
+    const cn=COUNTRY[c.country_id]||c.country_id;const p=Math.round(c.probability*100);
+    return '<div class="stat"><div class="l"><span>'+cn+'</span><span>'+p+'%</span></div><div class="bar"><i style="width:'+p+'%"></i></div></div>';
+  }).join("")||'<div class="facts">Not enough global data for this rare name.</div>';
+
+  $("rTraits").innerHTML=traits.map(t=>'<span class="trait">'+t+'</span>').join("");
+  $("rFacts").innerHTML=
+    '<div>🔥 Element: <b>'+element+'</b></div>'+
+    '<div>🎨 Palette: <b>'+palette+'</b></div>'+
+    '<div>🍀 Lucky number: <b>'+lucky+'</b></div>'+
+    '<div style="margin-top:8px">Based on '+((g.count||0).toLocaleString())+' real people named '+name+' across global records.</div>';
+
+  clearInterval(tick);st.style.display="none";$("result").style.display="block";
+  window.scrollTo({top:st.offsetTop-20,behavior:"smooth"});
+ }catch(e){
+  clearInterval(tick);st.style.display="none";
+  $("err").textContent="A data service is busy. Please tap Generate again in a moment.";
+  $("err").style.display="block";
+ }finally{
+  $("goBtn").disabled=false;
+ }
+}
+
+$("goBtn").addEventListener("click",generate);
+$("nameInput").addEventListener("keydown",e=>{if(e.key==="Enter")generate();});
+document.addEventListener("click",e=>{if(e.target.id==="againBtn"){$("result").style.display="none";$("nameInput").value="";$("nameInput").focus();}});
+$("saveBtn").addEventListener("click",()=>{alert("Long-press the portrait on your phone and choose “Save image”, or take a screenshot of the card.");});
+</script>
+</body>
+</html>
