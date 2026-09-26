@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SellerMath AI Pricing Copilot – What to Charge on Amazon, eBay, Etsy, Shopify & Walmart</title>
+<meta name="description" content="Free AI pricing copilot for sellers. Answer four quick questions about your product cost, weight and target margin, and get the exact price to charge on Amazon FBA, eBay, Etsy, Shopify and Walmart — with fees, net profit and a recommendation on where to sell first.">
+<link rel="canonical" href="https://dytsk9wrfv.page.coze.site/pricing-copilot.html">
+<meta property="og:title" content="SellerMath AI Pricing Copilot">
+<meta property="og:description" content="Tell me your cost and target profit. I'll tell you what to charge on every platform and where to sell first.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dytsk9wrfv.page.coze.site/pricing-copilot.html">
+<meta property="og:site_name" content="SellerMath">
+<style>
+:root{--bg:#0f1420;--panel:#171d2b;--card:#1e2637;--ink:#eef1f6;--muted:#98a2b3;--line:#2a3346;--brand:#6c8cff;--brand2:#8b5cf6;--good:#34d399;--bad:#f87171;--warn:#fbbf24;}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5;font-size:16px}
+.wrap{max-width:760px;margin:0 auto;padding:0 14px;min-height:100vh;display:flex;flex-direction:column}
+header.top{display:flex;align-items:center;justify-content:space-between;height:58px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:17px;text-decoration:none;color:inherit}
+.avatar{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;font-size:16px}
+.top a.link{color:var(--muted);text-decoration:none;font-size:13px;font-weight:600}
+.intro{text-align:center;margin:10px 0 16px}
+.intro h1{font-size:23px;letter-spacing:-.02em;margin:0 0 6px}
+.intro p{color:var(--muted);font-size:14px;margin:0}
+.chat{flex:1;display:flex;flex-direction:column;gap:12px;padding-bottom:14px}
+.msg{display:flex;gap:9px;max-width:100%;animation:rise .25s ease}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.msg .av{width:30px;height:30px;border-radius:9px;flex:0 0 30px;display:grid;place-items:center;font-size:15px;font-weight:800}
+.bot .av{background:linear-gradient(135deg,var(--brand),var(--brand2))}
+.user .av{background:#33405c}
+.bubble{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:11px 14px;font-size:14.5px;max-width:88%}
+.msg.user{align-self:flex-end;flex-direction:row-reverse}
+.msg.user .bubble{background:#2b3550;border-color:#3a4566}
+.bubble b{color:#fff}
+.opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:11px}
+.opts button{background:#232c40;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:8px 14px;font-size:13.5px;font-weight:650;cursor:pointer}
+.opts button:hover{border-color:var(--brand);color:#cdd8ff}
+.qinput{display:flex;gap:8px;margin-top:11px}
+.qinput input{flex:1;background:#111726;border:1px solid var(--line);color:var(--ink);border-radius:10px;padding:10px 12px;font-size:15px}
+.qinput input:focus{outline:2px solid #4656a8;border-color:var(--brand)}
+.qinput button{background:var(--brand);border:0;color:#fff;font-weight:700;border-radius:10px;padding:0 16px;font-size:14px}
+.typing{color:var(--muted);font-size:13.5px;display:flex;gap:4px;align-items:center}
+.typing i{width:6px;height:6px;border-radius:50%;background:var(--muted);animation:blink 1.2s infinite}
+.typing i:nth-child(2){animation-delay:.2s}.typing i:nth-child(3){animation-delay:.4s}
+@keyframes blink{0%,60%,100%{opacity:.25}30%{opacity:1}}
+.report{width:100%;max-width:100%}
+.platform{border:1px solid var(--line);border-radius:12px;padding:11px 13px;margin-top:9px;background:#1a2233}
+.platform .ph{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.platform .pn{font-weight:800;font-size:15px;display:flex;align-items:center;gap:7px}
+.tag{font-size:10.5px;font-weight:800;padding:3px 8px;border-radius:999px}
+.t-best{background:rgba(52,211,153,.15);color:var(--good)}
+.t-good{background:rgba(251,191,36,.14);color:var(--warn)}
+.t-mid{background:rgba(152,162,179,.15);color:var(--muted)}
+.plrow{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);padding:3px 0}
+.plrow b{color:var(--ink)}
+.price-big{font-size:20px;font-weight:800;color:#cfe0ff}
+.advice{background:linear-gradient(135deg,rgba(108,140,255,.16),rgba(139,92,246,.16));border:1px solid #3b4679;border-radius:12px;padding:13px 14px;margin-top:11px;font-size:14px}
+.advice h3{margin:0 0 6px;font-size:14.5px}
+.again{margin-top:12px;text-align:center}
+.again button{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:9px 16px;font-size:13.5px;font-weight:650;cursor:pointer}
+.footlink{color:var(--muted);font-size:12px;text-align:center;padding:14px 0 22px}
+.footlink a{color:#aab8e8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<a class="brand" href="/index.html"><span class="avatar">⚡</span> SellerMath Copilot</a>
+<a class="link" href="/tools.html">All tools</a>
+</header>
+
+<div class="intro">
+<h1>Your AI pricing copilot</h1>
+<p>Answer four quick questions. I'll tell you exactly what to charge on every platform — and where to sell first.</p>
+</div>
+
+<div class="chat" id="chat"></div>
+</div>
+
+<script>
+const chat=document.getElementById("chat");
+const data={};
+
+/* ---- fee models (2026, US), each returns price needed for target net margin ---- */
+const MODELS={
+ amazon:{name:"Amazon (FBA)",icon:"📦",
+  solve:(cost,weight,t,cat)=>{const r=cat.amazon;const fba=weight<=1?4.22:4.22+(Math.ceil(weight)-1)*0.38;
+   const price=(fba+cost)/(1-r-t);
+   const ref=Math.max(price*r,0.30);
+   return {price,fee:ref+fba,detail:[["Referral",ref],["FBA fulfillment",fba]]};}},
+ walmart:{name:"Walmart (WFS)",icon:"🛒",
+  solve:(cost,weight,t,cat)=>{
+   let f;
+   if(weight<=1)f=3.45;else if(weight<=3)f=3.45+Math.ceil(weight-1)*1.0;
+   else{const lb=Math.ceil(weight+0.25);f=lb<=20?5.75+(lb-4)*0.4:15.55+(lb-21)*0.4;}
+   const refRate=cat.walmart;
+   const price=(f+cost)/(1-refRate-t);
+   const ref=price*refRate;
+   return {price,fee:ref+f,detail:[["Referral",ref],["WFS fulfillment",f]]};}},
+ ebay:{name:"eBay",icon:"🏷️",
+  solve:(cost,weight,t)=>{const r=0.1325,fix=0.30;
+   const price=(cost+fix)/(1-r-t);
+   const fee=price*r+fix;
+   return {price,fee,detail:[["Final value fee",fee]]};}},
+ etsy:{name:"Etsy",icon:"🧶",
+  solve:(cost,weight,t)=>{const r=0.095,fix=0.45; // .20 listing + .25 payment fixed
+   const price=(cost+fix)/(1-r-t);
+   const fee=price*r+fix;
+   return {price,fee,detail:[["Listing + transaction + payment",fee]]};}},
+ shopify:{name:"Shopify (own store)",icon:"🛍️",
+  solve:(cost,weight,t)=>{const r=0.029,fix=0.30;
+   const price=(cost+fix)/(1-r-t);
+   const fee=price*r+fix;
+   return {price,fee,detail:[["Card processing",fee]]};}}
+};
+
+/* category fee rates + which platforms fit */
+const CATS={
+ home:{label:"Home & Kitchen",amazon:0.15,walmart:0.15,fit:["amazon","walmart"]},
+ apparel:{label:"Clothing & apparel",amazon:0.17,walmart:0.15,fit:["amazon","etsy"]},
+ electronics:{label:"Electronics accessories",amazon:0.08,walmart:0.15,fit:["amazon","walmart"]},
+ handmade:{label:"Handmade / crafts / vintage",amazon:0.15,walmart:0.15,fit:["etsy","ebay"]},
+ beauty:{label:"Beauty & personal care",amazon:0.15,walmart:0.15,fit:["amazon","walmart"]},
+ other:{label:"Something else",amazon:0.15,walmart:0.15,fit:["amazon","shopify"]}
+};
+
+function add(cls,html){const m=document.createElement("div");m.className="msg "+cls;
+ m.innerHTML=cls==="bot"?'<div class="av">⚡</div><div class="bubble">'+html+'</div>'
+ :'<div class="av">🧑</div><div class="bubble">'+html+'</div>';
+ chat.appendChild(m);window.scrollTo(0,document.body.scrollHeight);return m;}
+function typing(){const m=add("bot",'<div class="typing"><i></i><i></i><i></i></div>');return m;}
+function money(v){return "$"+v.toFixed(2);}
+
+function q1(){
+ const m=add("bot",`First — what are you selling? Pick the closest category.
+  <div class="opts">${Object.keys(CATS).map(k=>`<button data-k="${k}">${CATS[k].label}</button>`).join("")}</div>`);
+ m.querySelectorAll(".opts button").forEach(b=>b.onclick=()=>{
+  data.cat=CATS[b.dataset.k];data.catKey=b.dataset.k;
+  m.querySelectorAll(".opts").forEach(o=>o.remove());
+  add("user",b.textContent);
+  setTimeout(q2,260);});
+}
+function q2(){
+ const m=add("bot",`What's your <b>landed cost per unit</b> in dollars?
+   <small style="color:var(--muted)">Product + packaging + inbound shipping, before platform fees.</small>
+   <div class="qinput"><input id="cin" type="number" min="0" step="0.01" inputmode="decimal" placeholder="e.g. 12"><button>Next</button></div>`);
+ const go=()=>{const v=parseFloat(m.querySelector("#cin").value);if(!isFinite(v)||v<0)return;
+  data.cost=v;m.querySelector(".qinput").remove();
+  add("user",money(v));setTimeout(q3,260);};
+ m.querySelector("button").onclick=go;
+ m.querySelector("#cin").addEventListener("keydown",e=>{if(e.key==="Enter")go();});
+ setTimeout(()=>m.querySelector("#cin").focus(),50);
+}
+function q3(){
+ const m=add("bot",`How much does one unit <b>weigh</b>, in pounds?
+   <small style="color:var(--muted)">Used for Amazon FBA and Walmart fulfillment fees.</small>
+   <div class="qinput"><input id="win" type="number" min="0.01" step="0.1" inputmode="decimal" placeholder="e.g. 1"><button>Next</button></div>`);
+ const go=()=>{const v=parseFloat(m.querySelector("#win").value);if(!isFinite(v)||v<=0)return;
+  data.weight=v;m.querySelector(".qinput").remove();
+  add("user",v+" lb");setTimeout(q4,260);};
+ m.querySelector("button").onclick=go;
+ m.querySelector("#win").addEventListener("keydown",e=>{if(e.key==="Enter")go();});
+}
+function q4(){
+ const m=add("bot",`Last one — what <b>net profit margin</b> do you want?
+   <small style="color:var(--muted)">After every fee and your cost. Most sellers aim for 25–40%.</small>
+   <div class="opts">
+     <button data-v="0.20">20%</button>
+     <button data-v="0.30">30%</button>
+     <button data-v="0.40">40%</button>
+     <button data-v="0.50">50%</button>
+   </div>`);
+ m.querySelectorAll(".opts button").forEach(b=>b.onclick=()=>{
+  data.target=parseFloat(b.dataset.v);
+  m.querySelector(".opts").remove();
+  add("user",(data.target*100)+"% margin");
+  const t=typing();setTimeout(()=>{t.remove();report();},650);});
+}
+
+function report(){
+ const {cost,weight,target,cat,catKey}=data;
+ // max fee rate sanity: if target too high denominators <=0
+ let infeasible=false;
+ const rows=Object.keys(MODELS).map(k=>{
+  let r;
+  try{r=MODELS[k].solve(cost,weight,target,cat);}catch(e){r=null;}
+  if(!r||!isFinite(r.price)||r.price<=0){infeasible=true;return null;}
+  const net=r.price-r.fee-cost;
+  return {k,...r,net,margin:r.price>0?net/r.price:0};
+ });
+ if(rows.some(x=>x===null)){
+  add("bot",`That target margin is too high for these costs and fees on at least one platform — the math has no positive price. Try a lower target (20–35%) or lower your landed cost.`,);
+  restartBtn();return;
+ }
+
+ // rank: marketplaces first for sellers without ad budget; fit tag by category
+ const rankScore=x=>{
+  let s=0;
+  if(cat.fit.includes(x.k))s+=2;
+  if(x.k==="shopify")s-=1; // needs ad budget / own traffic
+  s+=x.net/40; // higher net slight edge
+  return s;
+ };
+ const ranked=[...rows].sort((a,b)=>rankScore(b)-rankScore(a));
+ const best=ranked[0].k;
+
+ let html=`<div class="report"><b>Here's your pricing plan</b> for a ${cat.label.toLowerCase()} item costing ${money(cost)}, at a ${(target*100)}% target margin:`;
+ for(const x of ranked){
+  let tagCls="t-mid",tagTxt="Option";
+  if(x.k===best){tagCls="t-best";tagTxt="Sell here first";}
+  else if(cat.fit.includes(x.k)){tagCls="t-good";tagTxt="Good fit";}
+  else if(x.k==="shopify"){tagCls="t-mid";tagTxt="Needs ad budget";}
+  html+=`<div class="platform">
+    <div class="ph"><div class="pn">${MODELS[x.k].icon} ${MODELS[x.k].name}</div><span class="tag ${tagCls}">${tagTxt}</span></div>
+    <div class="plrow"><span>Charge</span><b class="price-big">${money(x.price)}</b></div>
+    ${x.detail.map(d=>`<div class="plrow"><span>${d[0]}</span><b>${money(d[1])}</b></div>`).join("")}
+    <div class="plrow"><span>Net profit / margin</span><b style="color:var(--good)">${money(x.net)} · ${(x.margin*100).toFixed(1)}%</b></div>
+  </div>`;
+ }
+
+ // advice
+ const bestName=MODELS[best].name;
+ let advice;
+ if(best==="etsy")advice=`Start on <b>Etsy</b>: it brings its own buyers for handmade, craft and vintage goods, so you don't pay for ads while testing. List around <b>${money(ranked.find(x=>x.k==="etsy").price)}</b>, get reviews, then add your own Shopify store to keep more of each sale.`;
+ else if(best==="ebay")advice=`Start on <b>eBay</b>: strong built-in demand and no per-month commitment. Price near <b>${money(ranked.find(x=>x.k==="ebay").price)}</b>, build feedback, then expand to Amazon once you have consistent sales.`;
+ else if(best==="amazon")advice=`Start on <b>Amazon FBA</b>: Prime brings the traffic and fulfillment is handled for you. Launch around <b>${money(ranked.find(x=>x.k==="amazon").price)}</b>, watch your real ACoS, and only move to your own Shopify store once the product is proven.`;
+ else advice=`You have a workable margin. Lead with the marketplace that already has buyers for this category, prove the product, then open a Shopify store to earn the highest per-order profit.`;
+ // shopify warning
+ const sh=rows.find(x=>x.k==="shopify");
+ advice+=`<br><br>On <b>Shopify</b> you'd keep the most per order (${money(sh.net)}), but you must drive your own traffic — keep ad cost per order under roughly <b>${money(sh.net)}</b> or it flips to a loss.`;
+
+ html+=`<div class="advice"><h3>🧠 My recommendation</h3>${advice}</div>`;
+ html+=`<div class="again"><button id="restart">Start over with another product</button></div></div>`;
+ const m=add("bot",html);
+ m.querySelector("#restart").onclick=()=>{chat.innerHTML="";Object.keys(data).forEach(k=>delete data[k]);q1();};
+}
+function restartBtn(){
+ const b=document.createElement("div");b.className="again";
+ b.innerHTML='<button id="rb">Start over</button>';
+ chat.lastElementChild.querySelector(".bubble").appendChild(b);
+ b.querySelector("#rb").onclick=()=>{chat.innerHTML="";Object.keys(data).forEach(k=>delete data[k]);q1();};
+}
+
+q1();
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"SellerMath AI Pricing Copilot","url":"https://dytsk9wrfv.page.coze.site/pricing-copilot.html","inLanguage":"en","applicationCategory":"BusinessApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Guided pricing copilot: enter landed cost, weight and target margin to get the exact price to charge on Amazon FBA, eBay, Etsy, Shopify and Walmart, with fees, net profit and a recommendation on where to sell first."}
+</script>
+<div class="footlink" style="max-width:760px;margin:0 auto"><a href="/index.html">SellerMath</a> · Independent, not affiliated with the platforms. Estimates use published 2026 US rates; confirm in your dashboard.</div>
+</body>
+</html>
