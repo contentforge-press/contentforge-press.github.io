@@ -29,6 +29,10 @@ Sitemap: https://dytsk9wrfv.page.coze.site/sitemap.xml
 - [Poshmark Fee Calculator](https://dytsk9wrfv.page.coze.site/poshmark-fee-calculator.html): US Poshmark 2026 — flat $2.95 on sales under $15, 20% commission on $15 and up, calculated on item price only; the buyer pays flat-rate shipping, no listing or monthly fees.
 - [Mercari vs Poshmark Fees](https://dytsk9wrfv.page.coze.site/mercari-vs-poshmark-fees.html): Mercari 10% (on price + buyer shipping) vs Poshmark $2.95 / 20% (item price only). On fees Mercari is usually cheaper for $15+ orders, while Poshmark's larger fashion-focused audience can mean faster sales or higher prices.
 - [Depop Fee Calculator](https://dytsk9wrfv.page.coze.site/depop-fee-calculator.html): US & UK 2026 — 0% selling fee (removed in 2024); only payment processing, US 3.3% + $0.45 / UK 2.9% + £0.30 on item + shipping + tax; optional Boost is 12% of item price, charged only when a boosted listing sells (28-day window). Sellers outside US/UK still pay 10%.
+- [eBay vs Amazon Fees](https://dytsk9wrfv.page.coze.site/ebay-vs-amazon-fees.html): eBay ~13.6%+$0.30 vs Amazon 8–15% referral. For most categories at $25–$200, eBay is cheaper; Amazon's lower-rate categories (electronics 8%) can flip it. FBA fulfillment adds $3–$7+/unit.
+- [eBay vs Etsy Fees](https://dytsk9wrfv.page.coze.site/ebay-vs-etsy-fees.html): eBay ~14% all-in vs Etsy ~10–11%. Etsy is usually cheaper by 3–4 points on most sales. eBay's low-rate categories (electronics 9%, sneakers 8%) can be cheaper than Etsy.
+- [Etsy vs Amazon Handmade Fees](https://dytsk9wrfv.page.coze.site/etsy-vs-amazon-handmade.html): Etsy ~10–11% all-in vs Amazon Handmade flat 15%. Etsy is cheaper per sale; Amazon Handmade offers Prime/FBA access and waived monthly fee for approved artisans.
+- [Resale Profit Calculator](https://dytsk9wrfv.page.coze.site/resale-profit-calculator.html): Calculate exact net profit, margin, and ROI on every thrift flip. Supports eBay (13.25%), Poshmark (20%), Mercari (10%), Depop (~3.3%+processing), Etsy, and local sales with 0% fees.
 
 ## Key fee facts (2026)
 
