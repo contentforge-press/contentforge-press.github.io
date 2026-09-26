@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing Strategy Calculator 2026 – Cost-Plus, Margin, Competitive &amp; Psychological</title>
+<meta name="description" content="Free 2026 pricing strategy calculator with four modes: cost-plus markup, target margin, competitive pricing and psychological pricing. Enter your unit cost and pick a mode to see the selling price, profit, margin and markup at once.">
+<link rel="canonical" href="https://dytsk9wrfv.page.coze.site/pricing-strategy-calculator.html">
+<meta property="og:title" content="Pricing Strategy Calculator – 4 Modes in One">
+<meta property="og:description" content="Four pricing formulas, one free calculator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dytsk9wrfv.page.coze.site/pricing-strategy-calculator.html">
+<meta property="og:site_name" string="true">SellerMath">
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1f2430;--muted:#6b7280;--line:#e8eaee;
+--brand:#f1641f;--brand-d:#c94e10;--soft:#fef0e8;
+--radius:16px;--shadow:0 1px 2px rgba(20,24,40,.05),0 8px 24px rgba(20,24,40,.06);}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5;font-size:16px;overflow-x:hidden}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px;width:100%}
+header.top{background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px;letter-spacing:-.02em;white-space:nowrap}
+.logo{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,#ff924d,#f1641f);display:grid;place-items:center;color:#fff;font-size:17px;font-weight:900;flex:none}
+.top nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:600;margin-left:18px;white-space:nowrap}
+.top nav a:hover{color:var(--ink)}
+.hero{padding:34px 0 8px}
+h1{font-size:28px;line-height:1.2;letter-spacing:-.03em;margin:0 0 8px}
+.hero p{color:var(--muted);margin:0;max-width:720px}
+.pill{display:inline-block;background:var(--soft);color:var(--brand-d);font-size:12.5px;font-weight:700;padding:4px 10px;border-radius:999px;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:1fr;gap:18px;margin:22px 0 26px}
+@media(min-width:900px){.grid{grid-template-columns:1.1fr .9fr;align-items:start}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px}
+.card h2{font-size:16px;margin:0 0 14px}
+.field{margin-bottom:14px}.field:last-child{margin-bottom:0}
+.field label{display:block;font-size:13.5px;font-weight:650;margin-bottom:6px}
+.field .hint{font-weight:400;color:var(--muted);font-size:12px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.input{position:relative}
+input[type=number],select{width:100%;padding:11px 12px;font-size:16px;border:1px solid var(--line);border-radius:11px;background:#fcfcfd;min-width:0}
+.input .u{position:absolute;right:12px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:13px;font-weight:600}
+input.r{padding-right:38px}
+input:focus,select:focus{outline:2px solid #fbc6a6;border-color:var(--brand);background:#fff}
+select{appearance:none;-webkit-appearance:none}
+.mode-group{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:10px}
+.mode{cursor:pointer;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:#fcfcfd;font-size:13.5px;font-weight:600;transition:.15s}
+.mode.on{background:var(--soft);border-color:var(--brand);color:var(--brand-d)}
+.mode small{display:block;font-weight:400;color:var(--muted);font-size:11.5px;margin-top:2px}
+.mode.on small{color:var(--brand-d)}
+.metric{border:1px solid var(--line);border-radius:13px;padding:14px 16px;margin-bottom:12px}
+.metric .lab{font-size:13px;color:var(--muted);font-weight:600;margin:0 0 3px}
+.metric .val{font-size:26px;font-weight:900;letter-spacing:-.02em}
+.metric .formula{font-size:12px;color:var(--muted);margin:4px 0 0}
+.col{display:flex;justify-content:space-between;font-size:14px;padding:8px 0;border-bottom:1px dashed var(--line)}
+.col span{color:var(--muted)}.col b{font-size:14.5px}
+.note{font-size:12.5px;color:var(--muted);margin:10px 0 0}
+.section{margin:8px 0 40px}
+.section h2{font-size:20px;margin:0 0 10px;letter-spacing:-.02em}
+.section p{font-size:15px}
+.faq details{border:1px solid var(--line);border-radius:12px;background:#fff;padding:4px 14px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:650;font-size:15px;padding:9px 0;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq p{margin:0 0 12px;color:#374151;font-size:14.5px}
+.cta{background:linear-gradient(135deg,#fff4ec,#ffe3d2);border:1px solid #f6c7a8;border-radius:var(--radius);padding:20px;margin:10px 0 40px}
+.cta h2{margin:0 0 6px;font-size:18px}
+.cta p{margin:0 0 12px;color:#5b4636;font-size:14.5px}
+.btn{display:inline-block;background:var(--brand);color:#fff;font-weight:700;text-decoration:none;padding:11px 18px;border-radius:11px;font-size:15px}
+.btn:hover{background:var(--brand-d)}
+.toolsgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:8px 0 40px}
+.toolsgrid a{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:var(--ink);text-decoration:none;font-size:14px;font-weight:600}
+.toolsgrid a:hover{border-color:var(--brand);color:var(--brand-d)}
+footer{background:#fff;border-top:1px solid var(--line);padding:26px 0}
+footer p{color:var(--muted);font-size:13px;margin:0 0 10px;max-width:820px}
+footer a{color:var(--brand-d)}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="/index.html" style="text-decoration:none;color:inherit"><span class="logo">S</span> SellerMath</a>
+<nav><a href="#calculator">Calculator</a><a href="#faq">FAQ</a><a href="/tools.html">Tools</a></nav>
+</div></header>
+<main class="wrap">
+<section class="hero">
+<span class="pill">4 pricing modes in one tool</span>
+<h1>Pricing Strategy Calculator</h1>
+<p>Find a profitable selling price using the strategy that fits your situation. Pick a mode, enter your cost, and the tool shows <strong>selling price, profit, margin and markup</strong> in one view.</p>
+</section>
+
+<div class="grid" id="calculator">
+<div class="card">
+<h2>1. Choose a pricing strategy</h2>
+<div class="mode-group">
+<div class="mode on" data-m="plus">Cost-plus<small>Markup on cost</small></div>
+<div class="mode" data-m="margin">Target margin<small>Reverse from %</small></div>
+<div class="mode" data-m="comp">Competitive<small>vs market price</small></div>
+<div class="mode" data-m="psych">Psychological<small>Nearest .99</small></div>
+</div>
+<h2 style="margin-top:18px">2. Your inputs</h2>
+<div class="row2">
+<div class="field"><label>Unit cost</label>
+<div class="input"><input type="number" class="r in" id="cost" value="30"><span class="u">$</span></div></div>
+<div class="field" id="f_rate"><label id="l_rate">Markup</label>
+<div class="input"><input type="number" class="r in" id="rate" value="50"><span class="u">%</span></div></div>
+</div>
+<div class="field" id="f_comp" style="display:none"><label>Competitor price</label>
+<div class="input"><input type="number" class="r in" id="comp" value="45"><span class="u">$</span></div>
+<p class="hint" style="margin-top:4px">Positioning relative to competitor is set by the slider above (10% below &mdash; 10% above).</p>
+</div>
+<div class="field"><label>Keystone multiplier (bonus)</label>
+<div class="input"><input type="number" class="r in" id="keystone" value="2"><span class="u">&times;</span></div>
+<p class="note">Keystone (2&times;) is the classic retail rule of thumb. Use as a sanity check against your chosen strategy.</p>
+</div>
+</div>
+
+<div>
+<div class="metric">
+<p class="lab">Your selling price</p>
+<div class="val" id="o_price"></div>
+<p class="formula" id="o_formula"></p>
+</div>
+<div class="card">
+<div class="col"><span>Unit cost</span><b id="o_cost"></b></div>
+<div class="col"><span>Gross profit</span><b id="o_profit"></b></div>
+<div class="col"><span>Gross margin</span><b id="o_margin"></b></div>
+<div class="col"><span>Markup</span><b id="o_markup"></b></div>
+<div class="col"><span>Keystone sanity check</span><b id="o_keystone"></b></div>
+</div>
+</div>
+</div>
+
+<section class="section">
+<h2>The four pricing formulas</h2>
+<table class="ratetable" style="width:100%;border-collapse:collapse;font-size:14px">
+<tr style="background:#fafbfc"><th style="text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);font-size:12.5px">Mode</th><th style="text-align:right;padding:9px 10px;border-bottom:1px solid var(--line);font-size:12.5px">Formula</th></tr>
+<tr><td style="padding:9px 10px;border-bottom:1px solid var(--line)"><strong>Cost-plus</strong></td><td style="text-align:right;padding:9px 10px;border-bottom:1px solid var(--line)">Cost &times; (1 + markup%)</td></tr>
+<tr><td style="padding:9px 10px;border-bottom:1px solid var(--line)"><strong>Target margin</strong></td><td style="text-align:right;padding:9px 10px;border-bottom:1px solid var(--line)">Cost &divide; (1 &minus; margin%)</td></tr>
+<tr><td style="padding:9px 10px;border-bottom:1px solid var(--line)"><strong>Competitive</strong></td><td style="text-align:right;padding:9px 10px;border-bottom:1px solid var(--line)">Competitor price &times; (1 &plus; positioning%)</td></tr>
+<tr><td style="padding:9px 10px"><strong>Psychological</strong></td><td style="text-align:right;padding:9px 10px">Floor to nearest .99 (or .95)</td></tr>
+</table>
+<p class="note" style="margin-top:8px">Formulas reviewed against Shopify and ecommerce pricing guidance, 2026.</p>
+</section>
+
+<section class="section faq" id="faq">
+<h2>Frequently asked questions</h2>
+<details open><summary>What is the difference between markup and margin?</summary>
+<p>Markup is profit as a percentage of cost; margin is profit as a percentage of the selling price. A 50% markup gives a 33.3% margin, not 50%. The calculator shows both so you never confuse them.</p></details>
+<details><summary>When should I use target-margin pricing?</summary>
+<p>Use it when your business plan or a buyer sets a required profit margin. The calculator works backwards to give you the exact price that hits that margin.</p></details>
+<details><summary>How does competitive pricing work?</summary>
+<p>You anchor on a competitor's price and set yours relative to it. The calculator lets you price above or below the benchmark, then shows the resulting margin so you can see if the position is sustainable.</p></details>
+<details><summary>Is psychological pricing worth it?</summary>
+<p>Ending prices in .99 or .95 consistently improves conversion for consumer goods in many categories. The calculator rounds down from your target price so you keep a psychological edge while preserving margin.</p></details>
+</section>
+
+<div class="cta">
+<h2>Need help pricing your catalog?</h2>
+<p>We build custom pricing and profitability calculators for ecommerce sellers. Ask for a no-obligation quote.</p>
+<a class="btn" href="mailto:contentguard@coze.email?subject=Custom%20pricing%20calculator">Request a quote</a>
+</div>
+
+<section id="tools">
+<h2 style="font-size:18px">Related free tools</h2>
+<div class="toolsgrid">
+<a href="/markup-vs-margin-calculator.html">Markup vs Margin Calculator</a>
+<a href="/profit-margin-calculator.html">Profit Margin Calculator</a>
+<a href="/break-even-calculator.html">Break-Even Calculator</a>
+<a href="/tools.html">All tools</a>
+</div>
+</section>
+</main>
+<footer><div class="wrap">
+<p>SellerMath is an independent free-tool site. This calculator is for general estimation and <strong>is not financial advice</strong>.</p>
+<p>Formulas reviewed against Shopify ecommerce pricing guidance, 2026.</p>
+</div></footer>
+<script>
+(function(){
+var mode='plus';
+function $(id){return document.getElementById(id);}
+function n(id){return parseFloat($(id).value)||0;}
+function money(x){return '$'+x.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});}
+function pct(x){return x.toFixed(1)+'%';}
+function calc(){
+var cost=n('cost'),rate=n('rate')/100,keyst=n('keystone')||2;
+var price=cost*(1+rate);
+var formula='Cost &times; (1 + '+rate*100+'%)';
+if(mode==='margin'){
+  var margin=Math.max(0,Math.min(.99,rate));
+  price=cost/(1-margin);
+  formula='Cost &divide; (1 &minus; '+margin*100+'%)';
+}else if(mode==='comp'){
+  var comp=n('comp');
+  price=comp*(1+rate); // rate used as positioning %
+  formula='Competitor &times; (1 '+((rate*100)>=0?'+ ':'- ')+Math.abs(rate*100).toFixed(0)+'%)';
+}else if(mode==='psych'){
+  price=Math.floor(cost*(1+rate)*100-1)/100;
+  formula='Floor to .99 from cost-plus';
+}
+var profit=price-cost;
+var marginPct=price>0?profit/price:0;
+var markupPct=cost>0?profit/cost:0;
+$('o_price').textContent=money(price);
+$('o_formula').innerHTML=formula;
+$('o_cost').textContent=money(cost);
+$('o_profit').textContent=money(profit);
+$('o_margin').textContent=pct(marginPct*100);
+$('o_markup').textContent=pct(markupPct*100);
+$('o_keystone').textContent=money(cost*keyst)+' ('+keyst+'&times; cost)';
+}
+document.querySelectorAll('.mode').forEach(function(m){
+  m.addEventListener('click',function(){
+    document.querySelectorAll('.mode').forEach(x=>x.classList.remove('on'));
+    m.classList.add('on');
+    mode=m.getAttribute('data-m');
+    if(mode==='plus'||mode==='psych'){
+      $('l_rate').textContent='Markup';$('rate').value=50;
+    }else if(mode==='margin'){
+      $('l_rate').textContent='Target margin';$('rate').value=40;
+    }else if(mode==='comp'){
+      $('l_rate').textContent='Positioning';$('rate').value=0;
+    }
+    calc();
+  });
+});
+document.querySelectorAll('.in').forEach(function(el){el.addEventListener('input',calc);el.addEventListener('change',calc);});
+calc();
+})();
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Pricing Strategy Calculator","url":"https://dytsk9wrfv.page.coze.site/pricing-strategy-calculator.html","applicationCategory":"BusinessApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Four-mode pricing calculator: cost-plus, target margin, competitive, psychological pricing with margin and markup output."}
+</script>
+</body>
+</html>
