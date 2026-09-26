@@ -27,9 +27,9 @@ jobs:
             sleep 3
           done
           echo "ARCHIVE SUMMARY ok=${ok} fail=${fail} (failures retry on next run)"
-      - name: Health check live site + mirror
+      - name: Health check live site + mirrors
         run: |
-          for base in https://dytsk9wrfv.page.coze.site https://contentforge-press.github.io; do
+          for base in https://dytsk9wrfv.page.coze.site https://contentforge-press.github.io https://sellermath-tools.surge.sh; do
             for p in index tools amazon-fba-calculator depop-fee-calculator sales-tax-by-state california-sales-tax-calculator; do
               code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "${base}/${p}.html")
               echo "health ${base##*/}/${p}.html -> ${code}"
