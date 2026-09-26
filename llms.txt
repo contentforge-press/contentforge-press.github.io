@@ -49,6 +49,7 @@ Sitemap: https://dytsk9wrfv.page.coze.site/sitemap.xml
 - [Poshmark vs Depop Fees](https://dytsk9wrfv.page.coze.site/poshmark-vs-depop-fees.html): Poshmark $2.95/20% vs Depop 0% commission, payment only (US 3.3%+$0.45 / UK 2.9%+£0.30); US/UK toggle.
 - [Whatnot vs eBay Fees](https://dytsk9wrfv.page.coze.site/whatnot-vs-ebay-fees.html): Whatnot 8% (electronics 5%, coins 4%) + 2.9%+$0.30 with 0% commission above $1,500 vs eBay ~13.25%+$0.30.
 - [StockX vs GOAT Fees](https://dytsk9wrfv.page.coze.site/stockx-vs-goat-fees.html): Sneaker/streetwear resale — StockX 7–9% by seller level + 3% payment + $5 minimum vs GOAT 9.5–25% by seller rating + $5 fee + 2.9% cashout (free to GOAT credit); near-identical for new sellers.
+- [Walmart Marketplace Fee Calculator](https://dytsk9wrfv.page.coze.site/walmart-fee-calculator.html): 2026 referral fee by category (5–15%, price/tier based) with WFS fulfillment ($3.45 ≤1 lb up to big & bulky), storage, and net profit, margin, ROI and break-even. No setup, monthly or hidden fees; new sellers can get 20% off referral fees on the first $50K GMV.
 
 ## Key fee facts (2026)
 
