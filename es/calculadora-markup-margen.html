@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Markup vs Margen 2026 – Convierte Markup a Margen y Fija el Precio</title>
+<meta name="description" content="Calculadora gratis 2026 de markup vs margen. Introduce tu costo más el markup o el margen que deseas y obtén al instante el precio de venta, la ganancia y la conversión exacta. Un markup del 50% no es un margen del 50%.">
+<link rel="canonical" href="https://dytsk9wrfv.page.coze.site/es/calculadora-markup-margen.html">
+<meta property="og:title" content="Calculadora de Markup vs Margen 2026">
+<meta property="og:description" content="Convierte markup a margen, fija tu precio según un margen objetivo y evita el error clásico de precios.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dytsk9wrfv.page.coze.site/es/calculadora-markup-margen.html">
+<meta property="og:site_name" content="SellerMath">
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1f2430;--muted:#6b7280;--line:#e8eaee;
+--brand:#f1641f;--brand-d:#c94e10;--good:#0f9d58;--soft:#fef0e8;
+--radius:16px;--shadow:0 1px 2px rgba(20,24,40,.05),0 8px 24px rgba(20,24,40,.06);}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5;font-size:16px;overflow-x:hidden}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px;width:100%}
+header.top{background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px;letter-spacing:-.02em;white:nowrap}
+.logo{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,#ff924d,#f1641f);display:grid;place-items:center;color:#fff;font-size:17px;font-weight:900;flex:none}
+.top nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:600;margin-left:18px;white:nowrap}
+.top nav a:hover{color:var(--ink)}
+.hero{padding:34px 0 8px}
+h1{font-size:28px;line-height:1.2;letter-spacing:-.03em;margin:0 0 8px}
+.hero p{color:var(--muted);margin:0;font-size:16px;max-width:700px}
+.pill{display:inline-block;background:var(--soft);color:var(--brand-d);font-size:12.5px;font-weight:700;padding:4px 10px;border-radius:999px;margin-bottom:12px}
+.tabs{display:flex;gap:8px;margin:22px 0 14px;flex-wrap:wrap}
+.tab{padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:#fff;font-weight:700;font-size:14px;color:var(--muted);cursor:pointer}
+.tab.active{background:var(--brand);border-color:var(--brand);color:#fff}
+.panel{display:none}.panel.active{display:block}
+.grid{display:grid;grid-template-columns:1fr;gap:18px;margin:0 0 26px}
+@media(min-width:860px){.grid{grid-template-columns:1.05fr .95fr;align-items:start}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px}
+.card h2{font-size:16px;margin:0 0 14px;letter-spacing:-.01em}
+.field{margin-bottom:13px}.field:last-child{margin-bottom:0}
+.field label{display:block;font-size:13.5px;font-weight:650;margin-bottom:6px}
+.input{position:relative}
+input[type=number]{width:100%;padding:11px 12px;font-size:16px;border:1px solid var(--line);border-radius:11px;background:#fcfcfd;color:var(--ink);min-width:0}
+.input .u{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--muted);font-weight:600;font-size:15px}
+input.unit{padding-left:28px}
+.input .u2{position:absolute;right:12px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:13px;font-weight:600}
+input:focus{outline:2px solid #fbc6a6;border-color:var(--brand);background:#fff}
+.result .rline{display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+.result .rline span{color:var(--muted)}
+.result .rline b{font-size:16px}
+.result .rline b.hl{color:var(--brand-d)}
+.result .rline.total{border-bottom:none;margin-top:4px;padding-top:12px;border-top:2px solid var(--ink)}
+.result .rline.total b{font-size:21px}
+.small{font-size:13px}
+.section{margin:8px 0 40px}
+.section h2{font-size:20px;margin:0 0 10px;letter-spacing:-.02em}
+.section p{font-size:15px}
+.formula{background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:14.5px;margin:8px 0}
+.reftable{width:100%;border-collapse:collapse;font-size:14.5px;margin:6px 0 0}
+.reftable th,.reftable td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+.reftable th{background:#fafbfc;font-size:12.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.reftable td:last-child,.reftable th:last-child{text-align:right}
+.faq details{border:1px solid var(--line);border-radius:12px;background:#fff;padding:4px 14px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:650;font-size:15px;padding:9px 0;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq p{margin:0 0 12px;color:#374151;font-size:14.5px}
+.cta{background:linear-gradient(135deg,#fff4ec,#ffe3d2);border:1px solid #f6c7a8;border-radius:var(--radius);padding:20px;margin:10px 0 40px}
+.cta h2{margin:0 0 6px;font-size:18px}
+.cta p{margin:0 0 12px;color:#5b4636;font-size:14.5px}
+.btn{display:inline-block;background:var(--brand);color:#fff;font-weight:700;text-decoration:none;padding:11px 18px;border-radius:11px;font-size:15px}
+.btn:hover{background:var(--brand-d)}
+.toolsgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px;margin:8px 0 40px}
+.toolsgrid a{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:var(--ink);text-decoration:none;font-size:14px;font-weight:600}
+.toolsgrid a:hover{border-color:var(--brand);color:var(--brand-d)}
+footer{background:#fff;border-top:1px solid var(--line);padding:26px 0}
+footer p{color:var(--muted);font-size:13px;margin:0 0 10px;max-width:820px}
+footer a{color:var(--brand-d)}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/es/index.html" style="text-decoration:none;color:inherit"><span class="logo">S</span> SellerMath</a>
+    <nav><a href="#calculadora">Calculadora</a><a href="#faq">Preguntas</a><a href="/es/index.html">Inicio</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <span class="pill">2026 &middot; fundamentos de precios</span>
+    <h1>Calculadora de Markup vs Margen</h1>
+    <p>El markup es la ganancia medida sobre el <strong>costo</strong>; el margen es esa misma ganancia medida sobre el <strong>precio de venta</strong>. Un markup del 50% es solo un margen del 33,3%. Elige un modo, introduce tus números y obtén el precio correcto.</p>
+  </section>
+
+  <div class="tabs" id="calculadora">
+    <button class="tab active" data-t="pormarkup">Por markup</button>
+    <button class="tab" data-t="pormargen">Por margen objetivo</button>
+    <button class="tab" data-t="porprecio">Por un precio</button>
+  </div>
+
+  <div class="panel active" id="pormarkup">
+    <div class="grid">
+      <div class="card">
+        <h2>Conozco mi costo y mi markup</h2>
+        <div class="field"><label>Costo unitario</label>
+          <div class="input"><span class="u">$</span><input type="number" class="unit mk" id="mk_cost" value="40"></div></div>
+        <div class="field"><label>Markup sobre el costo</label>
+          <div class="input"><input type="number" class="mk" id="mk_pct" value="50"><span class="u2">%</span></div></div>
+      </div>
+      <div class="card result">
+        <div class="rline"><span>Precio de venta</span><b id="mk_price"></b></div>
+        <div class="rline"><span>Ganancia</span><b id="mk_profit"></b></div>
+        <div class="rline total"><span>Margen resultante</span><b id="mk_margin" class="hl"></b></div>
+        <p class="small" style="margin:12px 0 0;color:var(--muted)">Un markup de <b id="mk_lblpct">50%</b> produce un margen de <b id="mk_lblmargin"></b> — no del 50%.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" id="pormargen">
+    <div class="grid">
+      <div class="card">
+        <h2>Quiero un margen objetivo</h2>
+        <div class="field"><label>Costo unitario</label>
+          <div class="input"><span class="u">$</span><input type="number" class="unit mg" id="mg_cost" value="40"></div></div>
+        <div class="field"><label>Margen bruto objetivo</label>
+          <div class="input"><input type="number" class="mg" id="mg_pct" value="40"><span class="u2">%</span></div></div>
+      </div>
+      <div class="card result">
+        <div class="rline"><span>Precio de venta necesario</span><b id="mg_price"></b></div>
+        <div class="rline"><span>Ganancia</span><b id="mg_profit"></b></div>
+        <div class="rline total"><span>Markup que debes aplicar</span><b id="mg_markup" class="hl"></b></div>
+        <p class="small" style="margin:12px 0 0;color:var(--muted)">Para lograr un margen del <b id="mg_lbl">40%</b> sobre un costo de $40, fija un precio de <b id="mg_lblprice"></b>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" id="porprecio">
+    <div class="grid">
+      <div class="card">
+        <h2>Ya tengo costo y precio</h2>
+        <div class="field"><label>Costo unitario</label>
+          <div class="input"><span class="u">$</span><input type="number" class="unit pr" id="pr_cost" value="40"></div></div>
+        <div class="field"><label>Precio de venta</label>
+          <div class="input"><span class="u">$</span><input type="number" class="unit pr" id="pr_price" value="60"></div></div>
+      </div>
+      <div class="card result">
+        <div class="rline"><span>Ganancia</span><b id="pr_profit"></b></div>
+        <div class="rline"><span>Markup</span><b id="pr_markup"></b></div>
+        <div class="rline total"><span>Margen</span><b id="pr_margin" class="hl"></b></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <h2>Las fórmulas</h2>
+    <div class="formula">Markup % = (Precio − Costo) / Costo × 100<br>Margen % = (Precio − Costo) / Precio × 100</div>
+    <div class="formula">Margen = Markup / (1 + Markup)<br>Markup = Margen / (1 − Margen)</div>
+    <p>El numerador es idéntico: la ganancia en dinero. Solo cambia el denominador, por eso el markup y el margen nunca son el mismo número en una venta rentable. El margen siempre es el porcentaje menor.</p>
+  </section>
+
+  <section class="section">
+    <h2>Tabla rápida de markup a margen</h2>
+    <table class="reftable">
+      <tr><th>Markup</th><th>Margen</th></tr>
+      <tr><td>20%</td><td>16,7%</td></tr>
+      <tr><td>30%</td><td>23,1%</td></tr>
+      <tr><td>50%</td><td>33,3%</td></tr>
+      <tr><td>75%</td><td>42,9%</td></tr>
+      <tr><td>100%</td><td>50,0%</td></tr>
+    </table>
+  </section>
+
+  <section class="section faq" id="faq">
+    <h2>Preguntas frecuentes</h2>
+    <details open><summary>¿Un markup del 50% es lo mismo que un margen del 50%?</summary>
+      <p>No. Con un costo de $40, un markup del 50% fija un precio de $60 y una ganancia de $20. Esos $20 son el 33,3% del precio de $60, así que el margen es del 33,3%, no del 50%.</p></details>
+    <details><summary>¿Cómo convierto markup a margen?</summary>
+      <p>Usa margen = markup ÷ (1 + markup). En porcentajes, markup del 50% → 0,50 ÷ 1,50 = 0,333 = margen del 33,3%.</p></details>
+    <details><summary>¿Qué markup me da un margen del 40%?</summary>
+      <p>Usa markup = margen ÷ (1 − margen): 0,40 ÷ 0,60 = 0,667, así que necesitas un markup de aproximadamente el 66,7%. Sobre un costo de $40 eso significa un precio de $66,67.</p></details>
+    <details><summary>¿Cuál debo usar para fijar precios?</summary>
+      <p>El margen es el dato más seguro para gestionar la rentabilidad porque muestra directamente cuánto conservas de cada dólar vendido. Solo asegúrate de tener claro a cuál te refieres cuando hables de un porcentaje objetivo.</p></details>
+  </section>
+
+  <div class="cta">
+    <h2>¿Necesitas una calculadora de precios para tu tienda?</h2>
+    <p>Creamos calculadoras personalizadas de markup, margen y ganancia adaptadas a tus productos y comisiones. Pide un presupuesto sin compromiso.</p>
+    <a class="btn" href="mailto:contentguard@coze.email?subject=Calculadora%20de%20precios%20personalizada">Solicitar presupuesto</a>
+  </div>
+
+  <section id="relacionadas">
+    <h2 style="font-size:18px">Herramientas gratis relacionadas</h2>
+    <div class="toolsgrid">
+      <a href="/es/calculadora-margen-beneficio.html">Calculadora de Margen de Beneficio</a>
+      <a href="/es/index.html">Todas las herramientas</a>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p>SellerMath es un sitio independiente de herramientas gratis. Esta calculadora es solo una estimación general y <strong>no constituye asesoría financiera</strong>.</p>
+    <p>Fórmulas según la contabilidad estándar de costos y precios. Revisado: septiembre de 2026.</p>
+  </div>
+</footer>
+<script>
+(function(){
+  function $(id){return document.getElementById(id);}
+  function money(n){return '$'+n.toLocaleString('es-ES',{minimumFractionDigits:2,maximumFractionDigits:2});}
+  function num(id){return parseFloat($(id).value)||0;}
+  var tabs=document.querySelectorAll('.tab');
+  tabs.forEach(function(t){t.addEventListener('click',function(){
+    tabs.forEach(function(x){x.classList.remove('active');});
+    t.classList.add('active');
+    document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active');});
+    $(t.getAttribute('data-t')).classList.add('active');
+  });});
+  function fromMarkup(){
+    var cost=num('mk_cost'),m=num('mk_pct')/100;
+    var price=cost*(1+m), profit=price-cost, margin=price>0?profit/price*100:0;
+    $('mk_price').textContent=money(price);
+    $('mk_profit').textContent=money(profit);
+    $('mk_margin').textContent=margin.toFixed(1).replace('.',',')+'%';
+    $('mk_lblpct').textContent=num('mk_pct').toFixed(0)+'%';
+    $('mk_lblmargin').textContent=margin.toFixed(1).replace('.',',')+'%';
+  }
+  function fromMargin(){
+    var cost=num('mg_cost'),g=num('mg_pct')/100;
+    var price=g<1?cost/(1-g):0, profit=price-cost, markup=cost>0?profit/cost*100:0;
+    $('mg_price').textContent=money(price);
+    $('mg_profit').textContent=money(profit);
+    $('mg_markup').textContent=markup.toFixed(1).replace('.',',')+'%';
+    $('mg_lbl').textContent=num('mg_pct').toFixed(0)+'%';
+    $('mg_lblprice').textContent=money(price);
+  }
+  function fromPrice(){
+    var cost=num('pr_cost'),price=num('pr_price');
+    var profit=price-cost, markup=cost>0?profit/cost*100:0, margin=price>0?profit/price*100:0;
+    $('pr_profit').textContent=money(profit);
+    $('pr_markup').textContent=markup.toFixed(1).replace('.',',')+'%';
+    $('pr_margin').textContent=margin.toFixed(1).replace('.',',')+'%';
+  }
+  document.querySelectorAll('.mk').forEach(function(el){el.addEventListener('input',fromMarkup);});
+  document.querySelectorAll('.mg').forEach(function(el){el.addEventListener('input',fromMargin);});
+  document.querySelectorAll('.pr').forEach(function(el){el.addEventListener('input',fromPrice);});
+  fromMarkup();fromMargin();fromPrice();
+})();
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Markup vs Margen","url":"https://dytsk9wrfv.page.coze.site/es/calculadora-markup-margen.html","inLanguage":"es","applicationCategory":"BusinessApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Convierte entre markup y margen y fija el precio de venta a partir de un margen objetivo."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"¿Un markup del 50% es lo mismo que un margen del 50%?","acceptedAnswer":{"@type":"Answer","text":"No. Con un costo de $40, un markup del 50% da un precio de $60 y una ganancia de $20, que es el 33,3% del precio: el margen es del 33,3%."}},
+{"@type":"Question","name":"¿Cómo convierto markup a margen?","acceptedAnswer":{"@type":"Answer","text":"Margen = markup ÷ (1 + markup). Un markup del 50% equivale a 0,50 ÷ 1,50 = 33,3% de margen."}}
+]}
+</script>
+</body>
+</html>
