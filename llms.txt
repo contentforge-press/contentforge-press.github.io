@@ -53,6 +53,11 @@ Sitemap: https://dytsk9wrfv.page.coze.site/sitemap.xml
 - [StockX vs GOAT Fees](https://dytsk9wrfv.page.coze.site/stockx-vs-goat-fees.html): Sneaker/streetwear resale — StockX 7–9% by seller level + 3% payment + $5 minimum vs GOAT 9.5–25% by seller rating + $5 fee + 2.9% cashout (free to GOAT credit); near-identical for new sellers.
 - [Walmart Marketplace Fee Calculator](https://dytsk9wrfv.page.coze.site/walmart-fee-calculator.html): 2026 referral fee by category (5–15%, price/tier based) with WFS fulfillment ($3.45 ≤1 lb up to big & bulky), storage, and net profit, margin, ROI and break-even. No setup, monthly or hidden fees; new sellers can get 20% off referral fees on the first $50K GMV.
 
+- [Facebook Marketplace Fee Calculator](https://dytsk9wrfv.page.coze.site/facebook-marketplace-fee-calculator.html): 2026 Facebook Marketplace fees — 10% on shipped checkout sales ($0.80 minimum), 0% on local pickup (the only major platform with zero local fees). Shows fee, payout, profit and effective rate for both methods.
+- [Square Fee Calculator](https://dytsk9wrfv.page.coze.site/square-calculator.html): Square 2026 processing fees by plan and payment type — Free (in-person 2.6%+15¢, online 3.3%+30¢), Plus $49/mo (2.5%+15¢ in-person), Premium $149/mo (2.4%+15¢ in-person). Manual entry 3.5%+15¢, ACH 1%.
+- [Walmart vs Amazon Fees](https://dytsk9wrfv.page.coze.site/walmart-vs-amazon-fees.html): Side-by-side comparison of Walmart Marketplace + WFS vs Amazon FBA for 2026. Referral fees, fulfillment costs, monthly subscriptions, storage — with a live calculator showing which is cheaper at your price point.
+- [Etsy Profit Calculator](https://dytsk9wrfv.page.coze.site/etsy-profit-calculator.html): Exact Etsy profit after all 2026 fees — $0.20 listing, 6.5% transaction, 3%+$0.25 payment processing, 0.30%+$0.02 regulatory operating, optional Offsite Ads (15%/12%). Shows net profit, margin, and the price needed for $1 profit.
+
 ## Key fee facts (2026)
 
 - Etsy: $0.20 listing fee; 6.5% transaction fee; US payment processing 3% + $0.25; Offsite Ads 15% (12% over $10k in 12 months).
@@ -61,6 +66,7 @@ Sitemap: https://dytsk9wrfv.page.coze.site/sitemap.xml
 - Shopify: Basic $27/mo; card rate 2.9% + $0.30; third-party gateways add 2%.
 - TikTok Shop US: 6% referral for most categories; no separate payment fee.
 - PayPal US: Checkout 3.49% + $0.49; international +1.5%.
+- Square: Free plan 2.6%+15¢ in-person, 3.3%+30¢ online; Plus $49/mo 2.5%+15¢ in-person; Premium $149/mo 2.4%+15¢ in-person.
 - Stripe US: 2.9% + $0.30; international +1.5%; FX +1%.
 - Mercari US: flat 10% of item price + buyer-paid shipping; no seller payment fee (since Jan 6, 2025); buyer pays 3.6% protection fee.
 - Poshmark US: $2.95 flat under $15; 20% on $15+, item price only; buyer pays shipping.
