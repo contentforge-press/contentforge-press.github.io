@@ -128,8 +128,10 @@ footer a{color:var(--mut)}
 <h2>More free calculators</h2>
 <div class="more">
 <a href="/index.html">Etsy Fee Calculator</a>
+<a href="/etsy-profit-calculator.html">Etsy Profit Calculator</a>
 <a href="/shopify-calculator.html">Shopify Calculator</a>
 <a href="/etsy-vs-ebay-fees.html">Etsy vs eBay</a>
+<a href="/etsy-vs-amazon-handmade.html">Etsy vs Amazon Handmade</a>
 <a href="/tools.html">All tools</a>
 </div>
 
@@ -168,6 +170,9 @@ function run(){
 }
 ['price','orders','cogs','plan'].forEach(function(id){var el=$(id);el.addEventListener('input',run);el.addEventListener('change',run)});
 run();
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is it cheaper to sell on Etsy or Shopify in 2026?", "acceptedAnswer": {"@type": "Answer", "text": "On a pure fee basis, Shopify Basic becomes cheaper per sale once volume is high enough that the lower payment percentage offsets the $27 subscription. At a handful of orders a month, Etsy's no-monthly-fee model is cheaper. Enter your real volume to see the exact point."}}, {"@type": "Question", "name": "What is the break-even order count?", "acceptedAnswer": {"@type": "Answer", "text": "It is the number of monthly orders where Shopify's per-order savings exactly equal its subscription fee. With a $40 item it is typically in the low dozens of orders for Basic; use the calculator for your price."}}, {"@type": "Question", "name": "Does Shopify include hosting and a website?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — the subscription includes hosting, your storefront, SSL and the website builder. Etsy gives you a shop page inside its marketplace but not a standalone site."}}, {"@type": "Question", "name": "Are there extra Shopify fees?", "acceptedAnswer": {"@type": "Answer", "text": "If you use a third-party payment gateway instead of Shopify Payments, an additional 2% / 1% / 0.6% applies by plan. Apps and themes may also cost extra; the calculator assumes Shopify Payments and no paid apps."}}, {"@type": "Question", "name": "Can I use both Etsy and Shopify?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, a common path is to validate products and learn what sells on Etsy, then open a Shopify store to build an owned brand and capture repeat customers, linking the two over time."}}]}
 </script>
 </body>
 </html>
