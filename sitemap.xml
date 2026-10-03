@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://contentforge-press.github.io/3pl-pick-pack-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/3pl-storage-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/abandoned-cart-recovery-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/abc-inventory-analysis-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/acos-calculator-2026.html</loc></url>
@@ -10,26 +11,87 @@
   <url><loc>https://contentforge-press.github.io/ad-budget-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ad-cpm-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ad-frequency-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ad-spend-to-revenue-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/adyen-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/affirm-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/afterpay-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/air-freight-cost-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/alabama-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/alaska-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/alibaba-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/alibaba-supplier-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/alibaba-supplier-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/alibaba-supplier-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/alibaba-supplier-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/alibaba-supplier-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/alibaba-supplier-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/aliexpress-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/aliexpress-seller-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/aliexpress-seller-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/aliexpress-seller-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/aliexpress-seller-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/aliexpress-seller-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/aliexpress-seller-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/aliexpress-vs-temu-fees.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-au-referral-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-ca-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-ca-referral-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-de-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-de-referral-fee-clothing.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-de-referral-fee-electronics.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-de-seller-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-de-seller-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-de-seller-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-de-seller-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-de-seller-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-de-seller-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-dsp-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-ebay-etsy-fee-comparison-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-fba-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-fba-fee-calculator-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-100-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-1000-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-10000-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-12-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-120-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-1200-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-12000-dollar-item.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-15-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-150-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-1500-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-18-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-180-dollar-item.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-20-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-200-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-2000-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-220-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-25-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-250-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-25000-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-280-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-3-dollar-item.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-30-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-3000-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-35-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-350-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-400-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-45-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-5-dollar-item.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-50-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-500-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-5000-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-60-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-600-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-7-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-75-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-750-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-8-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-8000-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-85-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-9-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-90-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-900-dollar-item.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-fba-fees-on-95-dollar-item.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-fba-fees-small-item-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-fba-removal-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-fba-storage-fee-calculator.html</loc></url>
@@ -43,18 +105,45 @@
   <url><loc>https://contentforge-press.github.io/amazon-mx-referral-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-ppc-budget-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-pricing-calculator-2026.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-appliances-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-arts-crafts-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-automotive-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-baby-products-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-referral-fee-beauty-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-referral-fee-books-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-business-industrial-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-referral-fee-by-category-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-camera-photo-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-referral-fee-categories-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-referral-fee-clothing-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-collectibles-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-computers-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-diapers-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-digital-music-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-referral-fee-electronics-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-referral-fee-furniture-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-referral-fee-grocery-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-handmade-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-health-personal-care-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-home-garden-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-referral-fee-jewelry-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-kindle-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-lawn-garden-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-luggage-travel-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-musical-instruments-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-office-products-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-outdoors-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-pc-games-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-referral-fee-pet-products-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-referral-fee-shoes-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-shoes-handbags-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-software-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-sporting-goods-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-tools-home-improvement-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-referral-fee-toys-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-toys-games-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-video-games-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-referral-fee-watches-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-seller-central-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-sg-referral-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-uk-fee-calculator.html</loc></url>
@@ -62,18 +151,27 @@
   <url><loc>https://contentforge-press.github.io/amazon-uk-referral-fee-books.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-uk-referral-fee-clothing.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-uk-referral-fee-electronics.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-uk-seller-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-uk-seller-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-uk-seller-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-uk-seller-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-uk-seller-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-uk-seller-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-vs-etsy-fees.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/amazon-vs-shopify-fee-comparison-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-vs-shopify-fee-comparison.html</loc></url>
   <url><loc>https://contentforge-press.github.io/amazon-vs-walmart-fee-comparison.html</loc></url>
   <url><loc>https://contentforge-press.github.io/anchor-pricing-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/aov-boost-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/apple-app-store-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/apple-pay-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/arbitrage-profit-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/argentina-import-duty-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/argentina-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/arizona-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/arkansas-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/arpa-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/arpu-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/arr-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/atlanta-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/australia-gst-calculator.html</loc></url>
@@ -83,20 +181,25 @@
   <url><loc>https://contentforge-press.github.io/belgium-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/best-buy-marketplace-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/bigcommerce-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/bigcommerce-monthly-cost-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/blended-cac-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/bonanza-fee-calculator-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/bonanza-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/brazil-icms-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/brazil-import-duty-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/break-even-calculator-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/break-even-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/break-even-point-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/break-even-roas-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/budget-allocation-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/bulgaria-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/bundle-pricing-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/burn-rate-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/business-loan-emi-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/business-profit-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/cac-payback-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/california-sales-tax-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/campaign-budget-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/canada-gst-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/canada-hst-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/canada-import-duty-calculator.html</loc></url>
@@ -115,20 +218,29 @@
   <url><loc>https://contentforge-press.github.io/chile-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/china-import-duty-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/churn-rate-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/clearpay-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/cogs-calculator-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/cogs-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/colombia-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/colorado-sales-tax-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/commission-calculator-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/competitor-price-comparison-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/compound-interest-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/connecticut-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/container-loading-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/contractor-rate-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/contribution-margin-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/conversion-rate-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/cost-plus-pricing-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/coupang-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/coupon-redemption-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/cpc-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/creative-market-seller-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/creative-market-seller-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/creative-market-seller-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/creative-market-seller-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/creative-market-seller-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/creative-market-seller-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/credits.html</loc></url>
   <url><loc>https://contentforge-press.github.io/croatia-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/cross-border-return-calculator.html</loc></url>
@@ -137,21 +249,33 @@
   <url><loc>https://contentforge-press.github.io/currency-converter.html</loc></url>
   <url><loc>https://contentforge-press.github.io/customer-acquisition-cost-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/customer-health-score-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/customer-lifetime-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/customer-refund-rate-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/customer-retention-rate-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/customs-bond-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/customs-bond-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/cyprus-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/czech-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/days-of-inventory-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ddp-ddu-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ddp-duty-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/dead-stock-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/delaware-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/denmark-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/denver-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/depop-fee-calculator-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/depop-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/depop-seller-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/depop-seller-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/depop-seller-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/depop-seller-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/depop-seller-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/depop-seller-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/depop-uk-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/dimensional-weight-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/discount-rate-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/district-of-columbia-sales-tax-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/domain-renewal-cost-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/dropshipping-fee-calculator-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/dropshipping-margin-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/dropshipping-pricing-calculator.html</loc></url>
@@ -164,21 +288,75 @@
   <url><loc>https://contentforge-press.github.io/ebay-category-fee-clothing-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-category-fee-electronics-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-category-fee-sneakers-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-clothing-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-coins-paper-money-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-de-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-electronics-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-fee-calculator-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-fees-on-10-dollar-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-fees-on-100-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-100-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-fees-on-1000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-1000-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-10000-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-12-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-120-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-1200-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-12000-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-15-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-150-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-1500-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-18-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-180-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-20-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-200-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-2000-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-220-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-fees-on-25-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-25-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-250-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-25000-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-280-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-3-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-3000-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-35-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-350-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-400-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-45-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-5-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-fees-on-50-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-50-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-fees-on-500-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-500-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-5000-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-60-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-600-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-7-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-75-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-750-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-8-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-8000-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-85-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-9-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-90-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-900-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-fees-on-95-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-final-value-fee-2026.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-germany-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-insertion-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-media-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-motors-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-pricing-calculator-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-shoes-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-store-subscription-worth-it.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-uk-clothing-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-uk-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-uk-seller-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-uk-seller-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-uk-seller-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-uk-seller-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-uk-seller-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ebay-uk-seller-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-vs-amazon-fee-comparison.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-vs-amazon-fees.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-vs-bonanza-fees.html</loc></url>
@@ -186,6 +364,8 @@
   <url><loc>https://contentforge-press.github.io/ebay-vs-etsy-fee-comparison.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ebay-vs-etsy-fees.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ecommerce-conversion-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ecommerce-sales-tax-nexus-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/economic-order-quantity-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/egypt-import-duty-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/egypt-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/email-marketing-roi-calculator.html</loc></url>
@@ -201,15 +381,59 @@
   <url><loc>https://contentforge-press.github.io/etsy-fee-calculator-uk.html</loc></url>
   <url><loc>https://contentforge-press.github.io/etsy-fees-on-10-dollar-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/etsy-fees-on-100-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-100-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-1000-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-10000-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-12-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-120-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-1200-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-12000-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-15-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-150-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-1500-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-18-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-180-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-20-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/etsy-fees-on-200-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-200-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-2000-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-220-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/etsy-fees-on-25-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-25-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-250-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-25000-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-280-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-3-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-3000-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-35-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-350-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-400-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-45-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-5-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/etsy-fees-on-50-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-50-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-500-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-5000-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-60-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-600-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-7-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-75-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-750-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-8-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-8000-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-85-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-9-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-90-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-900-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-fees-on-95-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/etsy-france-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/etsy-germany-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/etsy-offsite-ads-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/etsy-offsite-ads-fee-explained.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-payment-processing-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/etsy-pricing-calculator-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/etsy-profit-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/etsy-shipping-profit-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/etsy-uk-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/etsy-vs-amazon-handmade-fees.html</loc></url>
   <url><loc>https://contentforge-press.github.io/etsy-vs-amazon-handmade.html</loc></url>
@@ -221,6 +445,7 @@
   <url><loc>https://contentforge-press.github.io/eu-import-duty-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/exchange-rate-margin-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/expansion-mrr-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/expansion-revenue-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/facebook-ads-cost-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/facebook-marketplace-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/facebook-roas-calculator.html</loc></url>
@@ -228,47 +453,88 @@
   <url><loc>https://contentforge-press.github.io/farfetch-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/fba-long-term-storage-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/fba-monthly-storage-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/fba-removal-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/fba-vs-fbm-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/fba-vs-fbm-fee-comparison.html</loc></url>
   <url><loc>https://contentforge-press.github.io/fbm-vs-3pl-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/fcl-shipping-cost-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/fee-aware-pricing-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/fill-rate-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/finland-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/fiverr-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/fiverr-seller-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/fiverr-seller-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/fiverr-seller-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/fiverr-seller-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/fiverr-seller-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/fiverr-seller-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/flip-profit-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/flipkart-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/florida-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/france-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/free-shipping-threshold-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/free-trial-conversion-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/freelance-profit-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/freelancer-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/freight-class-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/freight-forwarder-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/fuel-surcharge-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/fulfillment-cost-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/georgia-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/germany-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/goat-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/goat-seller-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/goat-seller-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/goat-seller-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/goat-seller-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/goat-seller-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/goat-seller-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/google-ads-cost-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/google-pay-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/google-play-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/google-shopping-roi-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/grailed-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/grailed-seller-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/grailed-seller-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/grailed-seller-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/grailed-seller-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/grailed-seller-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/grailed-seller-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/greece-vat-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/gross-margin-calculator-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/gross-margin-ratio-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/gross-merchandise-value-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/gross-profit-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/gross-revenue-retention-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/groundtruth.html</loc></url>
   <url><loc>https://contentforge-press.github.io/grr-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/gst-inclusive-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/gt-privacy.html</loc></url>
   <url><loc>https://contentforge-press.github.io/gt-refund.html</loc></url>
   <url><loc>https://contentforge-press.github.io/gt-terms.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/gumroad-creator-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/gumroad-creator-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/gumroad-creator-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/gumroad-creator-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/gumroad-creator-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/gumroad-creator-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/gumroad-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/hawaii-sales-tax-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/hmf-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/houston-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/how-much-does-shopify-cost.html</loc></url>
   <url><loc>https://contentforge-press.github.io/hts-code-lookup-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/hungary-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/idaho-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/illinois-sales-tax-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/import-duty-australia-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/import-duty-brazil-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/import-duty-canada-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/import-duty-france-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/import-duty-indonesia-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/import-duty-malaysia-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/import-duty-uk-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/independent-contractor-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/india-gst-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/india-import-duty-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/indiana-sales-tax-calculator.html</loc></url>
@@ -283,18 +549,40 @@
   <url><loc>https://contentforge-press.github.io/iowa-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ireland-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/italy-vat-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/itchio-developer-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/itchio-developer-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/itchio-developer-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/itchio-developer-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/itchio-developer-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/itchio-developer-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/japan-consumption-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/japan-import-duty-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/jumia-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/kansas-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/kentucky-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/kenya-vat-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/keystone-pricing-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/klarna-fee-calculator-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/klarna-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ko-fi-artist-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ko-fi-artist-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ko-fi-artist-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ko-fi-artist-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ko-fi-artist-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/ko-fi-artist-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ko-fi-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/landed-cost-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/last-mile-delivery-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/last-mile-delivery-cost-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/latvia-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/lazada-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/lazada-seller-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/lazada-seller-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/lazada-seller-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/lazada-seller-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/lazada-seller-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/lazada-seller-take-home-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/lcl-shipping-cost-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/lemonsqueezy-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/lifetime-value-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/lithuania-vat-calculator.html</loc></url>
@@ -308,13 +596,29 @@
   <url><loc>https://contentforge-press.github.io/malaysia-import-duty-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/malaysia-sst-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/malta-vat-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/map-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/markdown-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/marketing-roas-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/marketplace-facilitator-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/marketplace-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/markup-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/markup-vs-margin-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/maryland-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/massachusetts-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/mercado-libre-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/mercado-libre-seller-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/mercado-libre-seller-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/mercado-libre-seller-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/mercado-libre-seller-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/mercado-libre-seller-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/mercado-libre-seller-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/mercari-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/mercari-seller-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/mercari-seller-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/mercari-seller-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/mercari-seller-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/mercari-seller-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/mercari-seller-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/mercari-vs-poshmark-fees.html</loc></url>
   <url><loc>https://contentforge-press.github.io/meta-ads-budget-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/mexico-import-duty-calculator.html</loc></url>
@@ -326,11 +630,15 @@
   <url><loc>https://contentforge-press.github.io/missouri-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/montana-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/monthly-recurring-revenue-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/mpf-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/mrr-growth-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/msrp-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/multi-tier-discount-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/myntra-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/name-aura.html</loc></url>
   <url><loc>https://contentforge-press.github.io/ndr-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/nebraska-sales-tax-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/net-margin-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/net-profit-margin-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/net-revenue-retention-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/netherlands-vat-calculator.html</loc></url>
@@ -355,28 +663,84 @@
   <url><loc>https://contentforge-press.github.io/oregon-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/otto-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/overstock-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/overtime-pay-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/parcel-shipping-comparison-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/patreon-creator-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/patreon-creator-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/patreon-creator-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/patreon-creator-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/patreon-creator-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/patreon-creator-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/patreon-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/payback-period-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/paypal-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/paypal-fee-calculator-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/paypal-fee-on-200-dollars.html</loc></url>
   <url><loc>https://contentforge-press.github.io/paypal-fee-on-50-dollars.html</loc></url>
   <url><loc>https://contentforge-press.github.io/paypal-fees-on-100-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-1000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-10000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-12-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-120-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-1200-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-12000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-15-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-150-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-1500-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-18-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-180-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-20-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-200-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-2000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-220-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-25-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-250-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-25000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-280-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-3-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-3000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-35-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-350-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-400-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-45-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-5-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-50-dollar-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/paypal-fees-on-500-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-5000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-60-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-600-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-7-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-75-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-750-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-8-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-8000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-85-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-9-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-90-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-900-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/paypal-fees-on-95-dollar-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/paypal-goods-and-services-fee-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/paypal-vs-stripe-fee-comparison.html</loc></url>
   <url><loc>https://contentforge-press.github.io/paypal-vs-stripe-fees-small-business.html</loc></url>
   <url><loc>https://contentforge-press.github.io/paypal-vs-stripe-fees.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/payroll-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/penetration-pricing-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/pennsylvania-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/peru-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/philippines-import-duty-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/philippines-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/phoenix-sales-tax-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/pick-pack-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/pod-platform-fee-comparison.html</loc></url>
   <url><loc>https://contentforge-press.github.io/poland-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/portugal-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/poshmark-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/poshmark-seller-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/poshmark-seller-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/poshmark-seller-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/poshmark-seller-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/poshmark-seller-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/poshmark-seller-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/poshmark-vs-depop-fees.html</loc></url>
   <url><loc>https://contentforge-press.github.io/poshmark-vs-ebay-fees.html</loc></url>
   <url><loc>https://contentforge-press.github.io/poshmark-vs-mercari-fees.html</loc></url>
@@ -388,6 +752,12 @@
   <url><loc>https://contentforge-press.github.io/pricing-strategy-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/pricing-strategy-roi-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/printful-profit-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/printful-store-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/printful-store-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/printful-store-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/printful-store-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/printful-store-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/printful-store-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/profit-margin-calculator-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/profit-margin-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/promo-discount-calculator.html</loc></url>
@@ -395,43 +765,108 @@
   <url><loc>https://contentforge-press.github.io/qr-code-generator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/rakuten-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/realproof.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/redbubble-artist-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/redbubble-artist-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/redbubble-artist-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/redbubble-artist-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/redbubble-artist-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/redbubble-artist-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/redbubble-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/referral-program-roi-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/reorder-point-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/repeat-purchase-rate-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/resale-platform-fee-comparison.html</loc></url>
   <url><loc>https://contentforge-press.github.io/resale-profit-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/retail-margin-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/return-cost-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/return-on-ad-spend-calculator-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/return-shipping-cost-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/reverb-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/revolut-business-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/rhode-island-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/roas-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/roi-calculator-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/romania-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/rule-of-40-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/runway-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/saas-gross-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/saas-tool-stack-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/safety-stock-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/sales-tax-by-state-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/sales-tax-by-state.html</loc></url>
   <url><loc>https://contentforge-press.github.io/sales-tax-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/sales-tax-deduction-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/sales-tax-nexus-thresholds-by-state.html</loc></url>
   <url><loc>https://contentforge-press.github.io/san-francisco-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/saudi-arabia-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/saudi-import-duty-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/seattle-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/section-301-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/section-301-duty-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/sell-through-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/seller-resources.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/server-cost-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/sezzle-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/shein-marketplace-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/shipping-cost-calculator-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/shipping-cost-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/shipping-profit-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/shopee-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopee-seller-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopee-seller-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopee-seller-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopee-seller-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopee-seller-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopee-seller-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/shopee-vs-lazada-fees.html</loc></url>
   <url><loc>https://contentforge-press.github.io/shopify-app-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/shopify-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-currency-conversion-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/shopify-fee-calculator-2026.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-100-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-1000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-10000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-12-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-120-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-1200-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-12000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-15-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-150-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-1500-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-18-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-180-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-20-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-200-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-2000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-220-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-25-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-250-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-25000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-280-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-3-dollar-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/shopify-fees-on-30-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-3000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-35-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-350-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-400-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-45-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-5-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-50-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-500-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-5000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-60-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-600-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-7-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-75-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-750-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-8-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-8000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-85-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-9-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-90-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-900-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-fees-on-95-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/shopify-monthly-cost-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/shopify-payments-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/shopify-plans-compared-basic-vs-advanced.html</loc></url>
   <url><loc>https://contentforge-press.github.io/shopify-pricing-calculator-2026.html</loc></url>
@@ -454,18 +889,65 @@
   <url><loc>https://contentforge-press.github.io/spain-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/square-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/square-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/squarespace-commerce-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/squarespace-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/startup-burn-rate-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/startup-runway-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/stockout-cost-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/stockx-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stockx-seller-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stockx-seller-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stockx-seller-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stockx-seller-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stockx-seller-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stockx-seller-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/stockx-vs-goat-fees.html</loc></url>
   <url><loc>https://contentforge-press.github.io/stripe-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/stripe-fee-calculator-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/stripe-fee-on-100-dollars.html</loc></url>
   <url><loc>https://contentforge-press.github.io/stripe-fee-on-500-dollars.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-100-dollar-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/stripe-fees-on-1000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-10000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-12-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-120-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-1200-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-12000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-15-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-150-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-1500-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-18-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-180-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-20-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-200-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-2000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-220-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-25-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-250-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-25000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-280-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-3-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-3000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-35-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-350-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-400-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-45-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-5-dollar-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/stripe-fees-on-50-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-500-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-5000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-60-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-600-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-7-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-75-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-750-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-8-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-8000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-85-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-9-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-90-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-900-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/stripe-fees-on-95-dollar-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/stripe-international-card-surcharge.html</loc></url>
   <url><loc>https://contentforge-press.github.io/suggested-retail-price-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/sweden-vat-calculator.html</loc></url>
@@ -475,22 +957,77 @@
   <url><loc>https://contentforge-press.github.io/target-profit-price-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/tariff-landed-cost-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/teepublic-profit-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/temu-seller-break-even-price-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/temu-seller-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/temu-seller-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/temu-seller-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/temu-seller-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/temu-seller-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/temu-seller-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/temu-uk-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/temu-vs-amazon-fee-comparison.html</loc></url>
   <url><loc>https://contentforge-press.github.io/tennessee-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/texas-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/thailand-import-duty-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/thailand-vat-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiered-pricing-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/tiktok-ads-cost-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/tiktok-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/tiktok-roas-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-seller-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-seller-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-seller-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-seller-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-seller-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-seller-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/tiktok-shop-fee-calculator-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/tiktok-shop-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-by-category-2026.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-100-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-1000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-10000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-12-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-120-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-1200-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-12000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-15-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-150-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-1500-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-18-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-180-dollar-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-20-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-200-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-2000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-220-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-25-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-250-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-25000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-280-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-3-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-3000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-35-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-350-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-400-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-45-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-5-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-50-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-500-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-5000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-60-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-600-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-7-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-75-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-750-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-8-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-8000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-85-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-9-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-90-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-900-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tiktok-shop-fees-on-95-dollar-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/tiktok-shop-uk-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/tokopedia-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/tools.html</loc></url>
   <url><loc>https://contentforge-press.github.io/turkey-import-duty-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/turkey-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/uae-import-duty-calculator.html</loc></url>
@@ -501,11 +1038,20 @@
   <url><loc>https://contentforge-press.github.io/unit-economics-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/upsell-conversion-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/upwork-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/upwork-freelancer-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/upwork-freelancer-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/upwork-freelancer-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/upwork-freelancer-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/upwork-freelancer-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/upwork-freelancer-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/us-de-minimis-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/us-import-duty-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/us-sales-tax-calculator-2026.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/use-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/utah-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/value-based-pricing-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/vat-exclusive-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/vat-inclusive-price-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/vat-on-imports-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/vat-registration-threshold-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/venmo-fee-calculator.html</loc></url>
@@ -515,6 +1061,12 @@
   <url><loc>https://contentforge-press.github.io/vietnam-vat-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/vinted-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/vinted-france-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/vinted-seller-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/vinted-seller-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/vinted-seller-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/vinted-seller-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/vinted-seller-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/vinted-seller-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/vinted-uk-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/vinted-vs-depop-fees.html</loc></url>
   <url><loc>https://contentforge-press.github.io/vinted-vs-poshmark-fees.html</loc></url>
@@ -522,24 +1074,84 @@
   <url><loc>https://contentforge-press.github.io/volumetric-weight-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/walmart-fee-calculator-2026.html</loc></url>
   <url><loc>https://contentforge-press.github.io/walmart-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-100-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-1000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-10000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-12-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-120-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-1200-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-12000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-15-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-150-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-1500-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-18-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-180-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-20-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-200-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-2000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-220-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-25-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-250-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-25000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-280-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-3-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-3000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-35-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-350-dollar-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/walmart-fees-on-40-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-400-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-45-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-5-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-50-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-500-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-5000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-60-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-600-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-7-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-75-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-750-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-8-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-8000-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-85-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-9-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-90-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-900-dollar-sale.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-fees-on-95-dollar-sale.html</loc></url>
   <url><loc>https://contentforge-press.github.io/walmart-marketplace-referral-only-fees.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-seller-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-seller-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-seller-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-seller-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-seller-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/walmart-seller-take-home-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/walmart-vs-amazon-fees.html</loc></url>
   <url><loc>https://contentforge-press.github.io/walmart-vs-amazon-selling-fees.html</loc></url>
   <url><loc>https://contentforge-press.github.io/walmart-vs-etsy-fees.html</loc></url>
   <url><loc>https://contentforge-press.github.io/warehouse-storage-cost-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/washington-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/wayfair-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/webflow-designer-break-even-price-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/webflow-designer-fee-percentage-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/webflow-designer-net-payout-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/webflow-designer-profit-after-fees-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/webflow-designer-profit-margin-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/webflow-designer-take-home-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/website-cost-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/west-virginia-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/what-is-amazon-referral-fee.html</loc></url>
   <url><loc>https://contentforge-press.github.io/what-is-ebay-final-value-fee.html</loc></url>
   <url><loc>https://contentforge-press.github.io/whatnot-vs-ebay-fees.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/wholesale-price-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/wholesale-pricing-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/wisconsin-sales-tax-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/wise-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/wish-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/wix-ecommerce-fee-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/wix-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/woocommerce-cost-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/working-capital-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/wyoming-sales-tax-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/youtube-ads-calculator.html</loc></url>
   <url><loc>https://contentforge-press.github.io/zalando-fee-calculator.html</loc></url>
+  <url><loc>https://contentforge-press.github.io/zip-pay-fee-calculator.html</loc></url>
 </urlset>
