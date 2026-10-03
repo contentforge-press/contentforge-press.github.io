@@ -1,235 +1,66 @@
-<!DOCTYPE html><html lang="en"><head><!-- Coze Coding Analytics -->
-<script>
-(function(){
-  function randomUUID(){
-    if(typeof crypto!=="undefined"&&typeof crypto.randomUUID==="function"){
-      return crypto.randomUUID();
-    }
-    return "10000000-1000-4000-8000-100000000000".replace(/[018]/g,function(c){
-      return(+c^(crypto.getRandomValues(new Uint8Array(1))[0]&(15>>(+c/4)))).toString(16);
-    });
-  }
-
-  function encode(obj){return btoa(JSON.stringify(obj))}
-  function decode(str){try{return JSON.parse(atob(str))}catch(e){return null}}
-
-  function getDeviceId(){
-    var storageKey="__coze_coding_device_info";
-    try{
-      var info=decode(localStorage.getItem(storageKey));
-      if(info&&typeof info.did==="string"){return info.did}
-    }catch(e){}
-    var newInfo={did:randomUUID()};
-    try{localStorage.setItem(storageKey,encode(newInfo))}catch(e){}
-    return newInfo.did;
-  }
-
-  function sendPageViewEvent(){
-    var deviceId=getDeviceId();
-    var projectId="7689465264760651811";
-    var reportURL="https://code.coze.cn/api/coding/deployment/analytics/report?project_id="+encodeURIComponent(projectId)+"&did="+encodeURIComponent(deviceId);
-    try{
-      fetch(reportURL,{
-        method:"POST",
-        headers:{"Content-Type":"application/json"},
-        body:JSON.stringify({
-          events:[{
-            type:"page_view",
-            url:window.location.href,
-            path:window.location.pathname,
-            referrer:document.referrer,
-            timestamp:Date.now()
-          }]
-        })
-      }).catch(function(){});
-    }catch(e){}
-  }
-
-  if(document.readyState==="complete"){
-    sendPageViewEvent();
-  }else{
-    document.addEventListener("readystatechange",function(){
-      if(document.readyState==="complete"){sendPageViewEvent()}
-    });
-  }
-})();
-</script>
-<!-- WebPro SDK -->
-<script>
-(function(n,e,r,t,a,o,s,i,c,l,f,m,p,u){o="precollect";s="getAttribute";i="addEventListener";c="PerformanceObserver";l=function(e){f=[].slice.call(arguments);f.push(Date.now(),location.href);(e==o?l.p.a:l.q).push(f)};l.q=[];l.p={a:[]};n[a]=l;m=document.createElement("script");m.src=r+"?aid="+t+"&globalName="+a;m.crossOrigin="anonymous";e.getElementsByTagName("head")[0].appendChild(m);if(i in n){l.pcErr=function(e){e=e||n.event;p=e.target||e.srcElement;if(p instanceof Element||p instanceof HTMLElement){n[a](o,"st",{tagName:p.tagName,url:p[s]("href")||p[s]("src")})}else{n[a](o,"err",e.error||e.message)}};l.pcRej=function(e){e=e||n.event;n[a](o,"reject",e.reason||e.detail&&e.detail.reason)};n[i]("error",l.pcErr,true);n[i]("unhandledrejection",l.pcRej,true)}if("PerformanceLongTaskTiming"in n){u=l.pp={entries:[]};u.observer=new PerformanceObserver(function(e){u.entries=u.entries.concat(e.getEntries())});u.observer.observe({entryTypes:["longtask"]})}})(window,document,"https://apm.volccdn.com/mars-web/apmplus/web/browser.cn.js",1001891,"apmPlus");
-</script>
-<script>
-window.apmPlus("context.set", "project_id", "7689380518990774291");
-window.apmPlus("init",{
-  aid: 1001891,
-  token: '26a8704bd4d34b1698085c787d0c95d0'
-});
-window.apmPlus("start");
-</script>
-
-<meta name="msvalidate.01" content="D432671F9227B8ED20EAA7BC31A27DE6"/>
-<meta name="impact-site-verification" value="f4050299-9826-4f4c-a116-3016af784bb4"/><meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>UK VAT Calculator 2026 – Add or Remove 20% VAT Instantly</title>
-<meta name="description" content="Free 2026 UK VAT calculator. Add VAT to a net price or remove (reverse) VAT from a VAT-inclusive price. Standard 20%, reduced 5%, zero 0%." />
-<meta name="keywords" content="UK VAT calculator, VAT calculator 20%, reverse VAT calculator, remove VAT, add VAT, VAT inclusive exclusive"/>
-<link rel="canonical" href="https://contentforge-press.github.io/uk-vat-calculator.html"/>
-<meta property="og:title" content="UK VAT Calculator 2026"/>
-<meta property="og:description" content="Add or remove UK VAT (20%, 5%, 0%) instantly. Net, VAT and gross amounts."/>
-<meta property="og:type" content="website"/><meta property="og:url" content="https://contentforge-press.github.io/uk-vat-calculator.html"/>
-<meta property="og:site_name" content="PixHarvest"/>
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UK VAT Calculator – Add &amp; Remove VAT at 20%</title>
+<meta name="description" content="Add or remove UK VAT (20%) from any price. Standard rate VAT calculator for businesses.">
+<link rel="canonical" href="https://contentforge-press.github.io/uk-vat-calculator.html">
 <style>
-:root{--bg:#f6f7f9;--card:#fff;--ink:#1f2430;--muted:#6b7280;--line:#e8eaee;--brand:#f1641f;--brand-d:#c94e10;--soft:#fef0e8;--radius:16px;--shadow:0 1px 2px rgba(20,24,40,.05),0 8px 24px rgba(20,24,40,.06);--ok:#0f8a4f;}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5;font-size:16px}
-.wrap{max-width:760px;margin:0 auto;padding:0 16px}
-header.top{background:#fff;border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px;text-decoration:none;color:inherit}
-.logo{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,#ff924d,#f1641f);display:grid;place-items:center;color:#fff;font-size:17px;font-weight:900}
-.top nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:600;margin-left:18px}
-h1{font-size:28px;line-height:1.2;letter-spacing:-.03em;margin:24px 0 10px}
-h2{font-size:20px;margin:28px 0 12px;letter-spacing:-.02em}
-p{margin:10px 0}
-.pill{display:inline-block;background:var(--soft);color:var(--brand-d);font-size:12.5px;font-weight:700;padding:4px 10px;border-radius:999px;margin-bottom:12px}
-.hero p{color:var(--muted);margin:0 0 8px;max-width:680px}
-.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;margin:14px 0;box-shadow:var(--shadow)}
-.seg{display:flex;gap:6px;background:#f1f3f6;border-radius:10px;padding:4px;margin-bottom:16px}
-.seg button{flex:1;border:0;background:transparent;padding:9px;border-radius:7px;font-size:14px;font-weight:700;color:var(--muted);cursor:pointer}
-.seg button.on{background:#fff;color:var(--brand-d);box-shadow:var(--shadow)}
-label{display:block;font-size:13px;color:var(--muted);font-weight:600;margin:0 0 4px}
-input,select{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;font-size:16px;color:var(--ink)}
-input:focus,select:focus{outline:none;border-color:var(--brand)}
-.out{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
-@media (max-width:560px){.out{grid-template-columns:1fr}}
-.kv{background:#fafbfd;border:1px solid var(--line);border-radius:10px;padding:11px 12px}
-.kv .l{color:var(--muted);font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
-.kv .v{font-size:19px;font-weight:800;margin-top:3px}
-.v.brand{color:var(--brand-d)}
-.note{font-size:13px;color:var(--muted);margin:10px 0 0}
-table{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}
-th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left}
-th{color:var(--muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.04em;background:#fafbfd}
-.cta{background:linear-gradient(135deg,#fff8f2,#fff);border:1px solid #ffd6ba;padding:14px 16px;border-radius:14px;margin:18px 0}
-.cta a{color:var(--brand-d);font-weight:700}
-footer{background:#fff;border-top:1px solid var(--line);padding:24px 0}
-footer p{color:var(--muted);font-size:13px;margin:0 0 8px;max-width:820px}
-details{background:#fafbfd;border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:10px 0}
-summary{cursor:pointer;font-weight:700}
-details p{margin:6px 0}
-</style>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebApplication","name":"UK VAT Calculator 2026","url":"https://contentforge-press.github.io/uk-vat-calculator.html","description":"Add or remove UK VAT (20%, 5%, 0%) instantly and see net, VAT and gross amounts.","applicationCategory":"BusinessApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"author":{"@type":"Organization","name":"PixHarvest"}}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I remove 20% VAT from a price?","acceptedAnswer":{"@type":"Answer","text":"Divide the VAT-inclusive price by 1.20 to get the net price, then subtract to find the VAT. At 20%, the VAT element is exactly one sixth of the gross price."}},{"@type":"Question","name":"Why is subtracting 20% from the gross wrong?","acceptedAnswer":{"@type":"Answer","text":"Because VAT is 20% of the net price, not 20% of the gross. £600 minus 20% gives £480, but the correct net is £600 divided by 1.20 = £500."}},{"@type":"Question","name":"What are the UK VAT rates in 2026?","acceptedAnswer":{"@type":"Answer","text":"The standard rate is 20%, a reduced rate of 5% applies to certain goods such as home energy, and a zero rate applies to items such as most food and children's clothing."}}]}
-</script>
-</head><body>
-<header class="top"><div class="wrap">
-<a class="brand" href="/index.html"><span class="logo">P</span> PixHarvest</a>
-<nav><a href="/tools.html">All tools</a><a href="/sales-tax-calculator.html">US tax</a></nav>
-</div></header>
-<main class="wrap">
-<span class="pill">Free · UK rates 2026</span>
-<h1>UK VAT Calculator</h1>
-<p class="hero"><b>Add</b> VAT to a net price or <b>remove</b> it from a VAT-inclusive total. Supports the UK standard 20%, reduced 5% and zero rates.</p>
-
-<section class="panel">
-<div class="seg">
-<button id="tabAdd" class="on" type="button">Add VAT (net → gross)</button>
-<button id="tabRem" type="button">Remove VAT (gross → net)</button>
+:root{--brand:#0b4da2;--brand-d:#083a7d;--ink:#1f2937;--mut:#6b7280;--line:#e5e7eb;--bg:#f8fafc;--card:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{background:var(--brand);color:#fff;padding:14px 0}
+.brand{font-weight:700;font-size:17px;letter-spacing:.2px}
+.brand a{color:#fff;text-decoration:none}
+.brand small{opacity:.85;font-weight:400;margin-left:10px}
+.hero{padding:34px 0 10px}
+h1{font-size:28px;line-height:1.3;color:var(--ink)}
+.sub{color:var(--mut);font-size:15px;margin-top:8px}
+.calc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;margin:22px 0}
+.calc label{display:block;font-weight:600;font-size:14px;margin:12px 0 6px}
+.calc input{width:100%;padding:10px 12px;border:1px solid #cbd5e1;border-radius:8px;font-size:15px}
+.calc button{margin-top:16px;padding:11px 22px;background:var(--brand);color:#fff;border:none;border-radius:8px;font-size:15px;cursor:pointer;font-weight:600}
+.calc button:hover{background:var(--brand-d)}
+.result{margin-top:16px;padding:14px;border-radius:8px;background:#f0f7ff;border:1px solid #bcd9f5;font-size:15px;display:none}
+.result b{color:var(--brand)}
+.sec h2{font-size:21px;margin:28px 0 10px}
+.sec p{color:#374151;margin-bottom:10px}
+.related{margin:26px 0;padding:16px;background:var(--card);border:1px solid var(--line);border-radius:12px}
+.related h3{font-size:15px;margin-bottom:10px}
+.related a{display:inline-block;margin:4px 10px 4px 0;color:var(--brand);text-decoration:none;font-size:14px}
+footer{margin-top:40px;padding:22px 0;border-top:1px solid var(--line);color:var(--mut);font-size:13px;background:var(--card)}
+footer a{color:var(--brand);text-decoration:none}
+.pill{display:inline-block;background:#eef4ff;color:var(--brand);border-radius:999px;padding:2px 12px;font-size:12px;font-weight:600;margin-top:10px}
+@media(max-width:640px){h1{font-size:22px}}
+</style></head><body>
+<header><div class="wrap"><div class="brand"><a href="/index.html">PixHarvest Tools</a><small>free seller calculators · 2026</small></div></div></header>
+<div class="wrap">
+<div class="hero"><span class="pill">UK VAT 20%</span>
+<h1>UK VAT Calculator – Add &amp; Remove VAT at 20%</h1>
+<p class="sub">Add or remove UK VAT (20%) from any price. Standard rate VAT calculator for businesses.</p></div>
+<div class="calc">
+<div><label for="i1">Amount / Sale price ($)</label><input id="i1" placeholder="100.00"></div>
+<button onclick="go()">Calculate</button>
+<div class="result" id="o"></div>
 </div>
-<label id="inlabel">Net amount (ex. VAT), £</label>
-<input id="amount" type="number" min="0" step="0.01" value="100" inputmode="decimal"/>
-<div style="height:12px"></div>
-<label>VAT rate</label>
-<select id="rate">
-<option value="20" selected="">Standard – 20%</option>
-<option value="5">Reduced – 5%</option>
-<option value="0">Zero – 0%</option>
-</select>
-
-<div class="out">
-<div class="kv"><div class="l">Net (ex. VAT)</div><div class="v" id="net">-</div></div>
-<div class="kv"><div class="l">VAT</div><div class="v brand" id="vat">-</div></div>
-<div class="kv"><div class="l">Gross (inc. VAT)</div><div class="v" id="gross">-</div></div>
+<div class="sec">
+<h2>How to use this calculator</h2>
+<p>Enter the amount above and click <b>Calculate</b>. The result shows the tax and total.</p>
+<p>Fee structures change — always confirm the current rate on the platform's own fee page before final pricing decisions.</p>
 </div>
-<p class="note">All math runs locally in your browser.</p>
-</section>
-
-<h2>UK VAT Rates (2026)</h2>
-<section class="panel">
-<table>
-<thead><tr><th>Rate</th><th>Value</th><th>Examples</th></tr></thead>
-<tbody>
-<tr><td>Standard</td><td>20%</td><td>Most goods and services</td></tr>
-<tr><td>Reduced</td><td>5%</td><td>Home energy, some mobility / safety equipment</td></tr>
-<tr><td>Zero</td><td>0%</td><td>Most food, children&#39;s clothes, books, newspapers</td></tr>
-<tr><td>Exempt</td><td>—</td><td>Some education, insurance, financial services</td></tr>
-</tbody>
-</table>
-</section>
-
-<h2>Frequently asked questions</h2>
-<section class="panel">
-<details open=""><summary>How do I remove 20% VAT from a total?</summary>
-<p>Divide the gross price by 1.20 to get the net, then subtract the net from the gross to isolate the VAT. At 20% the VAT is exactly one sixth of the gross (£120 gross = £100 net + £20 VAT).</p>
-</details>
-<details><summary>Why can&#39;t I just subtract 20% from the gross?</summary>
-<p>Because VAT is 20% of the net price, not 20% of the bigger gross price. £600 − 20% = £480 is wrong; the correct net is £600 ÷ 1.20 = £500. This is the single most common VAT error.</p>
-</details>
-<details><summary>When must I register for UK VAT?</summary>
-<p>You must register when your VAT-taxable turnover exceeds the registration threshold over a rolling 12-month period. The threshold can change, so check the current figure on GOV.UK — registration may also be voluntary even if you are below it.</p>
-</details>
-</section>
-
-</main>
-<div class="cta-box" style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:8px;padding:16px;margin:24px auto;max-width:640px;text-align:center">
-<h3 style="margin:0 0 8px;font-size:1.1em">Optimize pricing across all platforms</h3>
-<p style="margin:0 0 12px;color:#475569">Our <a href="/pricing-copilot.html" style="color:#0369a1;font-weight:600">AI Pricing Copilot</a> finds the best price on every marketplace from one cost — free.</p>
-<a href="/pricing-copilot.html" style="display:inline-block;background:#0369a1;color:#fff;padding:8px 20px;border-radius:6px;text-decoration:none;font-weight:600">Try Pricing Copilot →</a>
+<div class="related"><h3>Related tools</h3>
+<a href="/amazon-fba-calculator.html">Amazon FBA calculator</a><a href="/ebay-calculator.html">eBay calculator</a><a href="/etsy-fee-calculator-2026.html">Etsy calculator</a><a href="/shopify-profit-calculator.html">Shopify calculator</a><a href="/paypal-fee-calculator.html">PayPal calculator</a><a href="/tools.html">All 400+ tools</a>
 </div>
-
+</div>
 <footer><div class="wrap">
-<p>PixHarvest is an independent free-tool site and does not provide tax or accounting advice. Not affiliated with HMRC.</p>
-<p>© PixHarvest · Free calculator tools for online sellers</p>
+<p>PixHarvest — live data APIs for AI agents &amp; sellers: <a href="https://pixharvest.com/try">free Shopify/GitHub/App Store/HN/job-intel snapshots</a>.</p>
+<p style="margin:0;">Free live snapshot &rarr; <a href="https://pixharvest.com/try">pixharvest.com/try</a></p>
 </div></footer>
 <script>
-(function(){
-function f(id){return document.getElementById(id);}
-var mode='add';
-function fmt(n){return '£'+n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
-function compute(){
-  var amount=parseFloat(f('amount').value)||0;
-  var r=parseFloat(f('rate').value)/100;
-  var net, vat, gross;
-  if(mode==='add'){
-    net=amount; vat=net*r; gross=net+vat;
-  }else{
-    gross=amount; net=r>0?gross/(1+r):gross; vat=gross-net;
-  }
-  f('net').textContent=fmt(net);
-  f('vat').textContent=fmt(vat);
-  f('gross').textContent=fmt(gross);
+function go(){var o=document.getElementById('o');var i1=document.getElementById('i1');var i2=document.getElementById('i2')||{value:0};
+
+const pr=+i1.value||0, vat=pr*0.2, gross=pr+vat, net=pr/(1+0.2);
+o.style.display='block';
+o.innerHTML='VAT: <b>$'+vat.toFixed(2)+'</b> &nbsp;·&nbsp; Gross: <b>$'+gross.toFixed(2)+'</b> &nbsp;·&nbsp; Net (remove VAT): <b>$'+net.toFixed(2)+'</b>';
 }
-function setMode(m){
-  mode=m;
-  f('tabAdd').className=m==='add'?'on':'';
-  f('tabRem').className=m==='remove'?'on':'';
-  f('inlabel').textContent=m==='add'?'Net amount (ex. VAT), £':'Gross amount (inc. VAT), £';
-  compute();
-}
-f('tabAdd').addEventListener('click',function(){setMode('add');});
-f('tabRem').addEventListener('click',function(){setMode('remove');});
-f('amount').addEventListener('input',compute);
-f('rate').addEventListener('change',compute);
-compute();
-})();
 </script>
-
-
-<div class="pixharvest-brand" style="max-width:1080px;margin:0 auto;padding:26px 16px 6px;border-top:1px solid #ececec;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:.85rem;color:#575e6a;">
-  <p style="margin:0 0 6px;"><strong style="color:#c24e10;">PixHarvest</strong> — live data APIs for AI agents &amp; ecommerce teams: <a href="/index.html" style="color:#0369a1;">Shopify store changes</a> · <a href="/index.html" style="color:#0369a1;">GitHub &amp; app intel</a> · <a href="/index.html" style="color:#0369a1;">market landscapes</a>.</p>
-  <p style="margin:0;">Free live snapshot &rarr; <a href="https://pixharvest.com/try" style="color:#0369a1;font-weight:600;">pixharvest.com/try</a></p>
-</div>
-
 </body></html>

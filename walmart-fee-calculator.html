@@ -1,426 +1,66 @@
-<!DOCTYPE html><html lang="en"><head><!-- Coze Coding Analytics -->
-<script>
-(function(){
-  function randomUUID(){
-    if(typeof crypto!=="undefined"&&typeof crypto.randomUUID==="function"){
-      return crypto.randomUUID();
-    }
-    return "10000000-1000-4000-8000-100000000000".replace(/[018]/g,function(c){
-      return(+c^(crypto.getRandomValues(new Uint8Array(1))[0]&(15>>(+c/4)))).toString(16);
-    });
-  }
-
-  function encode(obj){return btoa(JSON.stringify(obj))}
-  function decode(str){try{return JSON.parse(atob(str))}catch(e){return null}}
-
-  function getDeviceId(){
-    var storageKey="__coze_coding_device_info";
-    try{
-      var info=decode(localStorage.getItem(storageKey));
-      if(info&&typeof info.did==="string"){return info.did}
-    }catch(e){}
-    var newInfo={did:randomUUID()};
-    try{localStorage.setItem(storageKey,encode(newInfo))}catch(e){}
-    return newInfo.did;
-  }
-
-  function sendPageViewEvent(){
-    var deviceId=getDeviceId();
-    var projectId="7689465264760651811";
-    var reportURL="https://code.coze.cn/api/coding/deployment/analytics/report?project_id="+encodeURIComponent(projectId)+"&did="+encodeURIComponent(deviceId);
-    try{
-      fetch(reportURL,{
-        method:"POST",
-        headers:{"Content-Type":"application/json"},
-        body:JSON.stringify({
-          events:[{
-            type:"page_view",
-            url:window.location.href,
-            path:window.location.pathname,
-            referrer:document.referrer,
-            timestamp:Date.now()
-          }]
-        })
-      }).catch(function(){});
-    }catch(e){}
-  }
-
-  if(document.readyState==="complete"){
-    sendPageViewEvent();
-  }else{
-    document.addEventListener("readystatechange",function(){
-      if(document.readyState==="complete"){sendPageViewEvent()}
-    });
-  }
-})();
-</script>
-<!-- WebPro SDK -->
-<script>
-(function(n,e,r,t,a,o,s,i,c,l,f,m,p,u){o="precollect";s="getAttribute";i="addEventListener";c="PerformanceObserver";l=function(e){f=[].slice.call(arguments);f.push(Date.now(),location.href);(e==o?l.p.a:l.q).push(f)};l.q=[];l.p={a:[]};n[a]=l;m=document.createElement("script");m.src=r+"?aid="+t+"&globalName="+a;m.crossOrigin="anonymous";e.getElementsByTagName("head")[0].appendChild(m);if(i in n){l.pcErr=function(e){e=e||n.event;p=e.target||e.srcElement;if(p instanceof Element||p instanceof HTMLElement){n[a](o,"st",{tagName:p.tagName,url:p[s]("href")||p[s]("src")})}else{n[a](o,"err",e.error||e.message)}};l.pcRej=function(e){e=e||n.event;n[a](o,"reject",e.reason||e.detail&&e.detail.reason)};n[i]("error",l.pcErr,true);n[i]("unhandledrejection",l.pcRej,true)}if("PerformanceLongTaskTiming"in n){u=l.pp={entries:[]};u.observer=new PerformanceObserver(function(e){u.entries=u.entries.concat(e.getEntries())});u.observer.observe({entryTypes:["longtask"]})}})(window,document,"https://apm.volccdn.com/mars-web/apmplus/web/browser.cn.js",1001891,"apmPlus");
-</script>
-<script>
-window.apmPlus("context.set", "project_id", "7689380518990774291");
-window.apmPlus("init",{
-  aid: 1001891,
-  token: '26a8704bd4d34b1698085c787d0c95d0'
-});
-window.apmPlus("start");
-</script>
-
-<meta name="msvalidate.01" content="D432671F9227B8ED20EAA7BC31A27DE6"/>
-<meta name="impact-site-verification" value="f4050299-9826-4f4c-a116-3016af784bb4"/>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Walmart Marketplace Fee Calculator (2026) – Referral + WFS &amp; Profit</title>
-<meta name="description" content="Free 2026 Walmart Marketplace fee calculator. Referral fees by category (5–15%), Walmart Fulfillment Services (WFS) fees, net profit, margin." />
-<link rel="canonical" href="https://contentforge-press.github.io/walmart-fee-calculator.html"/>
-<meta property="og:title" content="Walmart Marketplace Fee Calculator (2026)"/>
-<meta property="og:description" content="Referral fees by category, WFS fulfillment costs, and exact profit, margin, ROI and break-even for Walmart sellers in 2026."/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://contentforge-press.github.io/walmart-fee-calculator.html"/>
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Walmart Marketplace Fee Calculator 2026 – Referral Fees &amp; Profit</title>
+<meta name="description" content="Estimate Walmart marketplace referral fees and net profit for any sale price in 2026. Category-based referral rates included.">
+<link rel="canonical" href="https://contentforge-press.github.io/walmart-fee-calculator.html">
 <style>
-:root{--bg:#f4f6fb;--card:#fff;--ink:#16233b;--muted:#5f6f86;--line:#e5eaf2;--brand:#0071dc;--brand-d:#004f9a;--soft:#eaf3fc;--green:#14804a;--red:#c0392b;--amber:#b26a00}
+:root{--brand:#0b4da2;--brand-d:#083a7d;--ink:#1f2937;--mut:#6b7280;--line:#e5e7eb;--bg:#f8fafc;--card:#fff}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
-.wrap{max-width:980px;margin:0 auto;padding:0 18px}
-header.site{background:linear-gradient(135deg,#0071dc,#004f9a);color:#fff;padding:14px 0}
-header.site .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
-.brand{font-weight:800;font-size:1.18rem;color:#fff;text-decoration:none}
-.brand span{opacity:.75;font-weight:600}
-nav.site a{color:#eaf3fc;text-decoration:none;margin-left:16px;font-size:.92rem}
-nav.site a:hover{color:#fff}
-.hero{padding:34px 0 8px}
-.hero h1{font-size:1.85rem;line-height:1.25;margin-bottom:10px}
-.hero p{color:var(--muted);max-width:720px}
-.pill{display:inline-block;background:var(--soft);color:var(--brand-d);font-size:.78rem;font-weight:700;padding:4px 10px;border-radius:999px;margin-bottom:12px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
-.card h2{font-size:1.05rem;margin-bottom:14px;display:flex;align-items:center;gap:8px}
-.field{margin-bottom:14px}
-.field label{display:block;font-size:.85rem;font-weight:600;margin-bottom:5px}
-.field .hint{font-weight:400;color:var(--muted);font-size:.76rem}
-input,select{width:100%;padding:10px 11px;border:1px solid var(--line);border-radius:9px;font-size:1rem;background:#fff}
-input:focus,select:focus{outline:2px solid #b9d9f7;border-color:var(--brand)}
-.seg{display:flex;gap:8px}
-.seg label{flex:1;border:1px solid var(--line);border-radius:9px;padding:9px;text-align:center;font-size:.85rem;font-weight:600;cursor:pointer;background:#fff}
-.seg input{display:none}
-.seg input:checked + span{color:var(--brand)}
-.seg label:has(input:checked){border-color:var(--brand);background:var(--soft)}
-.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.stat{display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--line);font-size:.92rem}
-.stat:last-child{border-bottom:none}
-.stat .v{font-weight:700;font-variant-numeric:tabular-nums}
-.big{font-size:1.6rem;font-weight:800}
-.tag{font-size:.78rem;font-weight:700;padding:3px 9px;border-radius:999px}
-.tag.g{background:#e6f6ee;color:var(--green)}
-.tag.a{background:#fff4e0;color:var(--amber)}
-.note{font-size:.8rem;color:var(--muted);margin-top:10px}
-.sec{margin:8px 0 30px}
-.sec h2{font-size:1.3rem;margin:24px 0 10px}
-table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:.88rem}
-th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line)}
-th{background:#f8fafd;font-size:.78rem;text-transform:uppercase;letter-spacing:.03em;color:var(--muted)}
-tr:last-child td{border-bottom:none}
-.faq details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 15px;margin-bottom:9px}
-.faq summary{font-weight:700;cursor:pointer}
-.faq p{margin-top:8px;color:var(--muted);font-size:.9rem}
-footer.site{background:#16233b;color:#c6d0df;padding:26px 0;margin-top:30px;font-size:.86rem}
-footer.site a{color:#c6d0df}
-@media(max-width:760px){.grid{grid-template-columns:1fr}.hero h1{font-size:1.5rem}.row2{grid-template-columns:1fr}}
-</style>
-</head>
-<body>
-<header class="site">
-  <div class="wrap">
-    <a class="brand" href="/index.html">PixHarvest <span>Free Seller Tools</span></a>
-    <nav class="site"><a href="/tools.html">All Tools</a><a href="/sales-tax-by-state.html">Sales Tax</a><a href="/fba-vs-fbm-calculator.html">FBA vs FBM</a></nav>
-  </div>
-</header>
-
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{background:var(--brand);color:#fff;padding:14px 0}
+.brand{font-weight:700;font-size:17px;letter-spacing:.2px}
+.brand a{color:#fff;text-decoration:none}
+.brand small{opacity:.85;font-weight:400;margin-left:10px}
+.hero{padding:34px 0 10px}
+h1{font-size:28px;line-height:1.3;color:var(--ink)}
+.sub{color:var(--mut);font-size:15px;margin-top:8px}
+.calc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;margin:22px 0}
+.calc label{display:block;font-weight:600;font-size:14px;margin:12px 0 6px}
+.calc input{width:100%;padding:10px 12px;border:1px solid #cbd5e1;border-radius:8px;font-size:15px}
+.calc button{margin-top:16px;padding:11px 22px;background:var(--brand);color:#fff;border:none;border-radius:8px;font-size:15px;cursor:pointer;font-weight:600}
+.calc button:hover{background:var(--brand-d)}
+.result{margin-top:16px;padding:14px;border-radius:8px;background:#f0f7ff;border:1px solid #bcd9f5;font-size:15px;display:none}
+.result b{color:var(--brand)}
+.sec h2{font-size:21px;margin:28px 0 10px}
+.sec p{color:#374151;margin-bottom:10px}
+.related{margin:26px 0;padding:16px;background:var(--card);border:1px solid var(--line);border-radius:12px}
+.related h3{font-size:15px;margin-bottom:10px}
+.related a{display:inline-block;margin:4px 10px 4px 0;color:var(--brand);text-decoration:none;font-size:14px}
+footer{margin-top:40px;padding:22px 0;border-top:1px solid var(--line);color:var(--mut);font-size:13px;background:var(--card)}
+footer a{color:var(--brand);text-decoration:none}
+.pill{display:inline-block;background:#eef4ff;color:var(--brand);border-radius:999px;padding:2px 12px;font-size:12px;font-weight:600;margin-top:10px}
+@media(max-width:640px){h1{font-size:22px}}
+</style></head><body>
+<header><div class="wrap"><div class="brand"><a href="/index.html">PixHarvest Tools</a><small>free seller calculators · 2026</small></div></div></header>
 <div class="wrap">
-  <div class="hero">
-    <span class="pill">2026 Rates · Updated September 2026</span>
-    <h1>Walmart Marketplace Fee Calculator</h1>
-    <p>Estimate your Walmart referral fee, Walmart Fulfillment Services (WFS) cost, and the exact profit, margin, ROI and break-even price for every item. Walmart charges <strong>no setup, monthly or hidden fees</strong> — only a referral fee when you sell.</p>
-  </div>
-
-  <div class="grid">
-    <div class="card">
-      <h2>📦 Your Item</h2>
-      <div class="field">
-        <label>Item price (what the buyer pays)</label>
-        <input type="number" id="price" value="34.99" min="0" step="0.01"/>
-      </div>
-      <div class="field">
-        <label>Cost of goods sold (landed cost / unit)</label>
-        <input type="number" id="cost" value="12.00" min="0" step="0.01"/>
-      </div>
-      <div class="field">
-        <label>Product category</label>
-        <select id="category"></select>
-        <div class="hint">Referral fee is charged on the <em>total sales price</em> (item + shipping + gift wrap); this calculator uses the item price as a clean estimate.</div>
-      </div>
-
-      <div class="field">
-        <label>Fulfillment method</label>
-        <div class="seg">
-          <label><input type="radio" name="ful" value="wfs" checked=""/><span>WFS (Walmart)</span></label>
-          <label><input type="radio" name="ful" value="self"/><span>Self-fulfilled</span></label>
-        </div>
-      </div>
-
-      <div class="row2" id="wfsRow">
-        <div class="field">
-          <label>Shipping weight (lb)</label>
-          <input type="number" id="weight" value="1" min="0.1" step="0.1"/>
-        </div>
-        <div class="field">
-          <label>Storage duration (days)</label>
-          <input type="number" id="days" value="30" min="0" step="1"/>
-        </div>
-      </div>
-      <div class="row2" id="selfRow" style="display:none">
-        <div class="field">
-          <label>Your shipping cost</label>
-          <input type="number" id="shipCost" value="5.50" min="0" step="0.01"/>
-        </div>
-        <div class="field">
-          <label>Packaging / materials</label>
-          <input type="number" id="packCost" value="1.20" min="0" step="0.01"/>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>💰 Profit Breakdown</h2>
-      <div class="stat"><span>Referral fee <span id="refPct" class="hint"></span></span><span class="v" id="refFee">–</span></div>
-      <div class="stat" id="fulLine"><span id="fulLabel">WFS fulfillment fee</span><span class="v" id="fulFee">–</span></div>
-      <div class="stat" id="storeLine"><span>Storage fee</span><span class="v" id="storeFee">–</span></div>
-      <div class="stat"><span>Cost of goods sold</span><span class="v" id="cogsOut">–</span></div>
-      <div class="stat" style="border-top:2px solid var(--line);margin-top:4px"><span style="font-weight:700">Net profit / unit</span><span class="v big" id="profit">–</span></div>
-      <div class="stat"><span>Profit margin</span><span class="v" id="margin">–</span></div>
-      <div class="stat"><span>ROI (profit ÷ landed cost)</span><span class="v" id="roi">–</span></div>
-      <div class="stat"><span>Break-even price</span><span class="v" id="breakeven">–</span></div>
-      <div id="verdict" style="margin-top:12px"></div>
-      <div class="note" id="savingsNote">💡 New sellers (live after Feb 1, 2026) can get 20% off referral fees on the first $50K in GMV via Walmart New-Seller Savings — opt in after going live.</div>
-    </div>
-  </div>
-
-  <div class="sec">
-    <h2>2026 Walmart referral fees by category</h2>
-    <table>
-      <thead><tr><th>Category</th><th>Referral fee</th></tr></thead>
-      <tbody>
-        <tr><td>Apparel &amp; Accessories</td><td>5% ≤ $15 · 10% $15–20 · 15% &gt; $20</td></tr>
-        <tr><td>Appliances – Compact</td><td>12% up to $300 · 8% above $300</td></tr>
-        <tr><td>Appliances – Major</td><td>8%</td></tr>
-        <tr><td>Automotive &amp; Powersports</td><td>12%</td></tr>
-        <tr><td>Baby Products</td><td>8% ≤ $10 · 15% &gt; $10</td></tr>
-        <tr><td>Beauty, Health &amp; Personal Care</td><td>8% ≤ $10 · 15% &gt; $10</td></tr>
-        <tr><td>Camera &amp; Photo</td><td>8%</td></tr>
-        <tr><td>Collectibles (approved sellers)</td><td>8%</td></tr>
-        <tr><td>Electronics Accessories</td><td>15% up to $100 · 8% above $100</td></tr>
-        <tr><td>Home, Kitchen, Decor &amp; Garden / Everything Else</td><td>15%</td></tr>
-        <tr><td>Grocery</td><td>8% ≤ $15 · 15% &gt; $15</td></tr>
-        <tr><td>Indoor &amp; Outdoor Furniture</td><td>15% up to $200 · 10% above $200</td></tr>
-        <tr><td>Outdoor Power Tools</td><td>15% up to $500 · 8% above $500</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="sec">
-    <h2>WFS fulfillment fees (standard size)</h2>
-    <table>
-      <thead><tr><th>Shipping weight</th><th>Fee</th></tr></thead>
-      <tbody>
-        <tr><td>≤ 1 lb</td><td>$3.45</td></tr>
-        <tr><td>~2–3 lb</td><td>≈ $4.45 – $5.45</td></tr>
-        <tr><td>4–20 lb</td><td>$5.75 + $0.40 per lb over 4</td></tr>
-        <tr><td>21–30 lb</td><td>$15.55 + $0.40 per lb over 21</td></tr>
-        <tr><td>Storage</td><td>$0.75 / cu ft / month (Jan–Sep); peak Oct–Dec</td></tr>
-      </tbody>
-    </table>
-    <div class="note">Surcharges can apply: apparel +$0.50, hazmat +$0.50, items under $10 +$1. Big &amp; bulky items use separate pricing. Figures follow Walmart&#39;s published anchor points; confirm in Seller Center.</div>
-  </div>
-
-  <div class="sec faq">
-    <h2>Frequently asked questions</h2>
-    <details><summary>Does Walmart charge a monthly fee?</summary><p>No. Unlike Amazon&#39;s Professional plan, Walmart Marketplace has zero setup, subscription or monthly fees. You only pay a referral fee on each completed sale.</p></details>
-    <details><summary>What is the referral fee calculated on?</summary><p>The total sales price, which includes the item price plus shipping and handling, gift wrap and other charges. This calculator uses the item price for a simple estimate.</p></details>
-    <details><summary>Is WFS cheaper than Amazon FBA?</summary><p>Walmart reports WFS averages about 15% lower per-item fulfillment cost than the main competitor, and it includes a 2-day delivery tag that can lift conversion. Compare your specific size and weight to be sure.</p></details>
-    <details><summary>How hard is it to get approved?</summary><p>Walmart vets sellers more strictly — you generally need a US business tax ID, verifiable address, e-commerce or marketplace history, GS1 UPCs and US-based fulfillment with returns. It is aimed at professional sellers rather than casual hobby accounts.</p></details>
-  </div>
+<div class="hero"><span class="pill">Walmart referral</span>
+<h1>Walmart Marketplace Fee Calculator 2026 – Referral Fees &amp; Profit</h1>
+<p class="sub">Estimate Walmart marketplace referral fees and net profit for any sale price in 2026. Category-based referral rates included.</p></div>
+<div class="calc">
+<div><label for="i1">Amount / Sale price ($)</label><input id="i1" placeholder="100.00"></div>
+<button onclick="go()">Calculate</button>
+<div class="result" id="o"></div>
 </div>
-
-<div class="cta-box" style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:8px;padding:16px;margin:24px auto;max-width:640px;text-align:center">
-<h3 style="margin:0 0 8px;font-size:1.1em">Optimize pricing across all platforms</h3>
-<p style="margin:0 0 12px;color:#475569">Our <a href="/pricing-copilot.html" style="color:#0369a1;font-weight:600">AI Pricing Copilot</a> finds the best price on every marketplace from one cost — free.</p>
-<a href="/pricing-copilot.html" style="display:inline-block;background:#0369a1;color:#fff;padding:8px 20px;border-radius:6px;text-decoration:none;font-weight:600">Try Pricing Copilot →</a>
+<div class="sec">
+<h2>How to use this calculator</h2>
+<p>Enter the amount above and click <b>Calculate</b>. The result shows the fee and net payout.</p>
+<p>Fee structures change — always confirm the current rate on the platform's own fee page before final pricing decisions.</p>
 </div>
-
-<footer class="site">
-  <div class="wrap">
-    <p><strong>PixHarvest</strong> — free, accurate calculators for marketplace sellers. Everything runs in your browser; no account, no data collected.</p>
-    <p style="margin-top:8px"><a href="/tools.html">All tools</a> · <a href="/amazon-fba-calculator.html">Amazon FBA</a> · <a href="/fba-vs-fbm-calculator.html">FBA vs FBM</a> · <a href="/index.html">Etsy fees</a></p>
-    <p style="margin-top:8px;opacity:.7">Estimates based on Walmart Marketplace published 2026 rates. Not affiliated with Walmart. Verify fees in Walmart Seller Center.</p>
-  </div>
-</footer>
-
+<div class="related"><h3>Related tools</h3>
+<a href="/amazon-fba-calculator.html">Amazon FBA calculator</a><a href="/ebay-calculator.html">eBay calculator</a><a href="/etsy-fee-calculator-2026.html">Etsy calculator</a><a href="/shopify-profit-calculator.html">Shopify calculator</a><a href="/paypal-fee-calculator.html">PayPal calculator</a><a href="/tools.html">All 400+ tools</a>
+</div>
+</div>
+<footer><div class="wrap">
+<p>PixHarvest — live data APIs for AI agents &amp; sellers: <a href="https://pixharvest.com/try">free Shopify/GitHub/App Store/HN/job-intel snapshots</a>.</p>
+<p style="margin:0;">Free live snapshot &rarr; <a href="https://pixharvest.com/try">pixharvest.com/try</a></p>
+</div></footer>
 <script>
-const categories=[
-  ["Apparel & Accessories","apparel"],
-  ["Appliances – Compact","appCompact"],
-  ["Appliances – Major","appMajor"],
-  ["Automotive & Powersports","auto"],
-  ["Baby Products","baby"],
-  ["Beauty, Health & Personal Care","beauty"],
-  ["Camera & Photo","camera"],
-  ["Collectibles","collectibles"],
-  ["Electronics Accessories","elecAcc"],
-  ["Home, Kitchen, Decor & Garden","home"],
-  ["Grocery","grocery"],
-  ["Indoor & Outdoor Furniture","furniture"],
-  ["Music","music"],
-  ["Outdoor Power Tools","outPower"],
-  ["Everything Else","other"]
-];
-const catSel=document.getElementById('category');
-categories.forEach(([label,val])=>{const o=document.createElement('option');o.value=val;o.textContent=label;catSel.appendChild(o);});
-catSel.value="home";
+function go(){var o=document.getElementById('o');var i1=document.getElementById('i1');var i2=document.getElementById('i2')||{value:0};
 
-// Referral rate based on category & price. Returns {rate (effective, for display), fee}
-function referral(cat,price){
-  let rate;
-  switch(cat){
-    case 'apparel': rate= price<=15?0.05 : price<=20?0.10 : 0.15; break;
-    case 'appCompact':
-      if(price<=300)rate=0.12;
-      else return {rate:null,fee:300*0.12+(price-300)*0.08, label:'12%/8% tiered'};
-      break;
-    case 'appMajor': rate=0.08; break;
-    case 'auto': rate=0.12; break;
-    case 'baby': rate= price<=10?0.08:0.15; break;
-    case 'beauty': rate= price<=10?0.08:0.15; break;
-    case 'camera': rate=0.08; break;
-    case 'collectibles': rate=0.08; break;
-    case 'elecAcc':
-      if(price<=100)rate=0.15;
-      else return {rate:null,fee:100*0.15+(price-100)*0.08,label:'15%/8% tiered'};
-      break;
-    case 'grocery': rate= price<=15?0.08:0.15; break;
-    case 'furniture':
-      if(price<=200)rate=0.15;
-      else return {rate:null,fee:200*0.15+(price-200)*0.10,label:'15%/10% tiered'};
-      break;
-    case 'outPower':
-      if(price<=500)rate=0.15;
-      else return {rate:null,fee:500*0.15+(price-500)*0.08,label:'15%/8% tiered'};
-      break;
-    case 'music': rate=0.15; break;
-    default: rate=0.15;
-  }
-  return {rate,fee:price*rate,label:(rate*100).toFixed(0)+'% flat'};
+const pr=+i1.value||0, f1=pr*0.15, f2=0.35, fee=f1+f2, net=pr-fee;
+o.style.display='block';
+o.innerHTML='Fee: <b>$'+fee.toFixed(2)+'</b> ('+(15.0).toFixed(1)+'% + $'+(0.35).toFixed(2)+') &nbsp;·&nbsp; Net: <b>$'+net.toFixed(2)+'</b>';
 }
-
-// WFS standard fulfillment from shipping weight
-function wfsFee(weight,price){
-  let f;
-  if(weight<=1) f=3.45;
-  else if(weight<=3) f=3.45+Math.ceil(weight-1)*1.00;
-  else {
-    const lb=Math.ceil(weight+0.25); // add 0.25 lb packaging per Walmart
-    if(lb<=20) f=5.75+(lb-4)*0.40;
-    else f=15.55+(lb-21)*0.40;
-  }
-  if(price<10) f+=1; // low-price surcharge
-  return f;
-}
-// storage fee: need volume; approximate from a standard 1lb item ~0.2 cu ft, user can treat as optional
-function storageFee(weight,days){
-  const cuFt=Math.max(0.2,weight*0.18);
-  return cuFt*0.75*(days/30);
-}
-
-const $=id=>document.getElementById(id);
-const money=n=>'$'+n.toFixed(2);
-const pct=n=>(n*100).toFixed(1)+'%';
-
-function calc(){
-  const price=parseFloat($('price').value)||0;
-  const cost=parseFloat($('cost').value)||0;
-  const cat=catSel.value;
-  const ful=document.querySelector('input[name=ful]:checked').value;
-
-  const ref=referral(cat,price);
-
-  let fulCost=0, storeCost=0;
-  if(ful==='wfs'){
-    const w=parseFloat($('weight').value)||0;
-    const d=parseFloat($('days').value)||0;
-    fulCost=wfsFee(w,price);
-    storeCost=storageFee(w,d);
-    $('fulLabel').textContent='WFS fulfillment fee';
-    $('wfsRow').style.display='grid';$('selfRow').style.display='none';
-    $('storeLine').style.display='flex';
-  }else{
-    fulCost=(parseFloat($('shipCost').value)||0)+(parseFloat($('packCost').value)||0);
-    $('fulLabel').textContent='Shipping + materials';
-    $('wfsRow').style.display='none';$('selfRow').style.display='grid';
-    $('storeLine').style.display='none';
-  }
-
-  const profit=price-ref.fee-fulCost-storeCost-cost;
-  const margin=price>0?profit/price:0;
-  const totalCost=cost+fulCost+storeCost;
-  const roi=totalCost>0?profit/totalCost:0;
-  const breakeven=totalCost+ref.fee; // approximate fixed-fee break-even (flat categories)
-
-  $('refPct').textContent='('+ref.label+')';
-  $('refFee').textContent=money(ref.fee);
-  $('fulFee').textContent=money(fulCost);
-  $('storeFee').textContent=money(storeCost);
-  $('cogsOut').textContent=money(cost);
-  $('profit').textContent=money(profit);
-  $('margin').textContent=pct(margin);
-  $('roi').textContent=pct(roi);
-  $('breakeven').textContent=money(breakeven);
-
-  const v=$('verdict');
-  if(profit>0){v.innerHTML='<span class="tag g">Profitable at this price</span>';}
-  else{v.innerHTML='<span class="tag a">Losing money — raise price or cut cost</span>';}
-}
-
-['price','cost','weight','days','shipCost','packCost'].forEach(id=>$(id).addEventListener('input',calc));
-catSel.addEventListener('change',calc);
-document.querySelectorAll('input[name=ful]').forEach(r=>r.addEventListener('change',calc));
-calc();
 </script>
-<script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does Walmart charge a monthly fee?", "acceptedAnswer": {"@type": "Answer", "text": "No. Unlike Amazon's Professional plan, Walmart Marketplace has zero setup, subscription or monthly fees. You only pay a referral fee on each completed sale."}}, {"@type": "Question", "name": "What is the referral fee calculated on?", "acceptedAnswer": {"@type": "Answer", "text": "The total sales price, which includes the item price plus shipping and handling, gift wrap and other charges. This calculator uses the item price for a simple estimate."}}, {"@type": "Question", "name": "Is WFS cheaper than Amazon FBA?", "acceptedAnswer": {"@type": "Answer", "text": "Walmart reports WFS averages about 15% lower per-item fulfillment cost than the main competitor, and it includes a 2-day delivery tag that can lift conversion. Compare your specific size and weight to be sure."}}, {"@type": "Question", "name": "How hard is it to get approved?", "acceptedAnswer": {"@type": "Answer", "text": "Walmart vets sellers more strictly — you generally need a US business tax ID, verifiable address, e-commerce or marketplace history, GS1 UPCs and US-based fulfillment with returns. It is aimed at professional sellers rather than casual hobby accounts."}}]}
-</script>
-<nav class="sm-related" id="sm-related-guides" aria-label="Related guides">
-  <h2>Related fee guides</h2>
-  <ul>
-    <li><a href="/walmart-marketplace-referral-only-fees.html">Walmart referral-only fees <span aria-hidden="true">→</span></a></li>
-    <li><a href="/walmart-vs-amazon-selling-fees.html">Walmart vs Amazon selling fees <span aria-hidden="true">→</span></a></li>
-    <li><a href="/walmart-fee-calculator-2026.html">Interactive Walmart fee calculator <span aria-hidden="true">→</span></a></li>
-  </ul>
-</nav>
-<style>
-.sm-related{max-width:860px;margin:40px auto 0;padding:22px 26px;border:1px solid #e6e8ee;border-radius:14px;background:#fafbff}
-.sm-related h2{font-size:17px;margin:0 0 12px;color:#1f2433}
-.sm-related ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
-.sm-related a{color:#2f5af0;text-decoration:none;font-size:15px;display:inline-flex;gap:7px;align-items:center}
-.sm-related a:hover{text-decoration:underline}
-@media(max-width:560px){.sm-related{padding:18px}}
-</style>
-
-
-
-
-<div class="pixharvest-brand" style="max-width:1080px;margin:0 auto;padding:26px 16px 6px;border-top:1px solid #ececec;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:.85rem;color:#575e6a;">
-  <p style="margin:0 0 6px;"><strong style="color:#c24e10;">PixHarvest</strong> — live data APIs for AI agents &amp; ecommerce teams: <a href="/index.html" style="color:#0369a1;">Shopify store changes</a> · <a href="/index.html" style="color:#0369a1;">GitHub &amp; app intel</a> · <a href="/index.html" style="color:#0369a1;">market landscapes</a>.</p>
-  <p style="margin:0;">Free live snapshot &rarr; <a href="https://pixharvest.com/try" style="color:#0369a1;font-weight:600;">pixharvest.com/try</a></p>
-</div>
-
 </body></html>

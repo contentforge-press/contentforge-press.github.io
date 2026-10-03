@@ -1,286 +1,66 @@
-<!DOCTYPE html><html lang="en"><head><!-- Coze Coding Analytics -->
-<script>
-(function(){
-  function randomUUID(){
-    if(typeof crypto!=="undefined"&&typeof crypto.randomUUID==="function"){
-      return crypto.randomUUID();
-    }
-    return "10000000-1000-4000-8000-100000000000".replace(/[018]/g,function(c){
-      return(+c^(crypto.getRandomValues(new Uint8Array(1))[0]&(15>>(+c/4)))).toString(16);
-    });
-  }
-
-  function encode(obj){return btoa(JSON.stringify(obj))}
-  function decode(str){try{return JSON.parse(atob(str))}catch(e){return null}}
-
-  function getDeviceId(){
-    var storageKey="__coze_coding_device_info";
-    try{
-      var info=decode(localStorage.getItem(storageKey));
-      if(info&&typeof info.did==="string"){return info.did}
-    }catch(e){}
-    var newInfo={did:randomUUID()};
-    try{localStorage.setItem(storageKey,encode(newInfo))}catch(e){}
-    return newInfo.did;
-  }
-
-  function sendPageViewEvent(){
-    var deviceId=getDeviceId();
-    var projectId="7689465264760651811";
-    var reportURL="https://code.coze.cn/api/coding/deployment/analytics/report?project_id="+encodeURIComponent(projectId)+"&did="+encodeURIComponent(deviceId);
-    try{
-      fetch(reportURL,{
-        method:"POST",
-        headers:{"Content-Type":"application/json"},
-        body:JSON.stringify({
-          events:[{
-            type:"page_view",
-            url:window.location.href,
-            path:window.location.pathname,
-            referrer:document.referrer,
-            timestamp:Date.now()
-          }]
-        })
-      }).catch(function(){});
-    }catch(e){}
-  }
-
-  if(document.readyState==="complete"){
-    sendPageViewEvent();
-  }else{
-    document.addEventListener("readystatechange",function(){
-      if(document.readyState==="complete"){sendPageViewEvent()}
-    });
-  }
-})();
-</script>
-<!-- WebPro SDK -->
-<script>
-(function(n,e,r,t,a,o,s,i,c,l,f,m,p,u){o="precollect";s="getAttribute";i="addEventListener";c="PerformanceObserver";l=function(e){f=[].slice.call(arguments);f.push(Date.now(),location.href);(e==o?l.p.a:l.q).push(f)};l.q=[];l.p={a:[]};n[a]=l;m=document.createElement("script");m.src=r+"?aid="+t+"&globalName="+a;m.crossOrigin="anonymous";e.getElementsByTagName("head")[0].appendChild(m);if(i in n){l.pcErr=function(e){e=e||n.event;p=e.target||e.srcElement;if(p instanceof Element||p instanceof HTMLElement){n[a](o,"st",{tagName:p.tagName,url:p[s]("href")||p[s]("src")})}else{n[a](o,"err",e.error||e.message)}};l.pcRej=function(e){e=e||n.event;n[a](o,"reject",e.reason||e.detail&&e.detail.reason)};n[i]("error",l.pcErr,true);n[i]("unhandledrejection",l.pcRej,true)}if("PerformanceLongTaskTiming"in n){u=l.pp={entries:[]};u.observer=new PerformanceObserver(function(e){u.entries=u.entries.concat(e.getEntries())});u.observer.observe({entryTypes:["longtask"]})}})(window,document,"https://apm.volccdn.com/mars-web/apmplus/web/browser.cn.js",1001891,"apmPlus");
-</script>
-<script>
-window.apmPlus("context.set", "project_id", "7689380518990774291");
-window.apmPlus("init",{
-  aid: 1001891,
-  token: '26a8704bd4d34b1698085c787d0c95d0'
-});
-window.apmPlus("start");
-</script>
-
-<meta name="msvalidate.01" content="D432671F9227B8ED20EAA7BC31A27DE6"/>
-<meta name="impact-site-verification" value="f4050299-9826-4f4c-a116-3016af784bb4"/>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Reorder Point Calculator 2026 – Safety Stock, ROP &amp; Days to Stockout</title>
-<meta name="description" content="Free 2026 reorder point calculator. Enter average daily sales, lead time and demand variability to get safety stock, reorder point." />
-<link rel="canonical" href="https://contentforge-press.github.io/reorder-point-calculator.html"/>
-<meta property="og:title" content="Reorder Point Calculator – Safety Stock &amp; ROP"/>
-<meta property="og:description" content="Calculate safety stock, reorder point and days to stockout in one free tool."/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://contentforge-press.github.io/reorder-point-calculator.html"/>
-<meta property="og:site_name" string="true"/></head><body>PixHarvest&#34;&gt;
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reorder Point Calculator – Safety Stock &amp; Lead Time</title>
+<meta name="description" content="Calculate reorder point from daily demand, lead time and safety stock.">
+<link rel="canonical" href="https://contentforge-press.github.io/reorder-point-calculator.html">
 <style>
-:root{--bg:#f6f7f9;--card:#fff;--ink:#1f2430;--muted:#6b7280;--line:#e8eaee;
---brand:#f1641f;--brand-d:#c94e10;--soft:#fef0e8;
---radius:16px;--shadow:0 1px 2px rgba(20,24,40,.05),0 8px 24px rgba(20,24,40,.06);}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5;font-size:16px;overflow-x:hidden}
-.wrap{max-width:1040px;margin:0 auto;padding:0 16px;width:100%}
-header.top{background:#fff;border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px;letter-spacing:-.02em;white-space:nowrap}
-.logo{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,#ff924d,#f1641f);display:grid;place-items:center;color:#fff;font-size:17px;font-weight:900;flex:none}
-.top nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:600;margin-left:18px;white-space:nowrap}
-.top nav a:hover{color:var(--ink)}
-.hero{padding:34px 0 8px}
-h1{font-size:28px;line-height:1.2;letter-spacing:-.03em;margin:0 0 8px}
-.hero p{color:var(--muted);margin:0;max-width:720px}
-.pill{display:inline-block;background:var(--soft);color:var(--brand-d);font-size:12.5px;font-weight:700;padding:4px 10px;border-radius:999px;margin-bottom:12px}
-.grid{display:grid;grid-template-columns:1fr;gap:18px;margin:22px 0 26px}
-@media(min-width:900px){.grid{grid-template-columns:1.05fr .95fr;align-items:start}}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px}
-.card h2{font-size:16px;margin:0 0 14px}
-.subhead{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:18px 0 8px}
-.subhead:first-child{margin-top:0}
-.field{margin-bottom:12px}.field:last-child{margin-bottom:0}
-.field label{display:block;font-size:13.5px;font-weight:650;margin-bottom:6px}
-.field .hint{font-weight:400;color:var(--muted);font-size:12px}
-.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.input{position:relative}
-input[type=number],select{width:100%;padding:11px 12px;font-size:16px;border:1px solid var(--line);border-radius:11px;background:#fcfcfd;min-width:0}
-.input .u{position:absolute;right:12px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:13px;font-weight:600}
-input.r{padding-right:40px}
-input:focus,select:focus{outline:2px solid #fbc6a6;border-color:var(--brand);background:#fff}
-select{appearance:none;-webkit-appearance:none}
-.metric{border:1px solid var(--line);border-radius:13px;padding:14px 16px;margin-bottom:12px}
-.metric .lab{font-size:13px;color:var(--muted);font-weight:600;margin:0 0 3px}
-.metric .val{font-size:24px;font-weight:900;letter-spacing:-.02em}
-.metric .formula{font-size:12px;color:var(--muted);margin:4px 0 0}
-.col{display:flex;justify-content:space-between;font-size:14px;padding:8px 0;border-bottom:1px dashed var(--line)}
-.col span{color:var(--muted)}.col b{font-size:14.5px}
-.note{font-size:12.5px;color:var(--muted);margin:10px 0 0}
-.alert{border-radius:12px;padding:12px 14px;font-size:14px;margin-top:6px}
-.alert.order{background:#e7f6ec;border:1px solid #b6e2c5;color:#15803d}
-.alert.hold{background:#f3f4f6;border:1px solid var(--line);color:#374151}
-.section{margin:8px 0 40px}
-.section h2{font-size:20px;margin:0 0 10px;letter-spacing:-.02em}
-.section p{font-size:15px}
-.faq details{border:1px solid var(--line);border-radius:12px;background:#fff;padding:4px 14px;margin-bottom:10px}
-.faq summary{cursor:pointer;font-weight:650;font-size:15px;padding:9px 0;list-style:none}
-.faq summary::-webkit-details-marker{display:none}
-.faq p{margin:0 0 12px;color:#374151;font-size:14.5px}
-.cta{background:linear-gradient(135deg,#fff4ec,#ffe3d2);border:1px solid #f6c7a8;border-radius:var(--radius);padding:20px;margin:10px 0 40px}
-.cta h2{margin:0 0 6px;font-size:18px}
-.cta p{margin:0 0 12px;color:#5b4636;font-size:14.5px}
-.btn{display:inline-block;background:var(--brand);color:#fff;font-weight:700;text-decoration:none;padding:11px 18px;border-radius:11px;font-size:15px}
-.btn:hover{background:var(--brand-d)}
-.toolsgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:8px 0 40px}
-.toolsgrid a{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:var(--ink);text-decoration:none;font-size:14px;font-weight:600}
-.toolsgrid a:hover{border-color:var(--brand);color:var(--brand-d)}
-footer{background:#fff;border-top:1px solid var(--line);padding:26px 0}
-footer p{color:var(--muted);font-size:13px;margin:0 0 10px;max-width:820px}
-footer a{color:var(--brand-d)}
-</style>
-
-
-<header class="top"><div class="wrap">
-<a class="brand" href="/index.html" style="text-decoration:none;color:inherit"><span class="logo">P</span> PixHarvest</a>
-<nav><a href="#calculator">Calculator</a><a href="#faq">FAQ</a><a href="/tools.html">Tools</a></nav>
-</div></header>
-<main class="wrap">
-<section class="hero">
-<span class="pill">2026 inventory planning</span>
-<h1>Reorder Point Calculator</h1>
-<p>Know exactly when to place a purchase order so new stock arrives before you run out. Enter daily sales, supplier lead time and demand variability to get <strong>safety stock, reorder point, days until stockout and reorder quantity</strong>.</p>
-</section>
-
-<div class="grid" id="calculator">
-<div class="card">
-<div class="subhead">Demand</div>
-<div class="row2">
-<div class="field"><label>Average daily sales <span class="hint">units / day</span></label>
-<div class="input"><input type="number" class="r in" id="dailysales" value="20"/></div></div>
-<div class="field"><label>Demand variability <span class="hint">std-dev / day</span></label>
-<div class="input"><input type="number" class="r in" id="stddev" value="6"/></div></div>
+:root{--brand:#0b4da2;--brand-d:#083a7d;--ink:#1f2937;--mut:#6b7280;--line:#e5e7eb;--bg:#f8fafc;--card:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{background:var(--brand);color:#fff;padding:14px 0}
+.brand{font-weight:700;font-size:17px;letter-spacing:.2px}
+.brand a{color:#fff;text-decoration:none}
+.brand small{opacity:.85;font-weight:400;margin-left:10px}
+.hero{padding:34px 0 10px}
+h1{font-size:28px;line-height:1.3;color:var(--ink)}
+.sub{color:var(--mut);font-size:15px;margin-top:8px}
+.calc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;margin:22px 0}
+.calc label{display:block;font-weight:600;font-size:14px;margin:12px 0 6px}
+.calc input{width:100%;padding:10px 12px;border:1px solid #cbd5e1;border-radius:8px;font-size:15px}
+.calc button{margin-top:16px;padding:11px 22px;background:var(--brand);color:#fff;border:none;border-radius:8px;font-size:15px;cursor:pointer;font-weight:600}
+.calc button:hover{background:var(--brand-d)}
+.result{margin-top:16px;padding:14px;border-radius:8px;background:#f0f7ff;border:1px solid #bcd9f5;font-size:15px;display:none}
+.result b{color:var(--brand)}
+.sec h2{font-size:21px;margin:28px 0 10px}
+.sec p{color:#374151;margin-bottom:10px}
+.related{margin:26px 0;padding:16px;background:var(--card);border:1px solid var(--line);border-radius:12px}
+.related h3{font-size:15px;margin-bottom:10px}
+.related a{display:inline-block;margin:4px 10px 4px 0;color:var(--brand);text-decoration:none;font-size:14px}
+footer{margin-top:40px;padding:22px 0;border-top:1px solid var(--line);color:var(--mut);font-size:13px;background:var(--card)}
+footer a{color:var(--brand);text-decoration:none}
+.pill{display:inline-block;background:#eef4ff;color:var(--brand);border-radius:999px;padding:2px 12px;font-size:12px;font-weight:600;margin-top:10px}
+@media(max-width:640px){h1{font-size:22px}}
+</style></head><body>
+<header><div class="wrap"><div class="brand"><a href="/index.html">PixHarvest Tools</a><small>free seller calculators · 2026</small></div></div></header>
+<div class="wrap">
+<div class="hero"><span class="pill">Reorder point</span>
+<h1>Reorder Point Calculator – Safety Stock &amp; Lead Time</h1>
+<p class="sub">Calculate reorder point from daily demand, lead time and safety stock.</p></div>
+<div class="calc">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px"><div><label for="i1">Daily demand (units)</label><input id="i1" placeholder="10"></div><div><label for="i2">Lead time (days)</label><input id="i2" placeholder="7"></div></div>
+<button onclick="go()">Calculate</button>
+<div class="result" id="o"></div>
 </div>
-<div class="subhead">Supply &amp; target</div>
-<div class="row2">
-<div class="field"><label>Supplier lead time <span class="hint">days</span></label>
-<div class="input"><input type="number" class="r in" id="leadtime" value="14"/></div></div>
-<div class="field"><label>Service level</label>
-<div class="input"><select id="service" class="in">
-<option value="1.28">90% (Z = 1.28)</option>
-<option value="1.65" selected="">95% (Z = 1.65)</option>
-<option value="2.05">98% (Z = 2.05)</option>
-<option value="2.33">99% (Z = 2.33)</option>
-</select></div></div>
+<div class="sec">
+<h2>How to use this calculator</h2>
+<p>Enter the amount above and click <b>Calculate</b>. The result shows the reorder point.</p>
+<p>Fee structures change — always confirm the current rate on the platform's own fee page before final pricing decisions.</p>
 </div>
-<div class="subhead">Your current position</div>
-<div class="row2">
-<div class="field"><label>Current inventory <span class="hint">units</span></label>
-<div class="input"><input type="number" class="r in" id="current" value="180"/></div></div>
-<div class="field"><label>Supplier MOQ <span class="hint">optional</span></label>
-<div class="input"><input type="number" class="r in" id="moq" value="0"/></div></div>
+<div class="related"><h3>Related tools</h3>
+<a href="/amazon-fba-calculator.html">Amazon FBA calculator</a><a href="/ebay-calculator.html">eBay calculator</a><a href="/etsy-fee-calculator-2026.html">Etsy calculator</a><a href="/shopify-profit-calculator.html">Shopify calculator</a><a href="/paypal-fee-calculator.html">PayPal calculator</a><a href="/tools.html">All 400+ tools</a>
 </div>
 </div>
-
-<div>
-<div class="metric">
-<p class="lab">Safety stock</p>
-<div class="val" id="o_ss"></div>
-<p class="formula">Z × σ<sub>daily</sub> × √lead time</p>
-</div>
-<div class="metric">
-<p class="lab">Reorder point (ROP)</p>
-<div class="val" id="o_rop"></div>
-<p class="formula">(daily sales × lead time) + safety stock</p>
-</div>
-<div class="card">
-<div class="col"><span>Days until stockout</span><b id="o_days"></b></div>
-<div class="col"><span>Recommended reorder quantity</span><b id="o_qty"></b></div>
-<div id="o_action"></div>
-</div>
-</div>
-</div>
-
-<section class="section">
-<h2>How the formulas work</h2>
-<p><strong>Safety stock</strong> protects against demand spikes and late deliveries. The statistical version multiplies the Z-score for your chosen service level by the standard deviation of daily demand and the square root of lead time. A higher service level means fewer stockouts but more inventory held.</p>
-<p><strong>Reorder point</strong> is the demand you expect during lead time plus the safety buffer. When on-hand inventory falls to this level, place the order.</p>
-<p class="note">Formulas follow standard inventory-planning guidance used across ecommerce and inventory tools (reviewed 2026).</p>
-</section>
-
-<section class="section faq" id="faq">
-<h2>Frequently asked questions</h2>
-<details open=""><summary>What is a reorder point?</summary>
-<p>The reorder point is the inventory level at which you should place a new purchase order so the next batch arrives before stock runs out. It equals expected demand during lead time plus safety stock.</p></details>
-<details><summary>How do I find my standard deviation of daily demand?</summary>
-<p>Use daily sales over the last 30–90 days and calculate the standard deviation. As a rough shortcut, estimate how much daily sales swing above or below your average.</p></details>
-<details><summary>What service level should I choose?</summary>
-<p>95% is a common default for profitable, steady products. Use a higher level for critical or high-margin items and a lower one where holding cost is a bigger concern.</p></details>
-<details><summary>What if my recommended quantity is below the MOQ?</summary>
-<p>The calculator rounds the order up to your supplier&#39;s minimum order quantity when needed, so a placed order always meets the MOQ.</p></details>
-</section>
-
-<section id="tools">
-<h2 style="font-size:18px">Related free tools</h2>
-<div class="toolsgrid">
-<a href="/cogs-calculator.html">COGS Calculator</a>
-<a href="/break-even-calculator.html">Break-Even Calculator</a>
-<a href="/amazon-fba-calculator.html">Amazon FBA Calculator</a>
-<a href="/tools.html">All tools</a>
-</div>
-</section>
-</main>
-<div class="cta-box" style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:8px;padding:16px;margin:24px auto;max-width:640px;text-align:center">
-<h3 style="margin:0 0 8px;font-size:1.1em">Optimize pricing across all platforms</h3>
-<p style="margin:0 0 12px;color:#475569">Our <a href="/pricing-copilot.html" style="color:#0369a1;font-weight:600">AI Pricing Copilot</a> finds the best price on every marketplace from one cost — free.</p>
-<a href="/pricing-copilot.html" style="display:inline-block;background:#0369a1;color:#fff;padding:8px 20px;border-radius:6px;text-decoration:none;font-weight:600">Try Pricing Copilot →</a>
-</div>
-
 <footer><div class="wrap">
-<p>PixHarvest is an independent free-tool site. This calculator is for general planning and <strong>is not financial advice</strong>.</p>
-<p>Standard inventory formulas, reviewed 2026. Validate inputs against your own sales history.</p>
+<p>PixHarvest — live data APIs for AI agents &amp; sellers: <a href="https://pixharvest.com/try">free Shopify/GitHub/App Store/HN/job-intel snapshots</a>.</p>
+<p style="margin:0;">Free live snapshot &rarr; <a href="https://pixharvest.com/try">pixharvest.com/try</a></p>
 </div></footer>
 <script>
-(function(){
-function $(id){return document.getElementById(id);}
-function n(id){return parseFloat($(id).value)||0;}
-function units(x){return Math.ceil(x).toLocaleString('en-US')+' units';}
-function calc(){
-var ds=n('dailysales'),sd=n('stddev'),lt=n('leadtime');
-var z=parseFloat($('service').value);
-var ss=z*sd*Math.sqrt(lt);
-var rop=ds*lt+ss;
-var cur=n('current'),moq=n('moq');
-var days=ds>0?cur/ds:0;
-var qty=Math.max(rop+ss-cur,0);
-if(qty>0&&moq>0){qty=Math.max(qty,moq);}
-$('o_ss').textContent=units(ss);
-$('o_rop').textContent=units(rop);
-$('o_days').textContent=days>0?(days<1?'< 1 day':days.toFixed(1)+' days'):'\u2014';
-$('o_qty').textContent=cur<=rop?units(qty):'0 units';
-var a=$('o_action');a.className='alert';
-if(cur<=rop){a.classList.add('order');a.textContent='Place an order now \u2014 on-hand inventory is at or below the reorder point.';}
-else{a.classList.add('hold');a.textContent='No order needed yet. Reorder when inventory falls to the reorder point ('+Math.ceil(rop)+' units).';}
+function go(){var o=document.getElementById('o');var i1=document.getElementById('i1');var i2=document.getElementById('i2')||{value:0};
+
+const dd=+i1.value||0, lt=+i2.value||0, ss=dd*0.5*1.65, rop=dd*lt+ss;
+o.style.display='block';
+o.innerHTML='Reorder point: <b>'+rop.toFixed(1)+' units</b> &nbsp;·&nbsp; Safety stock: <b>'+ss.toFixed(1)+'</b>';
 }
-document.querySelectorAll('.in').forEach(function(el){el.addEventListener('input',calc);el.addEventListener('change',calc);});
-calc();
-})();
 </script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebApplication","name":"Reorder Point Calculator","url":"https://contentforge-press.github.io/reorder-point-calculator.html","applicationCategory":"BusinessApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Safety stock, reorder point, days to stockout and reorder quantity calculator for ecommerce inventory."}
-</script>
-<script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a reorder point?", "acceptedAnswer": {"@type": "Answer", "text": "The reorder point is the inventory level at which you should place a new purchase order so the next batch arrives before stock runs out. It equals expected demand during lead time plus safety stock."}}, {"@type": "Question", "name": "How do I find my standard deviation of daily demand?", "acceptedAnswer": {"@type": "Answer", "text": "Use daily sales over the last 30–90 days and calculate the standard deviation. As a rough shortcut, estimate how much daily sales swing above or below your average."}}, {"@type": "Question", "name": "What service level should I choose?", "acceptedAnswer": {"@type": "Answer", "text": "95% is a common default for profitable, steady products. Use a higher level for critical or high-margin items and a lower one where holding cost is a bigger concern."}}, {"@type": "Question", "name": "What if my recommended quantity is below the MOQ?", "acceptedAnswer": {"@type": "Answer", "text": "The calculator rounds the order up to your supplier's minimum order quantity when needed, so a placed order always meets the MOQ."}}]}
-</script>
-
-
-
-<div class="pixharvest-brand" style="max-width:1080px;margin:0 auto;padding:26px 16px 6px;border-top:1px solid #ececec;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:.85rem;color:#575e6a;">
-  <p style="margin:0 0 6px;"><strong style="color:#c24e10;">PixHarvest</strong> — live data APIs for AI agents &amp; ecommerce teams: <a href="/index.html" style="color:#0369a1;">Shopify store changes</a> · <a href="/index.html" style="color:#0369a1;">GitHub &amp; app intel</a> · <a href="/index.html" style="color:#0369a1;">market landscapes</a>.</p>
-  <p style="margin:0;">Free live snapshot &rarr; <a href="https://pixharvest.com/try" style="color:#0369a1;font-weight:600;">pixharvest.com/try</a></p>
-</div>
-
 </body></html>

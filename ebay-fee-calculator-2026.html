@@ -1,159 +1,66 @@
-<!DOCTYPE html><html lang="en"><head><!-- Coze Coding Analytics -->
-<script>
-(function(){
-  function randomUUID(){
-    if(typeof crypto!=="undefined"&&typeof crypto.randomUUID==="function"){
-      return crypto.randomUUID();
-    }
-    return "10000000-1000-4000-8000-100000000000".replace(/[018]/g,function(c){
-      return(+c^(crypto.getRandomValues(new Uint8Array(1))[0]&(15>>(+c/4)))).toString(16);
-    });
-  }
-
-  function encode(obj){return btoa(JSON.stringify(obj))}
-  function decode(str){try{return JSON.parse(atob(str))}catch(e){return null}}
-
-  function getDeviceId(){
-    var storageKey="__coze_coding_device_info";
-    try{
-      var info=decode(localStorage.getItem(storageKey));
-      if(info&&typeof info.did==="string"){return info.did}
-    }catch(e){}
-    var newInfo={did:randomUUID()};
-    try{localStorage.setItem(storageKey,encode(newInfo))}catch(e){}
-    return newInfo.did;
-  }
-
-  function sendPageViewEvent(){
-    var deviceId=getDeviceId();
-    var projectId="7689465264760651811";
-    var reportURL="https://code.coze.cn/api/coding/deployment/analytics/report?project_id="+encodeURIComponent(projectId)+"&did="+encodeURIComponent(deviceId);
-    try{
-      fetch(reportURL,{
-        method:"POST",
-        headers:{"Content-Type":"application/json"},
-        body:JSON.stringify({
-          events:[{
-            type:"page_view",
-            url:window.location.href,
-            path:window.location.pathname,
-            referrer:document.referrer,
-            timestamp:Date.now()
-          }]
-        })
-      }).catch(function(){});
-    }catch(e){}
-  }
-
-  if(document.readyState==="complete"){
-    sendPageViewEvent();
-  }else{
-    document.addEventListener("readystatechange",function(){
-      if(document.readyState==="complete"){sendPageViewEvent()}
-    });
-  }
-})();
-</script>
-<!-- WebPro SDK -->
-<script>
-(function(n,e,r,t,a,o,s,i,c,l,f,m,p,u){o="precollect";s="getAttribute";i="addEventListener";c="PerformanceObserver";l=function(e){f=[].slice.call(arguments);f.push(Date.now(),location.href);(e==o?l.p.a:l.q).push(f)};l.q=[];l.p={a:[]};n[a]=l;m=document.createElement("script");m.src=r+"?aid="+t+"&globalName="+a;m.crossOrigin="anonymous";e.getElementsByTagName("head")[0].appendChild(m);if(i in n){l.pcErr=function(e){e=e||n.event;p=e.target||e.srcElement;if(p instanceof Element||p instanceof HTMLElement){n[a](o,"st",{tagName:p.tagName,url:p[s]("href")||p[s]("src")})}else{n[a](o,"err",e.error||e.message)}};l.pcRej=function(e){e=e||n.event;n[a](o,"reject",e.reason||e.detail&&e.detail.reason)};n[i]("error",l.pcErr,true);n[i]("unhandledrejection",l.pcRej,true)}if("PerformanceLongTaskTiming"in n){u=l.pp={entries:[]};u.observer=new PerformanceObserver(function(e){u.entries=u.entries.concat(e.getEntries())});u.observer.observe({entryTypes:["longtask"]})}})(window,document,"https://apm.volccdn.com/mars-web/apmplus/web/browser.cn.js",1001891,"apmPlus");
-</script>
-<script>
-window.apmPlus("context.set", "project_id", "7689380518990774291");
-window.apmPlus("init",{
-  aid: 1001891,
-  token: '26a8704bd4d34b1698085c787d0c95d0'
-});
-window.apmPlus("start");
-</script>
-
-<meta name="msvalidate.01" content="D432671F9227B8ED20EAA7BC31A27DE6"/>
-<meta name="impact-site-verification" value="f4050299-9826-4f4c-a116-3016af784bb4"/>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>eBay Fee Calculator 2026: Final Value Fee + Per-Order Fee</title>
-<meta name="description" content="Free 2026 eBay fee calculator. See the 13.6% final value fee plus per-order fee on any sale price and your net, instantly."/>
-<link rel="canonical" href="https://contentforge-press.github.io/ebay-fee-calculator-2026.html"/>
-<meta property="og:title" content="eBay Fee Calculator 2026: Final Value Fee + Per-Order Fee"/>
-<meta property="og:description" content="Free 2026 eBay fee calculator. See the 13.6% final value fee plus per-order fee on any sale price and your net, instantly."/>
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>eBay Fee Calculator 2026 – Final Value &amp; Insertion Fees</title>
+<meta name="description" content="Calculate eBay final value fees by category and your net payout in 2026.">
+<link rel="canonical" href="https://contentforge-press.github.io/ebay-fee-calculator-2026.html">
 <style>
-:root{--b:#2f5af0;--ink:#1f2433;--mut:#6b7280;--line:#e6e8ee}
-*{box-sizing:border-box}
-body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#f4f6fb}
-.wrap{max-width:880px;margin:0 auto;padding:28px 18px 60px}
-header a{color:var(--b);text-decoration:none;font-weight:700;font-size:18px}
-h1{font-size:26px;margin:18px 0 6px}
-.sub{color:var(--mut);margin:0 0 22px;font-size:15px}
-.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 6px 24px rgba(31,36,51,.05)}
-label{display:block;font-size:13px;color:var(--mut);margin:14px 0 6px;font-weight:600}
-input,select{width:100%;padding:12px 13px;font-size:16px;border:1px solid var(--line);border-radius:10px;background:#fff}
-input:focus,select:focus{outline:2px solid var(--b);border-color:var(--b)}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
-@media(max-width:560px){.grid2{grid-template-columns:1fr}}
-.fee-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed var(--line);font-size:15px}
-.fee-row small{display:block;color:var(--mut);font-size:12px}
-.fee-row.total{border-bottom:none;font-weight:700;font-size:17px;margin-top:4px}
-.amt{font-variant-numeric:tabular-nums}
-.net{margin-top:16px;padding:16px;border-radius:12px;background:#eef3ff;display:flex;justify-content:space-between;align-items:center;font-size:18px;font-weight:700}
-.net b{color:var(--b);font-size:24px}
-.note{margin-top:14px;font-size:12px;color:var(--mut);line-height:1.5}
-.cta{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
-.btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700;font-size:15px}
-.btn.p{background:var(--b);color:#fff}
-.btn.s{background:#fff;color:var(--b);border:1px solid var(--b)}
-</style>
-</head>
-<body>
+:root{--brand:#0b4da2;--brand-d:#083a7d;--ink:#1f2937;--mut:#6b7280;--line:#e5e7eb;--bg:#f8fafc;--card:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{background:var(--brand);color:#fff;padding:14px 0}
+.brand{font-weight:700;font-size:17px;letter-spacing:.2px}
+.brand a{color:#fff;text-decoration:none}
+.brand small{opacity:.85;font-weight:400;margin-left:10px}
+.hero{padding:34px 0 10px}
+h1{font-size:28px;line-height:1.3;color:var(--ink)}
+.sub{color:var(--mut);font-size:15px;margin-top:8px}
+.calc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;margin:22px 0}
+.calc label{display:block;font-weight:600;font-size:14px;margin:12px 0 6px}
+.calc input{width:100%;padding:10px 12px;border:1px solid #cbd5e1;border-radius:8px;font-size:15px}
+.calc button{margin-top:16px;padding:11px 22px;background:var(--brand);color:#fff;border:none;border-radius:8px;font-size:15px;cursor:pointer;font-weight:600}
+.calc button:hover{background:var(--brand-d)}
+.result{margin-top:16px;padding:14px;border-radius:8px;background:#f0f7ff;border:1px solid #bcd9f5;font-size:15px;display:none}
+.result b{color:var(--brand)}
+.sec h2{font-size:21px;margin:28px 0 10px}
+.sec p{color:#374151;margin-bottom:10px}
+.related{margin:26px 0;padding:16px;background:var(--card);border:1px solid var(--line);border-radius:12px}
+.related h3{font-size:15px;margin-bottom:10px}
+.related a{display:inline-block;margin:4px 10px 4px 0;color:var(--brand);text-decoration:none;font-size:14px}
+footer{margin-top:40px;padding:22px 0;border-top:1px solid var(--line);color:var(--mut);font-size:13px;background:var(--card)}
+footer a{color:var(--brand);text-decoration:none}
+.pill{display:inline-block;background:#eef4ff;color:var(--brand);border-radius:999px;padding:2px 12px;font-size:12px;font-weight:600;margin-top:10px}
+@media(max-width:640px){h1{font-size:22px}}
+</style></head><body>
+<header><div class="wrap"><div class="brand"><a href="/index.html">PixHarvest Tools</a><small>free seller calculators · 2026</small></div></div></header>
 <div class="wrap">
-<header><a href="/tools.html">← PixHarvest</a></header>
-<h1>eBay Fee Calculator (2026)</h1>
-<p class="sub">13.6% standard final value fee plus the per-order fee, live in your browser.</p>
-<div class="card">
-<label for="price">Sale price</label><input id="price" type="number" min="0" step="0.01" value="100" inputmode="decimal"/>
-<div class="net"><span>You keep (net)</span><b id="net">$0.00</b></div>
-<div style="margin-top:18px" id="feelist"></div>
-<div class="cta">
- <a class="btn p" href="/tools.html">See all free calculators</a>
- <a class="btn s" href="/tools.html">All free calculators</a>
+<div class="hero"><span class="pill">eBay FVF 13.25%</span>
+<h1>eBay Fee Calculator 2026 – Final Value &amp; Insertion Fees</h1>
+<p class="sub">Calculate eBay final value fees by category and your net payout in 2026.</p></div>
+<div class="calc">
+<div><label for="i1">Amount / Sale price ($)</label><input id="i1" placeholder="100.00"></div>
+<button onclick="go()">Calculate</button>
+<div class="result" id="o"></div>
 </div>
-<p class="note">Rates are 2026 figures (sources effective 2026-01-01). Estimates exclude product/COGS, ads and returns. Verify exact amounts with the platform.</p>
+<div class="sec">
+<h2>How to use this calculator</h2>
+<p>Enter the amount above and click <b>Calculate</b>. The result shows the fee and net payout.</p>
+<p>Fee structures change — always confirm the current rate on the platform's own fee page before final pricing decisions.</p>
+</div>
+<div class="related"><h3>Related tools</h3>
+<a href="/amazon-fba-calculator.html">Amazon FBA calculator</a><a href="/ebay-calculator.html">eBay calculator</a><a href="/etsy-fee-calculator-2026.html">Etsy calculator</a><a href="/shopify-profit-calculator.html">Shopify calculator</a><a href="/paypal-fee-calculator.html">PayPal calculator</a><a href="/tools.html">All 400+ tools</a>
 </div>
 </div>
+<footer><div class="wrap">
+<p>PixHarvest — live data APIs for AI agents &amp; sellers: <a href="https://pixharvest.com/try">free Shopify/GitHub/App Store/HN/job-intel snapshots</a>.</p>
+<p style="margin:0;">Free live snapshot &rarr; <a href="https://pixharvest.com/try">pixharvest.com/try</a></p>
+</div></footer>
 <script>
-const FEE_MODEL = {"fees": [{"label": "Final value fee (13.6%)", "hint": "Standard rate; lower with an eBay Store", "type": "percent", "rate": 0.136, "value": null}, {"label": "Per-order fee", "hint": "Charged once per order", "type": "fixed", "rate": null, "value": 0.4}]};
-const $=id=>document.getElementById(id);
-function money(x){return "$"+Number(x).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2});}
-function calc(){
-  const price=parseFloat($("price").value)||0;
-  let total=0; const rows=[];
-  for(const f of FEE_MODEL.fees){
-    let v=0;
-    if(f.type==="percent") v=price*f.rate;
-    else if(f.type==="fixed") v=f.value;
-    else if(f.type==="percent_plus_fixed") v=price*f.rate+f.value;
-    v=Math.round(v*100)/100;
-    rows.push([f.label,f.hint,v]); total+=v;
-  }
-  total=Math.round(total*100)/100;
-  $("feelist").innerHTML=rows.map(r=>
-    `<div class="fee-row"><span>${r[0]}<small>${r[1]||""}</small></span><span class="amt">${money(r[2])}</span></div>`).join("")
-    +`<div class="fee-row total"><span>Total fees</span><span class="amt">${money(total)}</span></div>`;
-  $("net").textContent=money(price-total);
+function go(){var o=document.getElementById('o');var i1=document.getElementById('i1');var i2=document.getElementById('i2')||{value:0};
+
+const pr=+i1.value||0, f1=pr*0.1325, f2=0.3, fee=f1+f2, net=pr-fee;
+o.style.display='block';
+o.innerHTML='Fee: <b>$'+fee.toFixed(2)+'</b> ('+(13.25).toFixed(1)+'% + $'+(0.3).toFixed(2)+') &nbsp;·&nbsp; Net: <b>$'+net.toFixed(2)+'</b>';
 }
-document.querySelectorAll("input").forEach(el=>el.addEventListener("input",calc));
-calc();
 </script>
-
-<div class="cta-box" style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:8px;padding:16px;margin:24px auto;max-width:640px;text-align:center">
-<h3 style="margin:0 0 8px;font-size:1.1em">Optimize pricing across all platforms</h3>
-<p style="margin:0 0 12px;color:#475569">Our <a href="/pricing-copilot.html" style="color:#0369a1;font-weight:600">AI Pricing Copilot</a> finds the best price on every marketplace from one cost — free.</p>
-<a href="/pricing-copilot.html" style="display:inline-block;background:#0369a1;color:#fff;padding:8px 20px;border-radius:6px;text-decoration:none;font-weight:600">Try Pricing Copilot →</a>
-</div>
-
-
-<div class="pixharvest-brand" style="max-width:1080px;margin:0 auto;padding:26px 16px 6px;border-top:1px solid #ececec;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:.85rem;color:#575e6a;">
-  <p style="margin:0 0 6px;"><strong style="color:#c24e10;">PixHarvest</strong> — live data APIs for AI agents &amp; ecommerce teams: <a href="/index.html" style="color:#0369a1;">Shopify store changes</a> · <a href="/index.html" style="color:#0369a1;">GitHub &amp; app intel</a> · <a href="/index.html" style="color:#0369a1;">market landscapes</a>.</p>
-  <p style="margin:0;">Free live snapshot &rarr; <a href="https://pixharvest.com/try" style="color:#0369a1;font-weight:600;">pixharvest.com/try</a></p>
-</div>
-
 </body></html>
